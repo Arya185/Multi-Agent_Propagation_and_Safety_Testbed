@@ -1,0 +1,11 @@
+requests
+python-dotenv
+pydantic
+jsonschema
+networkx
+numpy
+pandas
+scipy
+statsmodels
+matplotlib
+pytest
