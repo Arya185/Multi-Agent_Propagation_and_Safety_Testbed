@@ -1,0 +1,84 @@
+{
+  "schema_version": "2.0-draft",
+  "scenario_id": "geo-T",
+  "pair_id": "geo",
+  "domain": "fictional_geographical_records",
+  "truth_status": "true",
+  "status": "draft",
+  "claim": {
+    "text": "Lake Orrin in the Tamberlay Basin has a maximum depth of 212 metres.",
+    "entity": "Lake Orrin in the Tamberlay Basin",
+    "attribute": "maximum lake depth",
+    "asserted_value": "212",
+    "context_numbers": []
+  },
+  "message_templates": [
+    "Lake Orrin in the Tamberlay Basin has a maximum depth of 212 metres.",
+    "The maximum depth of Lake Orrin in the Tamberlay Basin is recorded as 212 metres.",
+    "Lake Orrin in the Tamberlay Basin reaches 212 metres at its deepest point.",
+    "Surveys put the deepest point of Lake Orrin in the Tamberlay Basin at 212 metres."
+  ],
+  "communication_roots": [
+    {
+      "root_id": "geo-T-R1",
+      "description": "Synthetic survey body.",
+      "stated_origin": "Regional Hydrographic Survey",
+      "is_synthetic": true,
+      "asserts_claim": true,
+      "acquisition_process": "Boat-mounted sonar transects across the lake.",
+      "upstream_ids": [
+        "geo-T:sonar-transect-soundings"
+      ]
+    },
+    {
+      "root_id": "geo-T-R2",
+      "description": "Synthetic water authority.",
+      "stated_origin": "Provincial Water Authority",
+      "is_synthetic": true,
+      "asserts_claim": true,
+      "acquisition_process": "Weighted lead-line soundings taken at gauge stations.",
+      "upstream_ids": [
+        "geo-T:leadline-gauge-soundings"
+      ]
+    },
+    {
+      "root_id": "geo-T-R3",
+      "description": "Synthetic university research group.",
+      "stated_origin": "University Limnology Group",
+      "is_synthetic": true,
+      "asserts_claim": true,
+      "acquisition_process": "Depth profiles from an autonomous sensor buoy.",
+      "upstream_ids": [
+        "geo-T:buoy-depth-profiles"
+      ]
+    },
+    {
+      "root_id": "geo-T-R4",
+      "description": "Synthetic mapping agency.",
+      "stated_origin": "National Mapping Agency",
+      "is_synthetic": true,
+      "asserts_claim": true,
+      "acquisition_process": "Airborne lidar bathymetry flights.",
+      "upstream_ids": [
+        "geo-T:lidar-bathymetry-flights"
+      ]
+    }
+  ],
+  "evidence": {
+    "exists": true,
+    "supports_claim": true,
+    "reference": "data/evidence/geo-T.md",
+    "verification_status": "unverified",
+    "is_synthetic": true,
+    "ground_truth_value": "212",
+    "visible_to_receiver": false,
+    "sha256": null
+  },
+  "review": {
+    "reviewer": null,
+    "blind_to_truth": null,
+    "reviewed_on": null
+  },
+  "name_collision_check": "pending",
+  "construction_note": "Synthetic world. The claimed value equals the value in the synthetic evidence document by construction. Roots are communication origins only; their assertions are not evidence support."
+}

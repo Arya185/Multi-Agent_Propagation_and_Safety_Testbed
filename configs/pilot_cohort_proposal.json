@@ -1,0 +1,89 @@
+{
+  "proposal_id": "pilot-proposal-1",
+  "status": "owner_approved",
+  "family": "pilot",
+  "fixed_on": null,
+  "members": [
+    {
+      "scenario": {
+        "scenario_id": "biz-a",
+        "scenario_version": 1
+      },
+      "scenario_sha256": "fce638039d69f774c91117512c51370a377e019e8b3fecd2c6dd59ecaeffb04b",
+      "evidence_sha256": "b51b1d32ca37e31f1dd70bde385cd067590fef4a1e4b78da9e943ab2e3404068"
+    },
+    {
+      "scenario": {
+        "scenario_id": "biz-b",
+        "scenario_version": 1
+      },
+      "scenario_sha256": "83aef409e83367036a4780ce2a6a744edd1e7a5742d9e081a208c3249a394721",
+      "evidence_sha256": "f6349fcbcb09a4e0f7fde00ae7e196c8893288662ad6fca42bf558397b7d6774"
+    },
+    {
+      "scenario": {
+        "scenario_id": "geo-a",
+        "scenario_version": 1
+      },
+      "scenario_sha256": "f2fd8037d098ab1a47e50a47ea0b96ee3f9a4bae85865557e30158e35ddd8766",
+      "evidence_sha256": "370080e5a64394d5218c39942519b08d313838cab305c728eda8a145d9382af0"
+    },
+    {
+      "scenario": {
+        "scenario_id": "geo-b",
+        "scenario_version": 1
+      },
+      "scenario_sha256": "ddf5161e6856b47e59cfc5c0b5e202b37daa159a0899cbddcf7e4c41f26045c6",
+      "evidence_sha256": "8528f3a853de73d73512f16c9a2af74b669544712d49438749f860b9deb84b09"
+    },
+    {
+      "scenario": {
+        "scenario_id": "hist-a",
+        "scenario_version": 1
+      },
+      "scenario_sha256": "2d81e0eea3f0bcca0ab8dcb65ab0280fbae575f6a2c83a83bd17412841c71066",
+      "evidence_sha256": "8b140cb4eec46cbe3ee27a4e64d5eabc6990ba60054bbe017af1b5844540f558"
+    },
+    {
+      "scenario": {
+        "scenario_id": "hist-b",
+        "scenario_version": 1
+      },
+      "scenario_sha256": "530b1e3d40804a32f2391d1974f5519328884420d992fbf15957c978d4fefbae",
+      "evidence_sha256": "7338013d4f989be077e4978a5738576403430ab1f06de59254d8ce647f529563"
+    },
+    {
+      "scenario": {
+        "scenario_id": "sci-a",
+        "scenario_version": 1
+      },
+      "scenario_sha256": "8852cf543382d6ef0166f46d9f3a6c9c6d596c4cd7607c45d62d8b61e4f2c756",
+      "evidence_sha256": "9edf69b4ba199831a5eb6e16283c0224b2d41c35150f6aeef30abdaa658efd39"
+    },
+    {
+      "scenario": {
+        "scenario_id": "sci-b",
+        "scenario_version": 1
+      },
+      "scenario_sha256": "d15067873264a3bb8fe5a012a4a23acb8bab27f138b7050572af02d905fd5e13",
+      "evidence_sha256": "3d2c6c444d8e4c95a4b41a4bfeb2a18f9af03d2d45467607545f22fba8ae8845"
+    },
+    {
+      "scenario": {
+        "scenario_id": "sw-a",
+        "scenario_version": 1
+      },
+      "scenario_sha256": "978e6c50ee1082a8feb55d9b204cc95c060cada84593ebb2c42eba8c9bd4f221",
+      "evidence_sha256": "73eb3a15ed5f44456b8f8aa1c8acab3ea66acbf57073d33f306059d52e23eaf7"
+    },
+    {
+      "scenario": {
+        "scenario_id": "sw-b",
+        "scenario_version": 1
+      },
+      "scenario_sha256": "006bee3df276bc974a96539b2ed9f3d64f3ade51a4963bff2be04a9e14fe1a10",
+      "evidence_sha256": "410d963f3a883e0b8559657f8312c54ee12fdc1490f52346aa3172b4068fa0ae"
+    }
+  ],
+  "note": "Proposal only; not a cohort freeze and not a registry. Hashes are recorded at proposal time (draft-state hashes when the scenarios are drafts) and go stale when a scenario or its evidence changes, in particular at the author_checked transition; regenerate the proposal then, never patch it."
+}

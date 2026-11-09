@@ -1,0 +1,87 @@
+{
+  "schema_version": "2.0-draft",
+  "scenario_id": "sci-F",
+  "pair_id": "sci",
+  "domain": "fictional_scientific_observations",
+  "truth_status": "false",
+  "status": "draft",
+  "claim": {
+    "text": "Penra-2 emitted 29 radio pulses on observation night 6.",
+    "entity": "Penra-2",
+    "attribute": "pulse count on observation night 6",
+    "asserted_value": "29",
+    "context_numbers": [
+      "2",
+      "6"
+    ]
+  },
+  "message_templates": [
+    "Penra-2 emitted 29 radio pulses on observation night 6.",
+    "On observation night 6, Penra-2 produced 29 radio pulses.",
+    "Penra-2's night-6 pulse count was 29.",
+    "The number of radio pulses from Penra-2 on observation night 6 was 29."
+  ],
+  "communication_roots": [
+    {
+      "root_id": "sci-F-R1",
+      "description": "Synthetic observatory with its own radio dish.",
+      "stated_origin": "Ilvane Observatory",
+      "is_synthetic": true,
+      "asserts_claim": true,
+      "acquisition_process": "Counts pulses in the recorded receiver output of its own dish.",
+      "upstream_ids": [
+        "sci-F:ilvane-dish-receiver-output"
+      ]
+    },
+    {
+      "root_id": "sci-F-R2",
+      "description": "Synthetic research institute with a separate radio array.",
+      "stated_origin": "Calder Institute",
+      "is_synthetic": true,
+      "asserts_claim": true,
+      "acquisition_process": "Counts pulses in the spectrogram archive of a separate radio array.",
+      "upstream_ids": [
+        "sci-F:calder-array-spectrogram-archive"
+      ]
+    },
+    {
+      "root_id": "sci-F-R3",
+      "description": "Synthetic volunteer observer network.",
+      "stated_origin": "Voss Amateur Network",
+      "is_synthetic": true,
+      "asserts_claim": true,
+      "acquisition_process": "Volunteers count audible pulses in audio recordings from their own receivers.",
+      "upstream_ids": [
+        "sci-F:voss-volunteer-audio-recordings"
+      ]
+    },
+    {
+      "root_id": "sci-F-R4",
+      "description": "Synthetic scheduled sky survey.",
+      "stated_origin": "Pelham Sky Survey",
+      "is_synthetic": true,
+      "asserts_claim": true,
+      "acquisition_process": "Counts pulses in the scheduled scan frames of a survey telescope.",
+      "upstream_ids": [
+        "sci-F:pelham-survey-scan-frames"
+      ]
+    }
+  ],
+  "evidence": {
+    "exists": true,
+    "supports_claim": false,
+    "reference": "data/evidence/sci-F.md",
+    "verification_status": "unverified",
+    "is_synthetic": true,
+    "ground_truth_value": "11",
+    "visible_to_receiver": false,
+    "sha256": null
+  },
+  "review": {
+    "reviewer": null,
+    "blind_to_truth": null,
+    "reviewed_on": null
+  },
+  "name_collision_check": "pending",
+  "construction_note": "Synthetic world. The claimed value deliberately differs from the synthetic evidence document by construction. That four roots with disjoint acquisition processes report the same wrong value is a construction assumption (coinciding independent errors), not a realistic process. Roots are communication origins only."
+}

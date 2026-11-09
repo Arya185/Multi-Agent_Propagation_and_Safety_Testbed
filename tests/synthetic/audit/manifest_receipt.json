@@ -1,0 +1,12 @@
+{
+  "fixture_digest": "c848fde6bc799bf8e078b4e550a53d9d0695d8a0a3cc504caeaabad2c19a221d",
+  "goldens_digest": "1c35b2c5df67c7998f710cf6b4f9e31577c55003b74a009a201ad4c41c6446af",
+  "helper_digest": "0e843c434bbcc02d5f28b255f779fb7a00566de57ce0cb1da451ef557e7b575c",
+  "manifest_sha256": "63e3a6d900a593292ea4de5d0e02628b749a51e6f580424176b215cb6d5fe402",
+  "note": "In-repository consistency aid, not an independent trust anchor: whoever can edit the manifest can edit this receipt. Stronger anchoring requires recording the manifest sha256 outside the repository.",
+  "previous_manifest_sha256": "8662e3172712a1fb80f2552b7b677d1ded71c62ed1228c98802dd839dc3d4a82",
+  "reason": "Stage 4J.7: registry.py (pilot eligibility gate, cohort proposal, exposure fields) and scenarios.py (author_checked requires evidence.sha256) changed",
+  "receipt_format": 1,
+  "recorded_by": "record_goldens.py --refresh-manifest",
+  "source_digest": "af5fe487233238896b54d8f11cc804e73d78e7ebce3133620c69afcb2a3db2d8"
+}

@@ -1,0 +1,46 @@
+{
+  "schema": "maps-pilot-policy-proposal",
+  "schema_version": 1,
+  "status": "PROPOSAL — NOT APPROVED",
+  "note": "A proposal record only. It is NOT a live policy: it has none of the maps-live-policy fields and cannot be loaded by maps.runs.policy_source. Every field below is proposed or pending the owner; none is approved. Values come from docs/stage_reports/owner_decision_ledger.md (Stage 4I.35 recommendations, not owner approvals).",
+  "fields": {
+    "ps12_approach": {"value": "C", "status": "proposed", "source": "ledger Stage 4I.35, PS-12"},
+    "ps12_consec": {"value": 5, "status": "proposed", "source": "ledger Stage 4I.35, PS-12-CONSEC"},
+    "nonfatal_4xx_statuses": {"value": [408, 429], "status": "proposed", "source": "ledger Stage 4I.35, PS-12-4XX"},
+    "fatal_3xx": {"value": true, "status": "proposed", "source": "ledger Stage 4I.35, PS-12-3XX"},
+    "ps05a_max_episodes": {"value": "planned_episodes", "status": "proposed", "source": "ledger Stage 4I.35, PS-05a"},
+    "ps05b_max_request_attempts": {"value": "3 * planned_episodes", "status": "proposed", "source": "ledger Stage 4I.35, PS-05b"},
+    "ps11": {"value": "keep_current_behavior", "status": "proposed", "source": "ledger Stage 4I.35, PS-11"},
+    "ps13": {"value": "keep_current_behavior", "status": "proposed", "source": "ledger Stage 4I.35, PS-13"},
+    "ps09_formula": {"value": "183 * (planned_episodes + 1)", "status": "proposed", "source": "ledger Stage 4I.35, PS-09"},
+    "theta_fraction": {"value": null, "status": "pending_owner", "source": "ledger MEANINGFUL_EFFECT_THRESHOLD; contrast-normalized: a fraction of each contrast's nominal root gap"},
+    "pi": {"value": null, "status": "pending_owner", "source": "ledger C0_TOLERANCE (primary measure: proportion of C0 episodes with more than zero reported roots)"},
+    "pi_breach_rule": {"value": null, "status": "pending_owner", "source": "ledger C0_TOLERANCE"},
+    "pi_breach_consequence": {"value": null, "status": "pending_owner", "source": "ledger C0_TOLERANCE"},
+    "policy_id": {"value": "maps-pilot-policy-2026-11-draft-1", "status": "proposed", "source": "Stage 4J.7 implementation prompt"},
+    "profile_name": {"value": "pilot-tolerant-c", "status": "proposed", "source": "Stage 4J.7 implementation prompt"},
+    "approval_reference": {"value": null, "status": "pending_owner", "source": "owner supplied; never written by the project"}
+  },
+  "owner_decisions": {
+    "cohort": {"value": "all five pairs (ten scenarios)", "status": "selected_by_owner_not_frozen", "source": "owner Stage 4J.7 implementation prompt"},
+    "hist_a_year_1612": {"status": "provisionally_accepted", "source": "owner Stage 4J.7 implementation prompt"},
+    "hist_b_wording": {"status": "accepted", "source": "owner Stage 4J.7 implementation prompt"},
+    "near_duplicate_geo_sci": {
+      "status": "unresolved",
+      "proposed_replacement": "rename 'Calder Group' to 'Maldon Group' in sci-a-R2 and sci-b-R2 identically",
+      "applied": false,
+      "source": "owner Stage 4J.7 implementation prompt; awaiting owner"
+    },
+    "author_id": {"value": null, "status": "pending_owner", "suggested_format": "project-owner-01", "source": "owner Stage 4J.7 implementation prompt; not written anywhere"}
+  },
+  "custody": [
+    {"item": "move the key to encrypted storage outside the repository", "status": "pending_owner_action"},
+    {"item": "delete the in-repository copy", "status": "pending_owner_action"},
+    {"item": "record the key hash", "status": "pending_owner_action"},
+    {"item": "custody attestation", "status": "pending_owner_action"},
+    {"item": "git-history exposure audit", "status": "pending_owner_action"}
+  ],
+  "attestation_file": null,
+  "evidence_binding_route": "scenario evidence.sha256 from author_checked upward; loader, registry and readiness check current evidence bytes; policy scope.content evidence digests must equal it",
+  "pilot_intent": "NOT AUTHORIZED"
+}

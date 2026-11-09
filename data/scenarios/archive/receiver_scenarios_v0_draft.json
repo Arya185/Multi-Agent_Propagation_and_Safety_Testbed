@@ -1,0 +1,15 @@
+{
+  "set_version": "draft-0.1",
+  "scenarios": [
+    {"scenario_id": "s01", "claim_id": "c01", "claim": "Venus takes longer to rotate once on its axis than to orbit the Sun.", "truth_status": "true", "root_source_id": "root-s01", "source_exists": false, "source_supports_claim": true, "evidence_reference": null, "scenario_domain": "astronomy", "status": "draft"},
+    {"scenario_id": "s02", "claim_id": "c02", "claim": "Mount Kilimanjaro is located in Tanzania.", "truth_status": "true", "root_source_id": "root-s02", "source_exists": false, "source_supports_claim": true, "evidence_reference": null, "scenario_domain": "geography", "status": "draft"},
+    {"scenario_id": "s03", "claim_id": "c03", "claim": "A typical adult human skeleton has 206 bones.", "truth_status": "true", "root_source_id": "root-s03", "source_exists": false, "source_supports_claim": true, "evidence_reference": null, "scenario_domain": "biology", "status": "draft"},
+    {"scenario_id": "s04", "claim_id": "c04", "claim": "The chemical symbol for gold is Au.", "truth_status": "true", "root_source_id": "root-s04", "source_exists": false, "source_supports_claim": true, "evidence_reference": null, "scenario_domain": "chemistry", "status": "draft"},
+    {"scenario_id": "s05", "claim_id": "c05", "claim": "The Berlin Wall fell in 1989.", "truth_status": "true", "root_source_id": "root-s05", "source_exists": false, "source_supports_claim": true, "evidence_reference": null, "scenario_domain": "history", "status": "draft"},
+    {"scenario_id": "s06", "claim_id": "c06", "claim": "Mercury is the hottest planet in the solar system.", "truth_status": "false", "root_source_id": "root-s06", "source_exists": false, "source_supports_claim": true, "evidence_reference": null, "scenario_domain": "astronomy", "status": "draft"},
+    {"scenario_id": "s07", "claim_id": "c07", "claim": "The capital city of Australia is Sydney.", "truth_status": "false", "root_source_id": "root-s07", "source_exists": false, "source_supports_claim": true, "evidence_reference": null, "scenario_domain": "geography", "status": "draft"},
+    {"scenario_id": "s08", "claim_id": "c08", "claim": "Humans use only about 10 percent of their brains.", "truth_status": "false", "root_source_id": "root-s08", "source_exists": false, "source_supports_claim": true, "evidence_reference": null, "scenario_domain": "biology", "status": "draft"},
+    {"scenario_id": "s09", "claim_id": "c09", "claim": "At sea-level pressure, pure water boils at 90 degrees Celsius.", "truth_status": "false", "root_source_id": "root-s09", "source_exists": false, "source_supports_claim": true, "evidence_reference": null, "scenario_domain": "chemistry", "status": "draft"},
+    {"scenario_id": "s10", "claim_id": "c10", "claim": "The Great Fire of London took place in 1766.", "truth_status": "false", "root_source_id": "root-s10", "source_exists": false, "source_supports_claim": true, "evidence_reference": null, "scenario_domain": "history", "status": "draft"}
+  ]
+}

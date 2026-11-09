@@ -1,0 +1,97 @@
+idx	episode_id	model_alias	model_id	scenario_id	truth_status	condition_id	n_messages	n_roots	prompt_variant	repetition	seed	template_order	root_ids
+0	ep_265942bd4270	synbeta	synthetic/mock-beta	syn-p2-a	false	C0	0	0	source-aware	0	4002927695		
+1	ep_85111b5bf798	synalpha	synthetic/mock-alpha	syn-p1-b	false	C4	2	2	source-aware	0	2379098676	2,3	syn-p1-b-R3,syn-p1-b-R2
+2	ep_5315117741fd	synbeta	synthetic/mock-beta	syn-p2-b	true	C4	2	2	source-aware	0	1146958882	1,0	syn-p2-b-R4,syn-p2-b-R3
+3	ep_6e2982a89da8	synbeta	synthetic/mock-beta	syn-p1-b	false	C5	4	4	neutral	0	2700437821	2,3,1,0	syn-p1-b-R3,syn-p1-b-R2,syn-p1-b-R4,syn-p1-b-R1
+4	ep_27c2fb166589	synbeta	synthetic/mock-beta	syn-p2-b	true	C2	2	1	neutral	0	2072042124	1,0	syn-p2-b-R4,syn-p2-b-R4
+5	ep_3953fd87ff30	synalpha	synthetic/mock-alpha	syn-p2-a	false	C0	0	0	source-aware	0	3188307301		
+6	ep_6f39b48289ad	synalpha	synthetic/mock-alpha	syn-p1-a	true	C1	1	1	neutral	0	715776497	2	syn-p1-a-R3
+7	ep_aed37ca9b84c	synbeta	synthetic/mock-beta	syn-p1-a	true	C1	1	1	neutral	0	2388506470	2	syn-p1-a-R3
+8	ep_eedcb102ec5b	synbeta	synthetic/mock-beta	syn-p1-a	true	C1	1	1	source-aware	0	150644351	2	syn-p1-a-R3
+9	ep_49fb3848f927	synalpha	synthetic/mock-alpha	syn-p1-a	true	C4	2	2	source-aware	0	1697321237	2,3	syn-p1-a-R3,syn-p1-a-R2
+10	ep_9cf4edaeaa4d	synalpha	synthetic/mock-alpha	syn-p2-b	true	C5	4	4	neutral	0	854100406	1,0,3,2	syn-p2-b-R4,syn-p2-b-R3,syn-p2-b-R1,syn-p2-b-R2
+11	ep_0000299ebe88	synalpha	synthetic/mock-alpha	syn-p1-a	true	C3	4	1	source-aware	0	3689011610	2,3,1,0	syn-p1-a-R3,syn-p1-a-R3,syn-p1-a-R3,syn-p1-a-R3
+12	ep_8b7b74549eab	synalpha	synthetic/mock-alpha	syn-p1-b	false	C2	2	1	source-aware	0	1495937274	2,3	syn-p1-b-R3,syn-p1-b-R3
+13	ep_096e56ae023b	synbeta	synthetic/mock-beta	syn-p2-a	false	C4	2	2	neutral	0	2056026375	1,0	syn-p2-a-R4,syn-p2-a-R3
+14	ep_552478e136d2	synbeta	synthetic/mock-beta	syn-p1-b	false	C0	0	0	source-aware	0	2574370902		
+15	ep_26f16364cb7f	synbeta	synthetic/mock-beta	syn-p1-b	false	C2	2	1	source-aware	0	1278634215	2,3	syn-p1-b-R3,syn-p1-b-R3
+16	ep_ddf5f4c010bd	synbeta	synthetic/mock-beta	syn-p2-b	true	C5	4	4	source-aware	0	1248185095	1,0,3,2	syn-p2-b-R4,syn-p2-b-R3,syn-p2-b-R1,syn-p2-b-R2
+17	ep_241bea6037be	synalpha	synthetic/mock-alpha	syn-p2-a	false	C3	4	1	neutral	0	958367923	1,0,3,2	syn-p2-a-R4,syn-p2-a-R4,syn-p2-a-R4,syn-p2-a-R4
+18	ep_25ce8939c2d6	synalpha	synthetic/mock-alpha	syn-p1-a	true	C0	0	0	source-aware	0	3278273835		
+19	ep_04aecf5906b5	synalpha	synthetic/mock-alpha	syn-p2-b	true	C3	4	1	source-aware	0	524440368	1,0,3,2	syn-p2-b-R4,syn-p2-b-R4,syn-p2-b-R4,syn-p2-b-R4
+20	ep_9ea78d92ad1e	synbeta	synthetic/mock-beta	syn-p2-b	true	C1	1	1	source-aware	0	3406050841	1	syn-p2-b-R4
+21	ep_f5b1dcd0a9fc	synalpha	synthetic/mock-alpha	syn-p2-b	true	C1	1	1	neutral	0	459200275	1	syn-p2-b-R4
+22	ep_370a7460a7bd	synalpha	synthetic/mock-alpha	syn-p1-a	true	C5	4	4	source-aware	0	256715929	2,3,1,0	syn-p1-a-R3,syn-p1-a-R2,syn-p1-a-R4,syn-p1-a-R1
+23	ep_e4a670f18dfd	synbeta	synthetic/mock-beta	syn-p2-a	false	C2	2	1	source-aware	0	2060896246	1,0	syn-p2-a-R4,syn-p2-a-R4
+24	ep_2d01164155e8	synalpha	synthetic/mock-alpha	syn-p2-a	false	C5	4	4	source-aware	0	976469996	1,0,3,2	syn-p2-a-R4,syn-p2-a-R3,syn-p2-a-R1,syn-p2-a-R2
+25	ep_c32fdcb8c38f	synbeta	synthetic/mock-beta	syn-p1-b	false	C5	4	4	source-aware	0	1052964395	2,3,1,0	syn-p1-b-R3,syn-p1-b-R2,syn-p1-b-R4,syn-p1-b-R1
+26	ep_6648cbe10fec	synbeta	synthetic/mock-beta	syn-p2-b	true	C1	1	1	neutral	0	3590335578	1	syn-p2-b-R4
+27	ep_d8828e2c0aa8	synbeta	synthetic/mock-beta	syn-p2-a	false	C0	0	0	neutral	0	3684066623		
+28	ep_d6c34cefd695	synbeta	synthetic/mock-beta	syn-p2-a	false	C5	4	4	neutral	0	4122140285	1,0,3,2	syn-p2-a-R4,syn-p2-a-R3,syn-p2-a-R1,syn-p2-a-R2
+29	ep_5c9f9c8288c4	synbeta	synthetic/mock-beta	syn-p2-b	true	C0	0	0	source-aware	0	841140978		
+30	ep_cf3b94f852b9	synalpha	synthetic/mock-alpha	syn-p2-a	false	C2	2	1	source-aware	0	3866602755	1,0	syn-p2-a-R4,syn-p2-a-R4
+31	ep_ec84b6638ffb	synalpha	synthetic/mock-alpha	syn-p2-a	false	C2	2	1	neutral	0	2061438956	1,0	syn-p2-a-R4,syn-p2-a-R4
+32	ep_7063617fbfe4	synalpha	synthetic/mock-alpha	syn-p1-a	true	C1	1	1	source-aware	0	1121785087	2	syn-p1-a-R3
+33	ep_283c223114f9	synbeta	synthetic/mock-beta	syn-p1-b	false	C3	4	1	neutral	0	3213308607	2,3,1,0	syn-p1-b-R3,syn-p1-b-R3,syn-p1-b-R3,syn-p1-b-R3
+34	ep_e28b92d384ba	synalpha	synthetic/mock-alpha	syn-p1-b	false	C4	2	2	neutral	0	4152596183	2,3	syn-p1-b-R3,syn-p1-b-R2
+35	ep_0dbe108d4fe0	synalpha	synthetic/mock-alpha	syn-p1-a	true	C4	2	2	neutral	0	1588460250	2,3	syn-p1-a-R3,syn-p1-a-R2
+36	ep_306cf7744adf	synbeta	synthetic/mock-beta	syn-p2-a	false	C4	2	2	source-aware	0	33366475	1,0	syn-p2-a-R4,syn-p2-a-R3
+37	ep_c0649c33f21e	synbeta	synthetic/mock-beta	syn-p1-a	true	C2	2	1	neutral	0	2934864318	2,3	syn-p1-a-R3,syn-p1-a-R3
+38	ep_7d771459f84e	synalpha	synthetic/mock-alpha	syn-p1-a	true	C2	2	1	neutral	0	3049505518	2,3	syn-p1-a-R3,syn-p1-a-R3
+39	ep_2952b7f1c0ba	synbeta	synthetic/mock-beta	syn-p2-b	true	C2	2	1	source-aware	0	1467148086	1,0	syn-p2-b-R4,syn-p2-b-R4
+40	ep_a7cc12aa9e83	synbeta	synthetic/mock-beta	syn-p2-a	false	C1	1	1	neutral	0	925454351	1	syn-p2-a-R4
+41	ep_2d9e31d5319b	synbeta	synthetic/mock-beta	syn-p1-a	true	C5	4	4	source-aware	0	750261484	2,3,1,0	syn-p1-a-R3,syn-p1-a-R2,syn-p1-a-R4,syn-p1-a-R1
+42	ep_c8345dd0c1c6	synalpha	synthetic/mock-alpha	syn-p1-b	false	C2	2	1	neutral	0	87165836	2,3	syn-p1-b-R3,syn-p1-b-R3
+43	ep_3894f50af288	synalpha	synthetic/mock-alpha	syn-p2-b	true	C2	2	1	neutral	0	801761756	1,0	syn-p2-b-R4,syn-p2-b-R4
+44	ep_00a6a792e977	synalpha	synthetic/mock-alpha	syn-p2-b	true	C0	0	0	neutral	0	3653263939		
+45	ep_12ffaa071b33	synalpha	synthetic/mock-alpha	syn-p1-a	true	C2	2	1	source-aware	0	1403871914	2,3	syn-p1-a-R3,syn-p1-a-R3
+46	ep_4b84a2599c01	synbeta	synthetic/mock-beta	syn-p2-b	true	C4	2	2	neutral	0	1344141078	1,0	syn-p2-b-R4,syn-p2-b-R3
+47	ep_c4c071386d62	synbeta	synthetic/mock-beta	syn-p2-b	true	C3	4	1	source-aware	0	2214393948	1,0,3,2	syn-p2-b-R4,syn-p2-b-R4,syn-p2-b-R4,syn-p2-b-R4
+48	ep_9cbc948480d0	synbeta	synthetic/mock-beta	syn-p2-a	false	C5	4	4	source-aware	0	2510553051	1,0,3,2	syn-p2-a-R4,syn-p2-a-R3,syn-p2-a-R1,syn-p2-a-R2
+49	ep_d894795acbff	synalpha	synthetic/mock-alpha	syn-p1-b	false	C1	1	1	neutral	0	4067423318	2	syn-p1-b-R3
+50	ep_199c6e248e4f	synalpha	synthetic/mock-alpha	syn-p2-b	true	C5	4	4	source-aware	0	3906318717	1,0,3,2	syn-p2-b-R4,syn-p2-b-R3,syn-p2-b-R1,syn-p2-b-R2
+51	ep_3e8517cf0a6d	synbeta	synthetic/mock-beta	syn-p1-b	false	C2	2	1	neutral	0	1646250176	2,3	syn-p1-b-R3,syn-p1-b-R3
+52	ep_d5d9cfab04b1	synbeta	synthetic/mock-beta	syn-p2-a	false	C2	2	1	neutral	0	560951204	1,0	syn-p2-a-R4,syn-p2-a-R4
+53	ep_2505c94cb923	synalpha	synthetic/mock-alpha	syn-p2-b	true	C4	2	2	source-aware	0	116290283	1,0	syn-p2-b-R4,syn-p2-b-R3
+54	ep_f75313bc31f6	synalpha	synthetic/mock-alpha	syn-p2-b	true	C0	0	0	source-aware	0	2655349586		
+55	ep_5d2f207c6cd1	synalpha	synthetic/mock-alpha	syn-p2-a	false	C0	0	0	neutral	0	690046989		
+56	ep_98caead2605f	synalpha	synthetic/mock-alpha	syn-p1-b	false	C3	4	1	neutral	0	298151394	2,3,1,0	syn-p1-b-R3,syn-p1-b-R3,syn-p1-b-R3,syn-p1-b-R3
+57	ep_7cb62e319c71	synalpha	synthetic/mock-alpha	syn-p2-a	false	C4	2	2	neutral	0	3180329440	1,0	syn-p2-a-R4,syn-p2-a-R3
+58	ep_7c3eadf57074	synbeta	synthetic/mock-beta	syn-p1-a	true	C4	2	2	neutral	0	139881249	2,3	syn-p1-a-R3,syn-p1-a-R2
+59	ep_679cb7c10a53	synbeta	synthetic/mock-beta	syn-p1-a	true	C3	4	1	source-aware	0	2033692199	2,3,1,0	syn-p1-a-R3,syn-p1-a-R3,syn-p1-a-R3,syn-p1-a-R3
+60	ep_8a93eca1a2b0	synbeta	synthetic/mock-beta	syn-p1-b	false	C0	0	0	neutral	0	1425275165		
+61	ep_c76bae9e2449	synalpha	synthetic/mock-alpha	syn-p2-a	false	C1	1	1	source-aware	0	2803749906	1	syn-p2-a-R4
+62	ep_eb5edaffe13b	synalpha	synthetic/mock-alpha	syn-p2-a	false	C3	4	1	source-aware	0	484574754	1,0,3,2	syn-p2-a-R4,syn-p2-a-R4,syn-p2-a-R4,syn-p2-a-R4
+63	ep_2cc40cc53465	synalpha	synthetic/mock-alpha	syn-p1-b	false	C3	4	1	source-aware	0	704344991	2,3,1,0	syn-p1-b-R3,syn-p1-b-R3,syn-p1-b-R3,syn-p1-b-R3
+64	ep_09bacea3b8fe	synbeta	synthetic/mock-beta	syn-p2-b	true	C0	0	0	neutral	0	1355577895		
+65	ep_74d15812449b	synalpha	synthetic/mock-alpha	syn-p1-b	false	C0	0	0	source-aware	0	3756788187		
+66	ep_32ed6a449785	synbeta	synthetic/mock-beta	syn-p2-a	false	C3	4	1	neutral	0	1941980908	1,0,3,2	syn-p2-a-R4,syn-p2-a-R4,syn-p2-a-R4,syn-p2-a-R4
+67	ep_79e05143e64f	synalpha	synthetic/mock-alpha	syn-p1-b	false	C0	0	0	neutral	0	1557169606		
+68	ep_29b59660bbce	synbeta	synthetic/mock-beta	syn-p1-a	true	C5	4	4	neutral	0	2121266502	2,3,1,0	syn-p1-a-R3,syn-p1-a-R2,syn-p1-a-R4,syn-p1-a-R1
+69	ep_1ad75a65f5b8	synbeta	synthetic/mock-beta	syn-p2-a	false	C3	4	1	source-aware	0	1705998251	1,0,3,2	syn-p2-a-R4,syn-p2-a-R4,syn-p2-a-R4,syn-p2-a-R4
+70	ep_991f57e5e3f2	synbeta	synthetic/mock-beta	syn-p1-a	true	C2	2	1	source-aware	0	2980170044	2,3	syn-p1-a-R3,syn-p1-a-R3
+71	ep_9ce52620f51f	synalpha	synthetic/mock-alpha	syn-p1-a	true	C3	4	1	neutral	0	2721098355	2,3,1,0	syn-p1-a-R3,syn-p1-a-R3,syn-p1-a-R3,syn-p1-a-R3
+72	ep_32aa5d819855	synbeta	synthetic/mock-beta	syn-p2-a	false	C1	1	1	source-aware	0	2554426189	1	syn-p2-a-R4
+73	ep_c0bc0b09706c	synalpha	synthetic/mock-alpha	syn-p1-b	false	C5	4	4	source-aware	0	2102756199	2,3,1,0	syn-p1-b-R3,syn-p1-b-R2,syn-p1-b-R4,syn-p1-b-R1
+74	ep_82ded23a110d	synalpha	synthetic/mock-alpha	syn-p1-a	true	C0	0	0	neutral	0	3670848753		
+75	ep_3f09aad32956	synbeta	synthetic/mock-beta	syn-p1-a	true	C0	0	0	source-aware	0	636136890		
+76	ep_b51c378e0a46	synalpha	synthetic/mock-alpha	syn-p2-b	true	C3	4	1	neutral	0	1429203076	1,0,3,2	syn-p2-b-R4,syn-p2-b-R4,syn-p2-b-R4,syn-p2-b-R4
+77	ep_418b1313cb72	synbeta	synthetic/mock-beta	syn-p1-b	false	C1	1	1	neutral	0	1924305685	2	syn-p1-b-R3
+78	ep_2672267eccd6	synalpha	synthetic/mock-alpha	syn-p1-b	false	C1	1	1	source-aware	0	565640863	2	syn-p1-b-R3
+79	ep_36f1c6df5ce8	synbeta	synthetic/mock-beta	syn-p2-b	true	C3	4	1	neutral	0	4173203549	1,0,3,2	syn-p2-b-R4,syn-p2-b-R4,syn-p2-b-R4,syn-p2-b-R4
+80	ep_792fee17a803	synbeta	synthetic/mock-beta	syn-p1-a	true	C4	2	2	source-aware	0	970230413	2,3	syn-p1-a-R3,syn-p1-a-R2
+81	ep_8b41db17936e	synbeta	synthetic/mock-beta	syn-p1-b	false	C3	4	1	source-aware	0	2720960912	2,3,1,0	syn-p1-b-R3,syn-p1-b-R3,syn-p1-b-R3,syn-p1-b-R3
+82	ep_1f44cbb017ab	synbeta	synthetic/mock-beta	syn-p1-a	true	C3	4	1	neutral	0	831254772	2,3,1,0	syn-p1-a-R3,syn-p1-a-R3,syn-p1-a-R3,syn-p1-a-R3
+83	ep_baa6d3a00925	synalpha	synthetic/mock-alpha	syn-p2-b	true	C2	2	1	source-aware	0	4220624476	1,0	syn-p2-b-R4,syn-p2-b-R4
+84	ep_f4b60270c045	synbeta	synthetic/mock-beta	syn-p1-a	true	C0	0	0	neutral	0	3983890355		
+85	ep_bb5f2de8841d	synbeta	synthetic/mock-beta	syn-p1-b	false	C4	2	2	source-aware	0	2288977413	2,3	syn-p1-b-R3,syn-p1-b-R2
+86	ep_eef975ad0f62	synalpha	synthetic/mock-alpha	syn-p1-b	false	C5	4	4	neutral	0	1340887439	2,3,1,0	syn-p1-b-R3,syn-p1-b-R2,syn-p1-b-R4,syn-p1-b-R1
+87	ep_c71f825c1dcb	synalpha	synthetic/mock-alpha	syn-p2-a	false	C1	1	1	neutral	0	2352067342	1	syn-p2-a-R4
+88	ep_90510411017a	synalpha	synthetic/mock-alpha	syn-p2-b	true	C1	1	1	source-aware	0	3872051944	1	syn-p2-b-R4
+89	ep_9efb3dfe2f95	synalpha	synthetic/mock-alpha	syn-p1-a	true	C5	4	4	neutral	0	3442137987	2,3,1,0	syn-p1-a-R3,syn-p1-a-R2,syn-p1-a-R4,syn-p1-a-R1
+90	ep_fcc77022dbdd	synalpha	synthetic/mock-alpha	syn-p2-a	false	C4	2	2	source-aware	0	686568827	1,0	syn-p2-a-R4,syn-p2-a-R3
+91	ep_313cb46a9abd	synbeta	synthetic/mock-beta	syn-p1-b	false	C1	1	1	source-aware	0	275933772	2	syn-p1-b-R3
+92	ep_d7ede0a74d40	synbeta	synthetic/mock-beta	syn-p2-b	true	C5	4	4	neutral	0	2748260711	1,0,3,2	syn-p2-b-R4,syn-p2-b-R3,syn-p2-b-R1,syn-p2-b-R2
+93	ep_e20ae03bbcbb	synalpha	synthetic/mock-alpha	syn-p2-b	true	C4	2	2	neutral	0	2553751037	1,0	syn-p2-b-R4,syn-p2-b-R3
+94	ep_16f58aa379fb	synalpha	synthetic/mock-alpha	syn-p2-a	false	C5	4	4	neutral	0	3812666857	1,0,3,2	syn-p2-a-R4,syn-p2-a-R3,syn-p2-a-R1,syn-p2-a-R2
+95	ep_50c7653d898a	synbeta	synthetic/mock-beta	syn-p1-b	false	C4	2	2	neutral	0	3856930872	2,3	syn-p1-b-R3,syn-p1-b-R2

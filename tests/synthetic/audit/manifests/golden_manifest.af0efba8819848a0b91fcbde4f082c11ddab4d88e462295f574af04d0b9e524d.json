@@ -1,0 +1,80 @@
+{
+  "canonicalization": "sha256 over raw file bytes; combined digest = sha256 of UTF-8 lines '<posix relpath>:<hex>' sorted by path, joined by LF, no trailing LF; digest_format_version 1",
+  "goldens": {
+    "episodes.jsonl": "4f8aff63ba204bd6adbabf7d7a4f80cf35b8d8814f4ae697cd1b7f58a334ce98",
+    "grid.tsv": "b5a812da872ba69c48d309eaea36ec986f6d03c5d5e785c6412629c65461a723",
+    "run_summary.json": "5d3823f8dd3987453884c7c2a09cb9b58bc4d58be7663cab34486ed50d8d91e3"
+  },
+  "goldens_digest": "1c35b2c5df67c7998f710cf6b4f9e31577c55003b74a009a201ad4c41c6446af",
+  "legacy_embedded_provenance": {
+    "matches_current_files": false,
+    "note": "legacy provenance embedded in the accepted summary differs from the current source files"
+  },
+  "manifest_format": 1,
+  "note": "SYNTHETIC golden manifest. Hashes and provenance for the accepted golden files; values show stability only.",
+  "previous_manifest_sha256": "31ed361f2ea585512657c5aeb1f9ca0ec8345b3ff1a00facef991933d6684a86",
+  "provenance": {
+    "dependencies": {
+      "pydantic": "2.14.3",
+      "pydantic_core": "2.50.4",
+      "pytest": "9.2.0",
+      "python-dotenv": "1.2.4",
+      "requests": "2.34.2"
+    },
+    "digest_algorithm": "sha256",
+    "digest_format_version": 1,
+    "fixture_digest": "c848fde6bc799bf8e078b4e550a53d9d0695d8a0a3cc504caeaabad2c19a221d",
+    "fixture_files": {
+      "README_SYNTHETIC.md": "411db8891b965c598d30028f66f970a1d11d97495a8a122d585c8ab011d7e8f1",
+      "config_synthetic.json": "b57bbf973980cfddb8ab89db61a02231c95dae29639d4d23901d7ca21e7e4e67",
+      "evidence/syn-p1-a.md": "4f52f48156f7a1bb144d350d944ceb5ed6fc264cc790363a8d51639c0504236c",
+      "evidence/syn-p1-b.md": "7e92f14c3d21f0b659cbcb19abb99e8455ecad3f57964958a0fc65824574a461",
+      "evidence/syn-p2-a.md": "938af1d7497713ec1325273620a4061e9a54fac21aa9c7f723c97eaab9c712df",
+      "evidence/syn-p2-b.md": "4c6fe4eafe4dc73bc6691909c81bbdd327d3b2f4ec4c7861b8720db85341648e",
+      "scenarios/syn-p1-a.json": "99cb609bfb22390d2abbfa61c9702a3259b3858a1f3ab2243e2d20854e57179d",
+      "scenarios/syn-p1-b.json": "e4f899ebc9c930f35eea0ba2748c4b51a071c25780cd63a9defcbed4911a8425",
+      "scenarios/syn-p2-a.json": "d3d81582357c76d1a1bea4572d9acc51edeaa491d96eab3482b945e85dbafb42",
+      "scenarios/syn-p2-b.json": "2eb84944bbcaed16234178797a800ceac0f992e71d50bf5b29d4ae3b34052831"
+    },
+    "helper_digest": "0e843c434bbcc02d5f28b255f779fb7a00566de57ce0cb1da451ef557e7b575c",
+    "helper_files": {
+      "synthetic_support.py": "966ec9939ae2798b57985bd58ab57275ae4b553ff573905cda0fab11e1db8e15"
+    },
+    "python_version": "3.12.16",
+    "source_digest": "3bc017684702a6f3da9afaa5efc79598ede8d2bf022a17f80dce52e2ee93c87a",
+    "source_files": {
+      "__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "adapters/__init__.py": "7a89ea85d179b331804a47bfbd6ceb3953b619b769e02e79dff5c9b9bedba204",
+      "adapters/run_loader.py": "bb4e632cfdbef496b3bd4d992e9a98fa4352e1a1f51c4ec0437fe4f987f0dbb5",
+      "config.py": "9a37d9924973bac07a6292bbbe31a5b93fb64d67e2a1b67eefd783af56d23f5e",
+      "experiments/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "experiments/metrics.py": "8bdca6ea7df7631485f1e9c86b8ca19cf6f0d5e42c18bf5a6a421d5660fbf29f",
+      "experiments/receiver.py": "fab22279cd8cef98008171de952ef95d33136c81f0e6496b4f54ac80aa47240d",
+      "llm_client.py": "1d98bb5d8462c3680f696f8439dc33f321cf23253eb2e9aa8cfdc613f89b4cf1",
+      "logging_utils.py": "7b595bb1b2494c76d1ea3b50d125c2c599a04381a7af835252cf6f0d1146b908",
+      "mock_client.py": "8cb6d1929b8a1aad78d1de585b9d5771e02d7ce473f754c0de4443c395a73e0a",
+      "prompts/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "prompts/receiver.py": "6cc6abe9005bdc5b1a1f29d0c811ac646c9a72011facc115ecb7022b017fd854",
+      "registry.py": "f45dc098471fccc0871c486683f226ff3b9da37ff8810ccb53eb88b0784b4ceb",
+      "runs/__init__.py": "d32cca52d3e1d72b584f419a14d9d7d4f44ed9f3f50682fcc4df7a81b3405a99",
+      "runs/artifact_hashes.py": "9f7537ffae9e189d65edf9da2630cb391dc7c75ac859b16916c3e08e8524f62f",
+      "runs/endpoint_policy.py": "6478188949fbca5324fd2333f1f946b13dcd64697554b9c49244dbac23735ed4",
+      "runs/executor.py": "b332011e6fcaace8302bfe0bb478027326143ac39f32e3b908119fe2bd3a4a2b",
+      "runs/guard.py": "fdcaba47bf960f7c6620976ae5188236b3c9de0ab0312047f806c110b4ef0047",
+      "runs/ids.py": "1cb201194012f655bcefe7cf290bf2999761ede89b45aa3b2d539a3b209fc422",
+      "runs/integrity_report.py": "3fe8165a4a7e0faff5331417ac220adbb977d4b6507d294e2f01600eb805ce14",
+      "runs/lifecycle.py": "80371ee512d9cddf333414dd796a8ba1916a724a35d34557d3c4f03ff2acfdee",
+      "runs/live_budget.py": "199f3b18a850ae562fc04ebdb39a4eaf55f29d0f3dd6be1b22636b3f53c7c132",
+      "runs/live_executor.py": "f13f0445cbf9b0e3c0bc4234130c4d77292df490960f8095f7595aad10075f8d",
+      "runs/live_policy.py": "9eb29f3d07c68c2e45c05c87909a9ad318fe105a48c5e081b5ea06e4c344ed1b",
+      "runs/policy_source.py": "b5b21fc15b07eae4fd54fcfe89271131865a336ae9d9a805fa108e884d0789ec",
+      "runs/provenance.py": "f923f508a8b9f09da12377362ffe4e566cea5a5d00fc0210f7c68a4aa6e1780b",
+      "scenarios.py": "15069c912437f3e6660a5549fadbca7cbb1aaf84b9cd3d76a5007ee00ff827f6",
+      "schemas.py": "f42868c5056ba08d29eff53bed73ac0d1bbc3d7142ca9c9402f0e3d8ccf2893e",
+      "validation.py": "c93bba777abf6621dc4f04df38179f8f8836f27046b7ee8e2ae480c2f24243b8"
+    }
+  },
+  "reason": "refresh: MAPS Stage 4J.3: scoring scale, adjudication gate and mechanical validation added; registry.py and validation.py joined the protected source set; receiver.py gained the fail-closed --registry gate; golden content unchanged",
+  "recorded_by": "record_goldens.py --refresh-manifest",
+  "synthetic": true
+}

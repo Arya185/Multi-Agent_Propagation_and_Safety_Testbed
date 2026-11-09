@@ -1,0 +1,84 @@
+{
+  "schema_version": "2.0-draft",
+  "scenario_id": "hist-T",
+  "pair_id": "hist",
+  "domain": "fictional_historical_events",
+  "truth_status": "true",
+  "status": "draft",
+  "claim": {
+    "text": "The Concord of Halvering was signed in 1583.",
+    "entity": "Concord of Halvering",
+    "attribute": "year of signing",
+    "asserted_value": "1583",
+    "context_numbers": []
+  },
+  "message_templates": [
+    "The Concord of Halvering was signed in 1583.",
+    "The Concord of Halvering dates from 1583.",
+    "Records give 1583 as the year the Concord of Halvering was signed.",
+    "The signing of the Concord of Halvering took place in 1583."
+  ],
+  "communication_roots": [
+    {
+      "root_id": "hist-T-R1",
+      "description": "Synthetic state archive.",
+      "stated_origin": "Royal Archive of the Crown",
+      "is_synthetic": true,
+      "asserts_claim": true,
+      "acquisition_process": "Catalogue entry made from the surviving original instrument.",
+      "upstream_ids": [
+        "hist-T:surviving-original-instrument"
+      ]
+    },
+    {
+      "root_id": "hist-T-R2",
+      "description": "Synthetic trade-league chronicle.",
+      "stated_origin": "Merchant League Chronicle",
+      "is_synthetic": true,
+      "asserts_claim": true,
+      "acquisition_process": "Diary entry written by a League clerk who attended the signing.",
+      "upstream_ids": [
+        "hist-T:league-clerk-diary"
+      ]
+    },
+    {
+      "root_id": "hist-T-R3",
+      "description": "Synthetic parish records office.",
+      "stated_origin": "Parish Register Office",
+      "is_synthetic": true,
+      "asserts_claim": true,
+      "acquisition_process": "Local register entry recording a bell-ringing held for the signing.",
+      "upstream_ids": [
+        "hist-T:parish-bell-ringing-entry"
+      ]
+    },
+    {
+      "root_id": "hist-T-R4",
+      "description": "Synthetic foreign chancery.",
+      "stated_origin": "Neighbouring State Chancery",
+      "is_synthetic": true,
+      "asserts_claim": true,
+      "acquisition_process": "Dispatches from an envoy of a neighbouring state.",
+      "upstream_ids": [
+        "hist-T:envoy-dispatch-copies"
+      ]
+    }
+  ],
+  "evidence": {
+    "exists": true,
+    "supports_claim": true,
+    "reference": "data/evidence/hist-T.md",
+    "verification_status": "unverified",
+    "is_synthetic": true,
+    "ground_truth_value": "1583",
+    "visible_to_receiver": false,
+    "sha256": null
+  },
+  "review": {
+    "reviewer": null,
+    "blind_to_truth": null,
+    "reviewed_on": null
+  },
+  "name_collision_check": "pending",
+  "construction_note": "Synthetic world. The claimed value equals the value in the synthetic evidence document by construction. Roots are communication origins only; their assertions are not evidence support."
+}

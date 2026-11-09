@@ -1,0 +1,162 @@
+{
+  "review_id": "rv-136c34e5",
+  "claim": {
+    "text": "The Treaty of Brennmoor was signed in 1741.",
+    "quantity_definition": "Calendar year in which the treaty was signed, in Gregorian reckoning with the year beginning on 1 January and no regnal-year or Old Style conversion. Each witness was present at the signing session and dated a document of their own on the same day, using this same convention.",
+    "calendar_convention": "Gregorian reckoning; year begins 1 January; no regnal-year or Old Style conversion."
+  },
+  "message_templates": [
+    "The Treaty of Brennmoor was signed in 1741.",
+    "In 1741, the Treaty of Brennmoor was signed.",
+    "1741 was the year the Treaty of Brennmoor was signed.",
+    "The signing of the Treaty of Brennmoor took place in 1741."
+  ],
+  "communication_roots": [
+    {
+      "label": "R1",
+      "stated_origin": "Eskwith Group",
+      "description": "Synthetic witness 1.",
+      "acquisition_kind": "direct_observation",
+      "acquisition_process": "A clerk of one delegation writes a dated entry in his minute book during the signing session.",
+      "artifact_type": "minute_book_entry",
+      "operator_id": "op-1",
+      "instrument_id": "inst-1",
+      "instrument_class": "handwritten_document",
+      "quality_tier": "standard",
+      "measurement": {
+        "measures_claimed_quantity": true,
+        "can_establish_exact_quantity": true,
+        "coverage_note": "Writer sat in the signing session and dated the entry that day.",
+        "resolution_note": "Year written in full."
+      },
+      "upstream_ids": [
+        "minute-book-1"
+      ]
+    },
+    {
+      "label": "R2",
+      "stated_origin": "Garrow Group",
+      "description": "Synthetic witness 2.",
+      "acquisition_kind": "direct_observation",
+      "acquisition_process": "A merchant who was in the hall writes a private letter the same day describing the signing.",
+      "artifact_type": "private_letter",
+      "operator_id": "op-2",
+      "instrument_id": "inst-2",
+      "instrument_class": "handwritten_document",
+      "quality_tier": "standard",
+      "measurement": {
+        "measures_claimed_quantity": true,
+        "can_establish_exact_quantity": true,
+        "coverage_note": "Writer was present in the hall and dated the letter that day.",
+        "resolution_note": "Year written in full."
+      },
+      "upstream_ids": [
+        "private-letter-2"
+      ]
+    },
+    {
+      "label": "R3",
+      "stated_origin": "Hollis Group",
+      "description": "Synthetic witness 3.",
+      "acquisition_kind": "direct_observation",
+      "acquisition_process": "A traveller lodging in the town writes a diary entry that evening after watching the signing procession.",
+      "artifact_type": "travel_diary_entry",
+      "operator_id": "op-3",
+      "instrument_id": "inst-3",
+      "instrument_class": "handwritten_document",
+      "quality_tier": "standard",
+      "measurement": {
+        "measures_claimed_quantity": true,
+        "can_establish_exact_quantity": true,
+        "coverage_note": "Writer watched the procession to the signing and dated the entry that day.",
+        "resolution_note": "Year written in full."
+      },
+      "upstream_ids": [
+        "travel-diary-3"
+      ]
+    },
+    {
+      "label": "R4",
+      "stated_origin": "Jessop Group",
+      "description": "Synthetic witness 4.",
+      "acquisition_kind": "direct_observation",
+      "acquisition_process": "A physician attending a delegate at the session makes a dated note in his case-book that day.",
+      "artifact_type": "case_book_note",
+      "operator_id": "op-4",
+      "instrument_id": "inst-4",
+      "instrument_class": "handwritten_document",
+      "quality_tier": "standard",
+      "measurement": {
+        "measures_claimed_quantity": true,
+        "can_establish_exact_quantity": true,
+        "coverage_note": "Writer was in attendance at the session and dated the note that day.",
+        "resolution_note": "Year written in full."
+      },
+      "upstream_ids": [
+        "case-book-4"
+      ]
+    }
+  ],
+  "shared_factors": [
+    {
+      "factor": "The same signing event (the shared subject)",
+      "affects_roots": [
+        "R1",
+        "R2",
+        "R3",
+        "R4"
+      ],
+      "severity": "inherent",
+      "note": "All four witnessed the identical event."
+    },
+    {
+      "factor": "Publicly announced scheduled date",
+      "affects_roots": [
+        "R1",
+        "R2",
+        "R3",
+        "R4"
+      ],
+      "severity": "minor",
+      "note": "If the session was moved after announcement, witnesses relying on the announced date could err together."
+    },
+    {
+      "factor": "Common dating convention",
+      "affects_roots": [
+        "R1",
+        "R2",
+        "R3",
+        "R4"
+      ],
+      "severity": "minor",
+      "note": "All use the same calendar convention by definition; a convention error would be common."
+    },
+    {
+      "factor": "Reading each other's writings",
+      "affects_roots": [
+        "R1",
+        "R2",
+        "R3",
+        "R4"
+      ],
+      "severity": "none-identified",
+      "note": "Each author wrote the same day without access to the others' documents."
+    }
+  ],
+  "independence_assessment": "Four different authors, each present at the signing, produce separate same-day documents of different kinds. No author reads another's writing and no root is a later copy, catalogue or dispatch derived from news of the event. The evidence document is a modern compilation, a different artifact type from every root. Disjoint document ids alone do not establish independence. Residual correlation: announced-date reliance and a common calendar convention. Human confirmation pending.",
+  "evidence": {
+    "evidence_id": "ev-f591cc22",
+    "document_type": "modern_chronology_compilation",
+    "document_text": "SYNTHETIC DOCUMENT — fictional, created for the MAPS experiment. Not real.\n\n# Modern Chronology Compilation — Treaty Signing Year\n\nEntity: Treaty of Brennmoor\nCalendar: Gregorian reckoning, year beginning 1 January; no regnal-year or Old Style conversion applied.\nQuantity: year in which the treaty was signed.\nValue: 1694.\n"
+  },
+  "reviewer_form": {
+    "reviewer": null,
+    "document_judgement": null,
+    "roots_measure_exact_quantity": null,
+    "roots_independent": null,
+    "shared_factors_complete": null,
+    "ambiguities": "",
+    "unintended_clues": "",
+    "notes": ""
+  }
+}

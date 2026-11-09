@@ -11,6 +11,10 @@ __pycache__/
 venv/
 .env
 
+# Answer key (Stage 4J.7): the key belongs in owner-held encrypted storage OUTSIDE the repository; this pattern only
+# prevents an accidental `git add` of a stray copy and is not a custody control.
+data/review/answer_key*
+
 # IDE
 .vscode/
 .idea/

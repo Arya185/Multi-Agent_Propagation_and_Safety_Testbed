@@ -1,0 +1,86 @@
+{
+  "schema_version": "2.0-draft",
+  "scenario_id": "sw-T",
+  "pair_id": "sw",
+  "domain": "fictional_software_release_histories",
+  "truth_status": "true",
+  "status": "draft",
+  "claim": {
+    "text": "Lumora 4.2 was released on 14 March 2031.",
+    "entity": "Lumora 4.2",
+    "attribute": "release date",
+    "asserted_value": "14 March 2031",
+    "context_numbers": [
+      "4.2"
+    ]
+  },
+  "message_templates": [
+    "Lumora 4.2 was released on 14 March 2031.",
+    "The release date of Lumora 4.2 was 14 March 2031.",
+    "Lumora 4.2 shipped on 14 March 2031.",
+    "According to the release history, Lumora 4.2 came out on 14 March 2031."
+  ],
+  "communication_roots": [
+    {
+      "root_id": "sw-T-R1",
+      "description": "Synthetic package registry.",
+      "stated_origin": "Open Package Index",
+      "is_synthetic": true,
+      "asserts_claim": true,
+      "acquisition_process": "Reads the publish timestamp recorded when the release was uploaded.",
+      "upstream_ids": [
+        "sw-T:index-upload-timestamp"
+      ]
+    },
+    {
+      "root_id": "sw-T-R2",
+      "description": "Synthetic mailing-list archive.",
+      "stated_origin": "Maintainers' Mailing List",
+      "is_synthetic": true,
+      "asserts_claim": true,
+      "acquisition_process": "Reads the date in the header of the human-written announcement post.",
+      "upstream_ids": [
+        "sw-T:announcement-post-header"
+      ]
+    },
+    {
+      "root_id": "sw-T-R3",
+      "description": "Synthetic automated build service.",
+      "stated_origin": "Build Verification Service",
+      "is_synthetic": true,
+      "asserts_claim": true,
+      "acquisition_process": "Reads the completion time of the automated release build run.",
+      "upstream_ids": [
+        "sw-T:release-build-run-record"
+      ]
+    },
+    {
+      "root_id": "sw-T-R4",
+      "description": "Synthetic signing service.",
+      "stated_origin": "Release Signing Authority",
+      "is_synthetic": true,
+      "asserts_claim": true,
+      "acquisition_process": "Reads the time the release artifacts were cryptographically signed.",
+      "upstream_ids": [
+        "sw-T:signing-service-log"
+      ]
+    }
+  ],
+  "evidence": {
+    "exists": true,
+    "supports_claim": true,
+    "reference": "data/evidence/sw-T.md",
+    "verification_status": "unverified",
+    "is_synthetic": true,
+    "ground_truth_value": "14 March 2031",
+    "visible_to_receiver": false,
+    "sha256": null
+  },
+  "review": {
+    "reviewer": null,
+    "blind_to_truth": null,
+    "reviewed_on": null
+  },
+  "name_collision_check": "pending",
+  "construction_note": "Synthetic world. The claimed value equals the value in the synthetic evidence document by construction. Roots are communication origins only; their assertions are not evidence support."
+}

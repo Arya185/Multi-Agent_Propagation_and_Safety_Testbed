@@ -1,0 +1,195 @@
+{
+  "schema_version": "2.1-draft",
+  "scenario_id": "sci-a",
+  "pair_id": "sci",
+  "domain": "fictional_scientific_observations",
+  "truth_status": "true",
+  "status": "draft",
+  "claim": {
+    "text": "Kesta-9 produced 17 detectable radio pulses on observation night 6.",
+    "entity": "Kesta-9",
+    "attribute": "detectable radio pulses on observation night 6",
+    "asserted_value": "17",
+    "context_numbers": [
+      "9",
+      "6"
+    ],
+    "quantity_definition": "Observation night 6 is the interval 20:00 to 04:00 UTC beginning 20 June 2031. A detectable pulse is a burst whose peak signal-to-noise ratio is at least 8 in the 1.40-1.43 GHz band; bursts separated by at least 50 ms count separately. Every observer applies this identical rule to its own recording of the full interval.",
+    "calendar_convention": "Gregorian calendar; times in UTC.",
+    "event_date": null
+  },
+  "message_templates": [
+    "Kesta-9 produced 17 detectable radio pulses on observation night 6.",
+    "On observation night 6, Kesta-9 produced 17 detectable radio pulses.",
+    "17 detectable radio pulses were produced by Kesta-9 on observation night 6.",
+    "The count of detectable radio pulses from Kesta-9 on observation night 6 was 17."
+  ],
+  "communication_roots": [
+    {
+      "root_id": "sci-a-R1",
+      "description": "Synthetic observing team A.",
+      "stated_origin": "Ilvane Group",
+      "is_synthetic": true,
+      "asserts_claim": true,
+      "acquisition_kind": "direct_observation",
+      "acquisition_process": "Applies the campaign counting rule to the recorded output of its own steerable dish receiver at site A.",
+      "artifact_type": "pulse_count_sheet",
+      "operator_id": "sci-op-1",
+      "instrument_id": "sci-inst-1",
+      "instrument_class": "class_b_radio_receiver",
+      "quality_tier": "standard",
+      "follows_standard_procedure": true,
+      "reads_other_roots_output": false,
+      "measurement": {
+        "measures_claimed_quantity": true,
+        "can_establish_exact_quantity": true,
+        "coverage_note": "Receiver tracked the target for the full interval at sensitivity sufficient to detect every burst meeting the counting rule.",
+        "resolution_note": "Timing resolution finer than the 50 ms separation rule."
+      },
+      "upstream_ids": [
+        "sci-a:recording-site-a"
+      ]
+    },
+    {
+      "root_id": "sci-a-R2",
+      "description": "Synthetic observing team B.",
+      "stated_origin": "Calder Group",
+      "is_synthetic": true,
+      "asserts_claim": true,
+      "acquisition_kind": "direct_observation",
+      "acquisition_process": "Applies the campaign counting rule to the recorded output of its own steerable dish receiver at site B.",
+      "artifact_type": "pulse_count_sheet",
+      "operator_id": "sci-op-2",
+      "instrument_id": "sci-inst-2",
+      "instrument_class": "class_b_radio_receiver",
+      "quality_tier": "standard",
+      "follows_standard_procedure": true,
+      "reads_other_roots_output": false,
+      "measurement": {
+        "measures_claimed_quantity": true,
+        "can_establish_exact_quantity": true,
+        "coverage_note": "Receiver tracked the target for the full interval at sensitivity sufficient to detect every burst meeting the counting rule.",
+        "resolution_note": "Timing resolution finer than the 50 ms separation rule."
+      },
+      "upstream_ids": [
+        "sci-a:recording-site-b"
+      ]
+    },
+    {
+      "root_id": "sci-a-R3",
+      "description": "Synthetic observing team C.",
+      "stated_origin": "Voss Group",
+      "is_synthetic": true,
+      "asserts_claim": true,
+      "acquisition_kind": "direct_observation",
+      "acquisition_process": "Applies the campaign counting rule to the recorded output of its own steerable dish receiver at site C.",
+      "artifact_type": "pulse_count_sheet",
+      "operator_id": "sci-op-3",
+      "instrument_id": "sci-inst-3",
+      "instrument_class": "class_b_radio_receiver",
+      "quality_tier": "standard",
+      "follows_standard_procedure": true,
+      "reads_other_roots_output": false,
+      "measurement": {
+        "measures_claimed_quantity": true,
+        "can_establish_exact_quantity": true,
+        "coverage_note": "Receiver tracked the target for the full interval at sensitivity sufficient to detect every burst meeting the counting rule.",
+        "resolution_note": "Timing resolution finer than the 50 ms separation rule."
+      },
+      "upstream_ids": [
+        "sci-a:recording-site-c"
+      ]
+    },
+    {
+      "root_id": "sci-a-R4",
+      "description": "Synthetic observing team D.",
+      "stated_origin": "Pelham Group",
+      "is_synthetic": true,
+      "asserts_claim": true,
+      "acquisition_kind": "direct_observation",
+      "acquisition_process": "Applies the campaign counting rule to the recorded output of its own steerable dish receiver at site D.",
+      "artifact_type": "pulse_count_sheet",
+      "operator_id": "sci-op-4",
+      "instrument_id": "sci-inst-4",
+      "instrument_class": "class_b_radio_receiver",
+      "quality_tier": "standard",
+      "follows_standard_procedure": true,
+      "reads_other_roots_output": false,
+      "measurement": {
+        "measures_claimed_quantity": true,
+        "can_establish_exact_quantity": true,
+        "coverage_note": "Receiver tracked the target for the full interval at sensitivity sufficient to detect every burst meeting the counting rule.",
+        "resolution_note": "Timing resolution finer than the 50 ms separation rule."
+      },
+      "upstream_ids": [
+        "sci-a:recording-site-d"
+      ]
+    }
+  ],
+  "shared_factors": [
+    {
+      "factor": "Same target emission on the same night (the shared subject)",
+      "affects_roots": [
+        "sci-a-R1",
+        "sci-a-R2",
+        "sci-a-R3",
+        "sci-a-R4"
+      ],
+      "severity": "inherent",
+      "note": "All four observe the same physical pulse train."
+    },
+    {
+      "factor": "Common counting rule",
+      "affects_roots": [
+        "sci-a-R1",
+        "sci-a-R2",
+        "sci-a-R3",
+        "sci-a-R4"
+      ],
+      "severity": "minor",
+      "note": "All apply the same published rule; the rule is the definition of the quantity, so a flaw in it is common."
+    },
+    {
+      "factor": "Ambient radio interference",
+      "affects_roots": [
+        "sci-a-R1",
+        "sci-a-R2",
+        "sci-a-R3",
+        "sci-a-R4"
+      ],
+      "severity": "minor",
+      "note": "Sites are geographically separate, but strong interference could affect several receivers."
+    },
+    {
+      "factor": "Instrument sensitivity",
+      "affects_roots": [
+        "sci-a-R1",
+        "sci-a-R2",
+        "sci-a-R3",
+        "sci-a-R4"
+      ],
+      "severity": "none-identified",
+      "note": "All four receivers are the same sensitivity class; no root has a sensitivity advantage."
+    }
+  ],
+  "independence_assessment": "Four separate receivers at separate sites, run by separate teams, each count pulses in their own recording using one standardized rule and equal-class sensitivity. No root reads another's output. Disjoint recording ids are not by themselves the basis for independence. Residual correlation: shared counting rule and possible common interference. Human confirmation pending.",
+  "evidence": {
+    "exists": true,
+    "supports_claim": true,
+    "reference": "data/evidence/sci-a.md",
+    "verification_status": "unverified",
+    "is_synthetic": true,
+    "document_type": "ground_truth_record",
+    "ground_truth_value": "17",
+    "visible_to_receiver": false,
+    "sha256": null
+  },
+  "review": {
+    "reviewer": null,
+    "blind_to_truth": null,
+    "reviewed_on": null,
+    "independence_confirmed": null
+  },
+  "name_collision_check": "pending",
+  "construction_note": "Synthetic world. The claimed value equals the value in the synthetic ground-truth document by construction."
+}

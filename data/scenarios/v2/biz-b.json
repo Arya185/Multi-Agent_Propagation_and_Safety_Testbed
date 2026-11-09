@@ -1,0 +1,193 @@
+{
+  "schema_version": "2.1-draft",
+  "scenario_id": "biz-b",
+  "pair_id": "biz",
+  "domain": "fictional_business_records",
+  "truth_status": "false",
+  "status": "draft",
+  "claim": {
+    "text": "Brisken Mill had 264 employees at its open-yard safety assembly on 12 May 2031.",
+    "entity": "Brisken Mill",
+    "attribute": "employees present at the open-yard safety assembly",
+    "asserted_value": "264",
+    "context_numbers": [
+      "12",
+      "2031"
+    ],
+    "quantity_definition": "Number of employees standing in the open assembly yard during the safety assembly on 12 May 2031. Attendance was mandatory and visitors and contractors were barred, so every person in the yard is an employee. The yard is open-air and unobstructed. Each observer counts the whole yard at the same moment during the assembly.",
+    "calendar_convention": "Gregorian calendar; dates as written.",
+    "event_date": "2031-05-12"
+  },
+  "message_templates": [
+    "Brisken Mill had 264 employees at its open-yard safety assembly on 12 May 2031.",
+    "At its open-yard safety assembly on 12 May 2031, Brisken Mill had 264 employees present.",
+    "264 employees of Brisken Mill were present at the open-yard safety assembly on 12 May 2031.",
+    "The open-yard safety assembly of Brisken Mill on 12 May 2031 had 264 employees present."
+  ],
+  "communication_roots": [
+    {
+      "root_id": "biz-b-R1",
+      "description": "Synthetic ground crew A.",
+      "stated_origin": "Tessaly Group",
+      "is_synthetic": true,
+      "asserts_claim": true,
+      "acquisition_kind": "direct_observation",
+      "acquisition_process": "Two-person ground crew counts employees zone by zone in the yard with hand tally counters during the assembly.",
+      "artifact_type": "tally_sheet",
+      "operator_id": "biz-op-1",
+      "instrument_id": "biz-inst-1",
+      "instrument_class": "manual_tally",
+      "quality_tier": "standard",
+      "follows_standard_procedure": true,
+      "reads_other_roots_output": false,
+      "measurement": {
+        "measures_claimed_quantity": true,
+        "can_establish_exact_quantity": true,
+        "coverage_note": "Crew covers the whole open yard in marked zones within the assembly window; every attendee is in plain view.",
+        "resolution_note": "Counts whole persons; zone totals summed."
+      },
+      "upstream_ids": [
+        "biz-b:tally-sheet-crew-a"
+      ]
+    },
+    {
+      "root_id": "biz-b-R2",
+      "description": "Synthetic aerial analyst B.",
+      "stated_origin": "Dunmere Group",
+      "is_synthetic": true,
+      "asserts_claim": true,
+      "acquisition_kind": "direct_observation",
+      "acquisition_process": "Analyst counts people in one overhead drone photograph of the whole yard taken during the assembly.",
+      "artifact_type": "aerial_image_count",
+      "operator_id": "biz-op-2",
+      "instrument_id": "biz-inst-2",
+      "instrument_class": "optical_aerial",
+      "quality_tier": "standard",
+      "follows_standard_procedure": true,
+      "reads_other_roots_output": false,
+      "measurement": {
+        "measures_claimed_quantity": true,
+        "can_establish_exact_quantity": true,
+        "coverage_note": "One frame spans the entire open yard; attendees are outdoors and unobstructed.",
+        "resolution_note": "Image resolution resolves individual persons."
+      },
+      "upstream_ids": [
+        "biz-b:drone-frame-b"
+      ]
+    },
+    {
+      "root_id": "biz-b-R3",
+      "description": "Synthetic thermal analyst C.",
+      "stated_origin": "Ostrel Group",
+      "is_synthetic": true,
+      "asserts_claim": true,
+      "acquisition_kind": "direct_observation",
+      "acquisition_process": "Analyst counts distinct heat signatures in a perimeter thermal-camera sweep taken during the assembly.",
+      "artifact_type": "thermal_sweep_count",
+      "operator_id": "biz-op-3",
+      "instrument_id": "biz-inst-3",
+      "instrument_class": "thermal_infrared",
+      "quality_tier": "standard",
+      "follows_standard_procedure": true,
+      "reads_other_roots_output": false,
+      "measurement": {
+        "measures_claimed_quantity": true,
+        "can_establish_exact_quantity": true,
+        "coverage_note": "Sweep covers the whole open yard; attendees are outdoors and distinguishable from background.",
+        "resolution_note": "Thermal resolution separates adjacent persons."
+      },
+      "upstream_ids": [
+        "biz-b:thermal-sweep-c"
+      ]
+    },
+    {
+      "root_id": "biz-b-R4",
+      "description": "Synthetic radar analyst D.",
+      "stated_origin": "Quillan Group",
+      "is_synthetic": true,
+      "asserts_claim": true,
+      "acquisition_kind": "direct_observation",
+      "acquisition_process": "Analyst counts occupancy returns in a perimeter radar scan taken during the assembly.",
+      "artifact_type": "radar_scan_count",
+      "operator_id": "biz-op-4",
+      "instrument_id": "biz-inst-4",
+      "instrument_class": "radar_occupancy",
+      "quality_tier": "standard",
+      "follows_standard_procedure": true,
+      "reads_other_roots_output": false,
+      "measurement": {
+        "measures_claimed_quantity": true,
+        "can_establish_exact_quantity": true,
+        "coverage_note": "Scan covers the whole open yard; attendees are outdoors within range.",
+        "resolution_note": "Radar resolution separates adjacent persons."
+      },
+      "upstream_ids": [
+        "biz-b:radar-scan-d"
+      ]
+    }
+  ],
+  "shared_factors": [
+    {
+      "factor": "Same attendees at the same assembly (the shared subject)",
+      "affects_roots": [
+        "biz-b-R1",
+        "biz-b-R2",
+        "biz-b-R3",
+        "biz-b-R4"
+      ],
+      "severity": "inherent",
+      "note": "All four observe the identical set of people at the identical moment."
+    },
+    {
+      "factor": "Crowding occlusion",
+      "affects_roots": [
+        "biz-b-R2",
+        "biz-b-R3"
+      ],
+      "severity": "minor",
+      "note": "Dense groups can hide individuals from overhead optical and thermal sensors."
+    },
+    {
+      "factor": "Shared definition of the counted quantity",
+      "affects_roots": [
+        "biz-b-R1",
+        "biz-b-R2",
+        "biz-b-R3",
+        "biz-b-R4"
+      ],
+      "severity": "minor",
+      "note": "All use the published definition of the counted group; a definition error would be common."
+    },
+    {
+      "factor": "Company records",
+      "affects_roots": [
+        "biz-b-R1",
+        "biz-b-R2",
+        "biz-b-R3",
+        "biz-b-R4"
+      ],
+      "severity": "none-identified",
+      "note": "No root uses HR, payroll, attendance rosters or any company-produced record."
+    }
+  ],
+  "independence_assessment": "Four teams with different sensing physics and operators each count the same instantaneous event directly; none reads company records or another root's output. Disjoint artifact ids alone do not establish this: independence rests on direct observation, distinct operators and instruments, and the shared-factor analysis. Residual correlation is crowding occlusion for imaging sensors. Human confirmation pending.",
+  "evidence": {
+    "exists": true,
+    "supports_claim": false,
+    "reference": "data/evidence/biz-b.md",
+    "verification_status": "unverified",
+    "is_synthetic": true,
+    "document_type": "ground_truth_record",
+    "ground_truth_value": "198",
+    "visible_to_receiver": false,
+    "sha256": null
+  },
+  "review": {
+    "reviewer": null,
+    "blind_to_truth": null,
+    "reviewed_on": null,
+    "independence_confirmed": null
+  },
+  "name_collision_check": "pending",
+  "construction_note": "Synthetic world. The claimed value deliberately differs from the synthetic ground-truth document by construction. That four roots with different acquisition methods report the same wrong value is a construction assumption (coinciding independent errors), not a realistic process."
+}

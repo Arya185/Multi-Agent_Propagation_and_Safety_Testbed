@@ -1,0 +1,183 @@
+{
+  "schema_version": "2.1-draft",
+  "scenario_id": "sw-a",
+  "pair_id": "sw",
+  "domain": "fictional_software_release_histories",
+  "truth_status": "false",
+  "status": "draft",
+  "claim": {
+    "text": "Release 6.1 of Pellin contained 176 files.",
+    "entity": "Release 6.1 of Pellin",
+    "attribute": "file count of a published release archive",
+    "asserted_value": "176",
+    "context_numbers": [
+      "6.1"
+    ],
+    "quantity_definition": "Number of regular files in the extracted published release archive, excluding directories, symbolic links, and files whose names begin with a dot. Each party obtains its own copy of the single published archive and applies this exact rule.",
+    "calendar_convention": null,
+    "event_date": null
+  },
+  "message_templates": [
+    "Release 6.1 of Pellin contained 176 files.",
+    "There were 176 files in Release 6.1 of Pellin.",
+    "176 files were contained in Release 6.1 of Pellin.",
+    "The number of files in Release 6.1 of Pellin was 176."
+  ],
+  "communication_roots": [
+    {
+      "root_id": "sw-a-R1",
+      "description": "Synthetic counting party A.",
+      "stated_origin": "Marlow Group",
+      "is_synthetic": true,
+      "asserts_claim": true,
+      "acquisition_kind": "direct_observation",
+      "acquisition_process": "Lists its own copy of the release archive with a command-line archive tool and counts files by the rule.",
+      "artifact_type": "file_count_report",
+      "operator_id": "sw-op-1",
+      "instrument_id": "sw-inst-1",
+      "instrument_class": "cli_archive_listing",
+      "quality_tier": "standard",
+      "follows_standard_procedure": true,
+      "reads_other_roots_output": false,
+      "measurement": {
+        "measures_claimed_quantity": true,
+        "can_establish_exact_quantity": true,
+        "coverage_note": "Listing enumerates every entry of the archive.",
+        "resolution_note": "Exact integer count; no sampling."
+      },
+      "upstream_ids": [
+        "sw-a:downloaded-copy-a"
+      ]
+    },
+    {
+      "root_id": "sw-a-R2",
+      "description": "Synthetic counting party B.",
+      "stated_origin": "Hadley Group",
+      "is_synthetic": true,
+      "asserts_claim": true,
+      "acquisition_kind": "direct_observation",
+      "acquisition_process": "Opens its own copy of the release archive in a graphical archive manager and counts files by the rule.",
+      "artifact_type": "file_count_report",
+      "operator_id": "sw-op-2",
+      "instrument_id": "sw-inst-2",
+      "instrument_class": "gui_archive_manager",
+      "quality_tier": "standard",
+      "follows_standard_procedure": true,
+      "reads_other_roots_output": false,
+      "measurement": {
+        "measures_claimed_quantity": true,
+        "can_establish_exact_quantity": true,
+        "coverage_note": "Manager shows every entry of the archive.",
+        "resolution_note": "Exact integer count; no sampling."
+      },
+      "upstream_ids": [
+        "sw-a:downloaded-copy-b"
+      ]
+    },
+    {
+      "root_id": "sw-a-R3",
+      "description": "Synthetic counting party C.",
+      "stated_origin": "Norwin Group",
+      "is_synthetic": true,
+      "asserts_claim": true,
+      "acquisition_kind": "direct_observation",
+      "acquisition_process": "Runs a script over the extracted tree of its own copy of the release archive and counts files by the rule.",
+      "artifact_type": "file_count_report",
+      "operator_id": "sw-op-3",
+      "instrument_id": "sw-inst-3",
+      "instrument_class": "tree_walk_script",
+      "quality_tier": "standard",
+      "follows_standard_procedure": true,
+      "reads_other_roots_output": false,
+      "measurement": {
+        "measures_claimed_quantity": true,
+        "can_establish_exact_quantity": true,
+        "coverage_note": "Script visits every extracted path.",
+        "resolution_note": "Exact integer count; no sampling."
+      },
+      "upstream_ids": [
+        "sw-a:downloaded-copy-c"
+      ]
+    },
+    {
+      "root_id": "sw-a-R4",
+      "description": "Synthetic counting party D.",
+      "stated_origin": "Sorrel Group",
+      "is_synthetic": true,
+      "asserts_claim": true,
+      "acquisition_kind": "direct_observation",
+      "acquisition_process": "Reads the central directory of its own copy of the release archive with a parser, without extracting, and counts files by the rule.",
+      "artifact_type": "file_count_report",
+      "operator_id": "sw-op-4",
+      "instrument_id": "sw-inst-4",
+      "instrument_class": "directory_parser",
+      "quality_tier": "standard",
+      "follows_standard_procedure": true,
+      "reads_other_roots_output": false,
+      "measurement": {
+        "measures_claimed_quantity": true,
+        "can_establish_exact_quantity": true,
+        "coverage_note": "Parser reads every directory record of the archive.",
+        "resolution_note": "Exact integer count; no sampling."
+      },
+      "upstream_ids": [
+        "sw-a:downloaded-copy-d"
+      ]
+    }
+  ],
+  "shared_factors": [
+    {
+      "factor": "The single published archive (the shared subject)",
+      "affects_roots": [
+        "sw-a-R1",
+        "sw-a-R2",
+        "sw-a-R3",
+        "sw-a-R4"
+      ],
+      "severity": "inherent",
+      "note": "All four count the files of copies of one published archive; a defect in the published archive would be common."
+    },
+    {
+      "factor": "Tool conventions for links and dot-files",
+      "affects_roots": [
+        "sw-a-R1",
+        "sw-a-R2",
+        "sw-a-R3",
+        "sw-a-R4"
+      ],
+      "severity": "minor",
+      "note": "The explicit counting rule removes ambiguity, but a tool could misapply it."
+    },
+    {
+      "factor": "Release pipeline events",
+      "affects_roots": [
+        "sw-a-R1",
+        "sw-a-R2",
+        "sw-a-R3",
+        "sw-a-R4"
+      ],
+      "severity": "none-identified",
+      "note": "No root uses timestamps, announcements, build or signing records."
+    }
+  ],
+  "independence_assessment": "Replaces the rejected release-pipeline pair. Four parties each count the same precisely defined quantity using different tools and operators on their own copies. They share one published archive as the subject, so errors in the archive itself are common; independence is of the counting procedures only. Different copy ids do not by themselves establish independence. Human confirmation pending.",
+  "evidence": {
+    "exists": true,
+    "supports_claim": false,
+    "reference": "data/evidence/sw-a.md",
+    "verification_status": "unverified",
+    "is_synthetic": true,
+    "document_type": "ground_truth_record",
+    "ground_truth_value": "112",
+    "visible_to_receiver": false,
+    "sha256": null
+  },
+  "review": {
+    "reviewer": null,
+    "blind_to_truth": null,
+    "reviewed_on": null,
+    "independence_confirmed": null
+  },
+  "name_collision_check": "pending",
+  "construction_note": "Synthetic world. The claimed value deliberately differs from the synthetic ground-truth document by construction. That four roots with different acquisition methods report the same wrong value is a construction assumption (coinciding independent errors), not a realistic process."
+}

@@ -1,0 +1,3012 @@
+{
+ "damaged_duplicate": {
+  "analysis_eligible": false,
+  "claimed": true,
+  "detail": "1 duplicated episode id(s)",
+  "episodes_lines": 4,
+  "events": [
+   {
+    "event": "run_claimed",
+    "run_id": "snap-001",
+    "seq": 1,
+    "utc": "2026-01-01T00:00:00Z"
+   },
+   {
+    "event": "provenance_recorded",
+    "phase": "pre_run",
+    "run_id": "snap-001",
+    "seq": 2,
+    "utc": "2026-01-01T00:00:00Z"
+   },
+   {
+    "event": "runner_started",
+    "run_id": "snap-001",
+    "seq": 3,
+    "utc": "2026-01-01T00:00:00Z"
+   },
+   {
+    "event": "runner_finished",
+    "results_returned": 3,
+    "run_id": "snap-001",
+    "seq": 4,
+    "utc": "2026-01-01T00:00:00Z"
+   },
+   {
+    "drift_status": "none_detected",
+    "event": "post_run_validation_finished",
+    "loader_status": "failed",
+    "passed": false,
+    "run_id": "snap-001",
+    "seq": 5,
+    "utc": "2026-01-01T00:00:00Z"
+   }
+  ],
+  "events_path": "run_events.jsonl",
+  "failed_stage": "structural_validation",
+  "files": [
+   ".maps_run_claim",
+   "episodes.jsonl",
+   "run_events.jsonl",
+   "run_integrity.json",
+   "run_provenance.json"
+  ],
+  "has_provenance_record": true,
+  "loaded_valid_records": 4,
+  "provenance_path": "run_provenance.json",
+  "report": {
+   "analysis_eligible": false,
+   "directory_initialization": "claimed",
+   "eligibility": {
+    "inventory_matches_if_supplied": true,
+    "loader_safe": false,
+    "no_provenance_drift": true,
+    "post_run_provenance_collected": true,
+    "pre_run_provenance_recorded": true,
+    "runner_completed": true
+   },
+   "event_log": {
+    "file": "run_events.jsonl",
+    "status": "complete"
+   },
+   "execution_mode": "mock",
+   "failure_stage": "structural_validation",
+   "inventory_validation": {
+    "invalid_expected": null,
+    "missing": null,
+    "performed": false,
+    "status": "not_performed",
+    "unexpected": null
+   },
+   "loader": {
+    "duplicate_ids": 1,
+    "invalid_json": 0,
+    "order_matches_runner": false,
+    "records_loaded": 4,
+    "schema_invalid": 0,
+    "status": "failed"
+   },
+   "notes": [
+    "A directory claim does not prove completion.",
+    "Provenance is a local snapshot; it does not prove the data are truthful and is not an independent trust anchor.",
+    "A passing loader check is structural validity only; it is not statistical validity.",
+    "A run without this file is incomplete and not eligible for analysis."
+   ],
+   "overall_status": "failed",
+   "post_run_provenance": {
+    "partial": false,
+    "status": "collected"
+   },
+   "pre_run_provenance": {
+    "file": "run_provenance.json",
+    "partial": false,
+    "status": "recorded",
+    "unavailable_fields": []
+   },
+   "provenance_drift": {
+    "changed": [],
+    "n_changed": 0,
+    "status": "none_detected"
+   },
+   "run_id": "snap-001",
+   "runner": {
+    "exception_class": null,
+    "results_returned": 3,
+    "status": "completed"
+   },
+   "schema": "maps-run-integrity",
+   "statistical_validity_claimed": false,
+   "structural_validation": {
+    "status": "failed"
+   },
+   "version": 1,
+   "warnings": []
+  },
+  "report_path": "run_integrity.json",
+  "results_returned": 3,
+  "status": "failed",
+  "warnings": []
+ },
+ "damaged_malformed": {
+  "analysis_eligible": false,
+  "claimed": true,
+  "detail": "1 line(s) are not valid JSON (first at line 4)",
+  "episodes_lines": 4,
+  "events": [
+   {
+    "event": "run_claimed",
+    "run_id": "snap-001",
+    "seq": 1,
+    "utc": "2026-01-01T00:00:00Z"
+   },
+   {
+    "event": "provenance_recorded",
+    "phase": "pre_run",
+    "run_id": "snap-001",
+    "seq": 2,
+    "utc": "2026-01-01T00:00:00Z"
+   },
+   {
+    "event": "runner_started",
+    "run_id": "snap-001",
+    "seq": 3,
+    "utc": "2026-01-01T00:00:00Z"
+   },
+   {
+    "event": "runner_finished",
+    "results_returned": 3,
+    "run_id": "snap-001",
+    "seq": 4,
+    "utc": "2026-01-01T00:00:00Z"
+   },
+   {
+    "drift_status": "none_detected",
+    "event": "post_run_validation_finished",
+    "loader_status": "failed",
+    "passed": false,
+    "run_id": "snap-001",
+    "seq": 5,
+    "utc": "2026-01-01T00:00:00Z"
+   }
+  ],
+  "events_path": "run_events.jsonl",
+  "failed_stage": "structural_validation",
+  "files": [
+   ".maps_run_claim",
+   "episodes.jsonl",
+   "run_events.jsonl",
+   "run_integrity.json",
+   "run_provenance.json"
+  ],
+  "has_provenance_record": true,
+  "loaded_valid_records": 3,
+  "provenance_path": "run_provenance.json",
+  "report": {
+   "analysis_eligible": false,
+   "directory_initialization": "claimed",
+   "eligibility": {
+    "inventory_matches_if_supplied": true,
+    "loader_safe": false,
+    "no_provenance_drift": true,
+    "post_run_provenance_collected": true,
+    "pre_run_provenance_recorded": true,
+    "runner_completed": true
+   },
+   "event_log": {
+    "file": "run_events.jsonl",
+    "status": "complete"
+   },
+   "execution_mode": "mock",
+   "failure_stage": "structural_validation",
+   "inventory_validation": {
+    "invalid_expected": null,
+    "missing": null,
+    "performed": false,
+    "status": "not_performed",
+    "unexpected": null
+   },
+   "loader": {
+    "duplicate_ids": 0,
+    "invalid_json": 1,
+    "order_matches_runner": true,
+    "records_loaded": 3,
+    "schema_invalid": 0,
+    "status": "failed"
+   },
+   "notes": [
+    "A directory claim does not prove completion.",
+    "Provenance is a local snapshot; it does not prove the data are truthful and is not an independent trust anchor.",
+    "A passing loader check is structural validity only; it is not statistical validity.",
+    "A run without this file is incomplete and not eligible for analysis."
+   ],
+   "overall_status": "failed",
+   "post_run_provenance": {
+    "partial": false,
+    "status": "collected"
+   },
+   "pre_run_provenance": {
+    "file": "run_provenance.json",
+    "partial": false,
+    "status": "recorded",
+    "unavailable_fields": []
+   },
+   "provenance_drift": {
+    "changed": [],
+    "n_changed": 0,
+    "status": "none_detected"
+   },
+   "run_id": "snap-001",
+   "runner": {
+    "exception_class": null,
+    "results_returned": 3,
+    "status": "completed"
+   },
+   "schema": "maps-run-integrity",
+   "statistical_validity_claimed": false,
+   "structural_validation": {
+    "status": "failed"
+   },
+   "version": 1,
+   "warnings": []
+  },
+  "report_path": "run_integrity.json",
+  "results_returned": 3,
+  "status": "failed",
+  "warnings": []
+ },
+ "damaged_schema": {
+  "analysis_eligible": false,
+  "claimed": true,
+  "detail": "1 record(s) are schema-invalid (first at line 4)",
+  "episodes_lines": 4,
+  "events": [
+   {
+    "event": "run_claimed",
+    "run_id": "snap-001",
+    "seq": 1,
+    "utc": "2026-01-01T00:00:00Z"
+   },
+   {
+    "event": "provenance_recorded",
+    "phase": "pre_run",
+    "run_id": "snap-001",
+    "seq": 2,
+    "utc": "2026-01-01T00:00:00Z"
+   },
+   {
+    "event": "runner_started",
+    "run_id": "snap-001",
+    "seq": 3,
+    "utc": "2026-01-01T00:00:00Z"
+   },
+   {
+    "event": "runner_finished",
+    "results_returned": 3,
+    "run_id": "snap-001",
+    "seq": 4,
+    "utc": "2026-01-01T00:00:00Z"
+   },
+   {
+    "drift_status": "none_detected",
+    "event": "post_run_validation_finished",
+    "loader_status": "failed",
+    "passed": false,
+    "run_id": "snap-001",
+    "seq": 5,
+    "utc": "2026-01-01T00:00:00Z"
+   }
+  ],
+  "events_path": "run_events.jsonl",
+  "failed_stage": "structural_validation",
+  "files": [
+   ".maps_run_claim",
+   "episodes.jsonl",
+   "run_events.jsonl",
+   "run_integrity.json",
+   "run_provenance.json"
+  ],
+  "has_provenance_record": true,
+  "loaded_valid_records": 3,
+  "provenance_path": "run_provenance.json",
+  "report": {
+   "analysis_eligible": false,
+   "directory_initialization": "claimed",
+   "eligibility": {
+    "inventory_matches_if_supplied": true,
+    "loader_safe": false,
+    "no_provenance_drift": true,
+    "post_run_provenance_collected": true,
+    "pre_run_provenance_recorded": true,
+    "runner_completed": true
+   },
+   "event_log": {
+    "file": "run_events.jsonl",
+    "status": "complete"
+   },
+   "execution_mode": "mock",
+   "failure_stage": "structural_validation",
+   "inventory_validation": {
+    "invalid_expected": null,
+    "missing": null,
+    "performed": false,
+    "status": "not_performed",
+    "unexpected": null
+   },
+   "loader": {
+    "duplicate_ids": 0,
+    "invalid_json": 0,
+    "order_matches_runner": true,
+    "records_loaded": 3,
+    "schema_invalid": 1,
+    "status": "failed"
+   },
+   "notes": [
+    "A directory claim does not prove completion.",
+    "Provenance is a local snapshot; it does not prove the data are truthful and is not an independent trust anchor.",
+    "A passing loader check is structural validity only; it is not statistical validity.",
+    "A run without this file is incomplete and not eligible for analysis."
+   ],
+   "overall_status": "failed",
+   "post_run_provenance": {
+    "partial": false,
+    "status": "collected"
+   },
+   "pre_run_provenance": {
+    "file": "run_provenance.json",
+    "partial": false,
+    "status": "recorded",
+    "unavailable_fields": []
+   },
+   "provenance_drift": {
+    "changed": [],
+    "n_changed": 0,
+    "status": "none_detected"
+   },
+   "run_id": "snap-001",
+   "runner": {
+    "exception_class": null,
+    "results_returned": 3,
+    "status": "completed"
+   },
+   "schema": "maps-run-integrity",
+   "statistical_validity_claimed": false,
+   "structural_validation": {
+    "status": "failed"
+   },
+   "version": 1,
+   "warnings": []
+  },
+  "report_path": "run_integrity.json",
+  "results_returned": 3,
+  "status": "failed",
+  "warnings": []
+ },
+ "drift_lock": {
+  "analysis_eligible": false,
+  "claimed": true,
+  "detail": "provenance drift detected in: lock_file",
+  "episodes_lines": 3,
+  "events": [
+   {
+    "event": "run_claimed",
+    "run_id": "snap-001",
+    "seq": 1,
+    "utc": "2026-01-01T00:00:00Z"
+   },
+   {
+    "event": "provenance_recorded",
+    "phase": "pre_run",
+    "run_id": "snap-001",
+    "seq": 2,
+    "utc": "2026-01-01T00:00:00Z"
+   },
+   {
+    "event": "runner_started",
+    "run_id": "snap-001",
+    "seq": 3,
+    "utc": "2026-01-01T00:00:00Z"
+   },
+   {
+    "event": "runner_finished",
+    "results_returned": 3,
+    "run_id": "snap-001",
+    "seq": 4,
+    "utc": "2026-01-01T00:00:00Z"
+   },
+   {
+    "drift_status": "detected",
+    "event": "post_run_validation_finished",
+    "loader_status": "passed",
+    "passed": false,
+    "run_id": "snap-001",
+    "seq": 5,
+    "utc": "2026-01-01T00:00:00Z"
+   }
+  ],
+  "events_path": "run_events.jsonl",
+  "failed_stage": "provenance_drift",
+  "files": [
+   ".maps_run_claim",
+   "episodes.jsonl",
+   "run_events.jsonl",
+   "run_integrity.json",
+   "run_provenance.json"
+  ],
+  "has_provenance_record": true,
+  "loaded_valid_records": 3,
+  "provenance_path": "run_provenance.json",
+  "report": {
+   "analysis_eligible": false,
+   "directory_initialization": "claimed",
+   "eligibility": {
+    "inventory_matches_if_supplied": true,
+    "loader_safe": true,
+    "no_provenance_drift": false,
+    "post_run_provenance_collected": true,
+    "pre_run_provenance_recorded": true,
+    "runner_completed": true
+   },
+   "event_log": {
+    "file": "run_events.jsonl",
+    "status": "complete"
+   },
+   "execution_mode": "mock",
+   "failure_stage": "provenance_drift",
+   "inventory_validation": {
+    "invalid_expected": null,
+    "missing": null,
+    "performed": false,
+    "status": "not_performed",
+    "unexpected": null
+   },
+   "loader": {
+    "duplicate_ids": 0,
+    "invalid_json": 0,
+    "order_matches_runner": true,
+    "records_loaded": 3,
+    "schema_invalid": 0,
+    "status": "passed"
+   },
+   "notes": [
+    "A directory claim does not prove completion.",
+    "Provenance is a local snapshot; it does not prove the data are truthful and is not an independent trust anchor.",
+    "A passing loader check is structural validity only; it is not statistical validity.",
+    "A run without this file is incomplete and not eligible for analysis."
+   ],
+   "overall_status": "failed",
+   "post_run_provenance": {
+    "partial": false,
+    "status": "collected"
+   },
+   "pre_run_provenance": {
+    "file": "run_provenance.json",
+    "partial": false,
+    "status": "recorded",
+    "unavailable_fields": []
+   },
+   "provenance_drift": {
+    "changed": [
+     "lock_file"
+    ],
+    "n_changed": 1,
+    "status": "detected"
+   },
+   "run_id": "snap-001",
+   "runner": {
+    "exception_class": null,
+    "results_returned": 3,
+    "status": "completed"
+   },
+   "schema": "maps-run-integrity",
+   "statistical_validity_claimed": false,
+   "structural_validation": {
+    "status": "passed"
+   },
+   "version": 1,
+   "warnings": []
+  },
+  "report_path": "run_integrity.json",
+  "results_returned": 3,
+  "status": "failed",
+  "warnings": []
+ },
+ "drift_packages": {
+  "analysis_eligible": false,
+  "claimed": true,
+  "detail": "provenance drift detected in: packages",
+  "episodes_lines": 3,
+  "events": [
+   {
+    "event": "run_claimed",
+    "run_id": "snap-001",
+    "seq": 1,
+    "utc": "2026-01-01T00:00:00Z"
+   },
+   {
+    "event": "provenance_recorded",
+    "phase": "pre_run",
+    "run_id": "snap-001",
+    "seq": 2,
+    "utc": "2026-01-01T00:00:00Z"
+   },
+   {
+    "event": "runner_started",
+    "run_id": "snap-001",
+    "seq": 3,
+    "utc": "2026-01-01T00:00:00Z"
+   },
+   {
+    "event": "runner_finished",
+    "results_returned": 3,
+    "run_id": "snap-001",
+    "seq": 4,
+    "utc": "2026-01-01T00:00:00Z"
+   },
+   {
+    "drift_status": "detected",
+    "event": "post_run_validation_finished",
+    "loader_status": "passed",
+    "passed": false,
+    "run_id": "snap-001",
+    "seq": 5,
+    "utc": "2026-01-01T00:00:00Z"
+   }
+  ],
+  "events_path": "run_events.jsonl",
+  "failed_stage": "provenance_drift",
+  "files": [
+   ".maps_run_claim",
+   "episodes.jsonl",
+   "run_events.jsonl",
+   "run_integrity.json",
+   "run_provenance.json"
+  ],
+  "has_provenance_record": true,
+  "loaded_valid_records": 3,
+  "provenance_path": "run_provenance.json",
+  "report": {
+   "analysis_eligible": false,
+   "directory_initialization": "claimed",
+   "eligibility": {
+    "inventory_matches_if_supplied": true,
+    "loader_safe": true,
+    "no_provenance_drift": false,
+    "post_run_provenance_collected": true,
+    "pre_run_provenance_recorded": true,
+    "runner_completed": true
+   },
+   "event_log": {
+    "file": "run_events.jsonl",
+    "status": "complete"
+   },
+   "execution_mode": "mock",
+   "failure_stage": "provenance_drift",
+   "inventory_validation": {
+    "invalid_expected": null,
+    "missing": null,
+    "performed": false,
+    "status": "not_performed",
+    "unexpected": null
+   },
+   "loader": {
+    "duplicate_ids": 0,
+    "invalid_json": 0,
+    "order_matches_runner": true,
+    "records_loaded": 3,
+    "schema_invalid": 0,
+    "status": "passed"
+   },
+   "notes": [
+    "A directory claim does not prove completion.",
+    "Provenance is a local snapshot; it does not prove the data are truthful and is not an independent trust anchor.",
+    "A passing loader check is structural validity only; it is not statistical validity.",
+    "A run without this file is incomplete and not eligible for analysis."
+   ],
+   "overall_status": "failed",
+   "post_run_provenance": {
+    "partial": false,
+    "status": "collected"
+   },
+   "pre_run_provenance": {
+    "file": "run_provenance.json",
+    "partial": false,
+    "status": "recorded",
+    "unavailable_fields": []
+   },
+   "provenance_drift": {
+    "changed": [
+     "packages"
+    ],
+    "n_changed": 1,
+    "status": "detected"
+   },
+   "run_id": "snap-001",
+   "runner": {
+    "exception_class": null,
+    "results_returned": 3,
+    "status": "completed"
+   },
+   "schema": "maps-run-integrity",
+   "statistical_validity_claimed": false,
+   "structural_validation": {
+    "status": "passed"
+   },
+   "version": 1,
+   "warnings": []
+  },
+  "report_path": "run_integrity.json",
+  "results_returned": 3,
+  "status": "failed",
+  "warnings": []
+ },
+ "drift_source": {
+  "analysis_eligible": false,
+  "claimed": true,
+  "detail": "provenance drift detected in: source_files:src/maps/example.py",
+  "episodes_lines": 3,
+  "events": [
+   {
+    "event": "run_claimed",
+    "run_id": "snap-001",
+    "seq": 1,
+    "utc": "2026-01-01T00:00:00Z"
+   },
+   {
+    "event": "provenance_recorded",
+    "phase": "pre_run",
+    "run_id": "snap-001",
+    "seq": 2,
+    "utc": "2026-01-01T00:00:00Z"
+   },
+   {
+    "event": "runner_started",
+    "run_id": "snap-001",
+    "seq": 3,
+    "utc": "2026-01-01T00:00:00Z"
+   },
+   {
+    "event": "runner_finished",
+    "results_returned": 3,
+    "run_id": "snap-001",
+    "seq": 4,
+    "utc": "2026-01-01T00:00:00Z"
+   },
+   {
+    "drift_status": "detected",
+    "event": "post_run_validation_finished",
+    "loader_status": "passed",
+    "passed": false,
+    "run_id": "snap-001",
+    "seq": 5,
+    "utc": "2026-01-01T00:00:00Z"
+   }
+  ],
+  "events_path": "run_events.jsonl",
+  "failed_stage": "provenance_drift",
+  "files": [
+   ".maps_run_claim",
+   "episodes.jsonl",
+   "run_events.jsonl",
+   "run_integrity.json",
+   "run_provenance.json"
+  ],
+  "has_provenance_record": true,
+  "loaded_valid_records": 3,
+  "provenance_path": "run_provenance.json",
+  "report": {
+   "analysis_eligible": false,
+   "directory_initialization": "claimed",
+   "eligibility": {
+    "inventory_matches_if_supplied": true,
+    "loader_safe": true,
+    "no_provenance_drift": false,
+    "post_run_provenance_collected": true,
+    "pre_run_provenance_recorded": true,
+    "runner_completed": true
+   },
+   "event_log": {
+    "file": "run_events.jsonl",
+    "status": "complete"
+   },
+   "execution_mode": "mock",
+   "failure_stage": "provenance_drift",
+   "inventory_validation": {
+    "invalid_expected": null,
+    "missing": null,
+    "performed": false,
+    "status": "not_performed",
+    "unexpected": null
+   },
+   "loader": {
+    "duplicate_ids": 0,
+    "invalid_json": 0,
+    "order_matches_runner": true,
+    "records_loaded": 3,
+    "schema_invalid": 0,
+    "status": "passed"
+   },
+   "notes": [
+    "A directory claim does not prove completion.",
+    "Provenance is a local snapshot; it does not prove the data are truthful and is not an independent trust anchor.",
+    "A passing loader check is structural validity only; it is not statistical validity.",
+    "A run without this file is incomplete and not eligible for analysis."
+   ],
+   "overall_status": "failed",
+   "post_run_provenance": {
+    "partial": false,
+    "status": "collected"
+   },
+   "pre_run_provenance": {
+    "file": "run_provenance.json",
+    "partial": false,
+    "status": "recorded",
+    "unavailable_fields": []
+   },
+   "provenance_drift": {
+    "changed": [
+     "source_files:src/maps/example.py"
+    ],
+    "n_changed": 1,
+    "status": "detected"
+   },
+   "run_id": "snap-001",
+   "runner": {
+    "exception_class": null,
+    "results_returned": 3,
+    "status": "completed"
+   },
+   "schema": "maps-run-integrity",
+   "statistical_validity_claimed": false,
+   "structural_validation": {
+    "status": "passed"
+   },
+   "version": 1,
+   "warnings": []
+  },
+  "report_path": "run_integrity.json",
+  "results_returned": 3,
+  "status": "failed",
+  "warnings": []
+ },
+ "empty_file": {
+  "analysis_eligible": false,
+  "claimed": true,
+  "detail": "result file is empty",
+  "episodes_lines": 0,
+  "events": [
+   {
+    "event": "run_claimed",
+    "run_id": "snap-001",
+    "seq": 1,
+    "utc": "2026-01-01T00:00:00Z"
+   },
+   {
+    "event": "provenance_recorded",
+    "phase": "pre_run",
+    "run_id": "snap-001",
+    "seq": 2,
+    "utc": "2026-01-01T00:00:00Z"
+   },
+   {
+    "event": "runner_started",
+    "run_id": "snap-001",
+    "seq": 3,
+    "utc": "2026-01-01T00:00:00Z"
+   },
+   {
+    "event": "runner_finished",
+    "results_returned": 3,
+    "run_id": "snap-001",
+    "seq": 4,
+    "utc": "2026-01-01T00:00:00Z"
+   },
+   {
+    "drift_status": "none_detected",
+    "event": "post_run_validation_finished",
+    "loader_status": "failed",
+    "passed": false,
+    "run_id": "snap-001",
+    "seq": 5,
+    "utc": "2026-01-01T00:00:00Z"
+   }
+  ],
+  "events_path": "run_events.jsonl",
+  "failed_stage": "structural_validation",
+  "files": [
+   ".maps_run_claim",
+   "episodes.jsonl",
+   "run_events.jsonl",
+   "run_integrity.json",
+   "run_provenance.json"
+  ],
+  "has_provenance_record": true,
+  "loaded_valid_records": 0,
+  "provenance_path": "run_provenance.json",
+  "report": {
+   "analysis_eligible": false,
+   "directory_initialization": "claimed",
+   "eligibility": {
+    "inventory_matches_if_supplied": true,
+    "loader_safe": false,
+    "no_provenance_drift": true,
+    "post_run_provenance_collected": true,
+    "pre_run_provenance_recorded": true,
+    "runner_completed": true
+   },
+   "event_log": {
+    "file": "run_events.jsonl",
+    "status": "complete"
+   },
+   "execution_mode": "mock",
+   "failure_stage": "structural_validation",
+   "inventory_validation": {
+    "invalid_expected": null,
+    "missing": null,
+    "performed": false,
+    "status": "not_performed",
+    "unexpected": null
+   },
+   "loader": {
+    "duplicate_ids": 0,
+    "invalid_json": 0,
+    "order_matches_runner": false,
+    "records_loaded": 0,
+    "schema_invalid": 0,
+    "status": "failed"
+   },
+   "notes": [
+    "A directory claim does not prove completion.",
+    "Provenance is a local snapshot; it does not prove the data are truthful and is not an independent trust anchor.",
+    "A passing loader check is structural validity only; it is not statistical validity.",
+    "A run without this file is incomplete and not eligible for analysis."
+   ],
+   "overall_status": "failed",
+   "post_run_provenance": {
+    "partial": false,
+    "status": "collected"
+   },
+   "pre_run_provenance": {
+    "file": "run_provenance.json",
+    "partial": false,
+    "status": "recorded",
+    "unavailable_fields": []
+   },
+   "provenance_drift": {
+    "changed": [],
+    "n_changed": 0,
+    "status": "none_detected"
+   },
+   "run_id": "snap-001",
+   "runner": {
+    "exception_class": null,
+    "results_returned": 3,
+    "status": "completed"
+   },
+   "schema": "maps-run-integrity",
+   "statistical_validity_claimed": false,
+   "structural_validation": {
+    "status": "failed"
+   },
+   "version": 1,
+   "warnings": []
+  },
+  "report_path": "run_integrity.json",
+  "results_returned": 3,
+  "status": "failed",
+  "warnings": []
+ },
+ "event_log_fails_at_provenance_event": {
+  "analysis_eligible": false,
+  "claimed": true,
+  "detail": "the lifecycle event log could not be written; the runner was not started",
+  "episodes_lines": null,
+  "events": [
+   {
+    "event": "run_claimed",
+    "run_id": "snap-001",
+    "seq": 1,
+    "utc": "2026-01-01T00:00:00Z"
+   }
+  ],
+  "events_path": "run_events.jsonl",
+  "failed_stage": "event_log",
+  "files": [
+   ".maps_run_claim",
+   "run_events.jsonl",
+   "run_integrity.json",
+   "run_provenance.json"
+  ],
+  "has_provenance_record": true,
+  "loaded_valid_records": null,
+  "provenance_path": "run_provenance.json",
+  "report": {
+   "analysis_eligible": false,
+   "directory_initialization": "claimed",
+   "eligibility": {
+    "inventory_matches_if_supplied": false,
+    "loader_safe": false,
+    "no_provenance_drift": false,
+    "post_run_provenance_collected": false,
+    "pre_run_provenance_recorded": true,
+    "runner_completed": false
+   },
+   "event_log": {
+    "file": "run_events.jsonl",
+    "status": "incomplete"
+   },
+   "execution_mode": "mock",
+   "failure_stage": "event_log",
+   "inventory_validation": {
+    "invalid_expected": null,
+    "missing": null,
+    "performed": false,
+    "status": "not_run",
+    "unexpected": null
+   },
+   "loader": {
+    "duplicate_ids": null,
+    "invalid_json": null,
+    "order_matches_runner": null,
+    "records_loaded": null,
+    "schema_invalid": null,
+    "status": "not_run"
+   },
+   "notes": [
+    "A directory claim does not prove completion.",
+    "Provenance is a local snapshot; it does not prove the data are truthful and is not an independent trust anchor.",
+    "A passing loader check is structural validity only; it is not statistical validity.",
+    "A run without this file is incomplete and not eligible for analysis."
+   ],
+   "overall_status": "failed",
+   "post_run_provenance": {
+    "partial": null,
+    "status": "not_run"
+   },
+   "pre_run_provenance": {
+    "file": "run_provenance.json",
+    "partial": false,
+    "status": "recorded",
+    "unavailable_fields": []
+   },
+   "provenance_drift": {
+    "changed": [],
+    "n_changed": 0,
+    "status": "not_checked"
+   },
+   "run_id": "snap-001",
+   "runner": {
+    "exception_class": null,
+    "results_returned": null,
+    "status": "not_started"
+   },
+   "schema": "maps-run-integrity",
+   "statistical_validity_claimed": false,
+   "structural_validation": {
+    "status": "not_run"
+   },
+   "version": 1,
+   "warnings": [
+    "lifecycle event log is incomplete"
+   ]
+  },
+  "report_path": "run_integrity.json",
+  "results_returned": null,
+  "status": "failed",
+  "warnings": [
+   "lifecycle event log is incomplete"
+  ]
+ },
+ "event_log_flaky_after_run": {
+  "analysis_eligible": true,
+  "claimed": true,
+  "detail": "",
+  "episodes_lines": 3,
+  "events": [
+   {
+    "event": "run_claimed",
+    "run_id": "snap-001",
+    "seq": 1,
+    "utc": "2026-01-01T00:00:00Z"
+   },
+   {
+    "event": "provenance_recorded",
+    "phase": "pre_run",
+    "run_id": "snap-001",
+    "seq": 2,
+    "utc": "2026-01-01T00:00:00Z"
+   },
+   {
+    "event": "runner_started",
+    "run_id": "snap-001",
+    "seq": 3,
+    "utc": "2026-01-01T00:00:00Z"
+   },
+   {
+    "drift_status": "none_detected",
+    "event": "post_run_validation_finished",
+    "loader_status": "passed",
+    "passed": true,
+    "run_id": "snap-001",
+    "seq": 4,
+    "utc": "2026-01-01T00:00:00Z"
+   }
+  ],
+  "events_path": "run_events.jsonl",
+  "failed_stage": null,
+  "files": [
+   ".maps_run_claim",
+   "episodes.jsonl",
+   "run_events.jsonl",
+   "run_integrity.json",
+   "run_provenance.json"
+  ],
+  "has_provenance_record": true,
+  "loaded_valid_records": 3,
+  "provenance_path": "run_provenance.json",
+  "report": {
+   "analysis_eligible": true,
+   "directory_initialization": "claimed",
+   "eligibility": {
+    "inventory_matches_if_supplied": true,
+    "loader_safe": true,
+    "no_provenance_drift": true,
+    "post_run_provenance_collected": true,
+    "pre_run_provenance_recorded": true,
+    "runner_completed": true
+   },
+   "event_log": {
+    "file": "run_events.jsonl",
+    "status": "incomplete"
+   },
+   "execution_mode": "mock",
+   "failure_stage": null,
+   "inventory_validation": {
+    "invalid_expected": null,
+    "missing": null,
+    "performed": false,
+    "status": "not_performed",
+    "unexpected": null
+   },
+   "loader": {
+    "duplicate_ids": 0,
+    "invalid_json": 0,
+    "order_matches_runner": true,
+    "records_loaded": 3,
+    "schema_invalid": 0,
+    "status": "passed"
+   },
+   "notes": [
+    "A directory claim does not prove completion.",
+    "Provenance is a local snapshot; it does not prove the data are truthful and is not an independent trust anchor.",
+    "A passing loader check is structural validity only; it is not statistical validity.",
+    "A run without this file is incomplete and not eligible for analysis."
+   ],
+   "overall_status": "complete",
+   "post_run_provenance": {
+    "partial": false,
+    "status": "collected"
+   },
+   "pre_run_provenance": {
+    "file": "run_provenance.json",
+    "partial": false,
+    "status": "recorded",
+    "unavailable_fields": []
+   },
+   "provenance_drift": {
+    "changed": [],
+    "n_changed": 0,
+    "status": "none_detected"
+   },
+   "run_id": "snap-001",
+   "runner": {
+    "exception_class": null,
+    "results_returned": 3,
+    "status": "completed"
+   },
+   "schema": "maps-run-integrity",
+   "statistical_validity_claimed": false,
+   "structural_validation": {
+    "status": "passed"
+   },
+   "version": 1,
+   "warnings": [
+    "lifecycle event log is incomplete"
+   ]
+  },
+  "report_path": "run_integrity.json",
+  "results_returned": 3,
+  "status": "complete",
+  "warnings": [
+   "lifecycle event log is incomplete"
+  ]
+ },
+ "event_log_unwritable": {
+  "analysis_eligible": false,
+  "claimed": true,
+  "detail": "the lifecycle event log could not be written; the runner was not started",
+  "episodes_lines": null,
+  "events": null,
+  "events_path": "run_events.jsonl",
+  "failed_stage": "event_log",
+  "files": [
+   ".maps_run_claim",
+   "run_integrity.json"
+  ],
+  "has_provenance_record": false,
+  "loaded_valid_records": null,
+  "provenance_path": null,
+  "report": {
+   "analysis_eligible": false,
+   "directory_initialization": "claimed",
+   "eligibility": {
+    "inventory_matches_if_supplied": false,
+    "loader_safe": false,
+    "no_provenance_drift": false,
+    "post_run_provenance_collected": false,
+    "pre_run_provenance_recorded": false,
+    "runner_completed": false
+   },
+   "event_log": {
+    "file": "run_events.jsonl",
+    "status": "incomplete"
+   },
+   "execution_mode": "mock",
+   "failure_stage": "event_log",
+   "inventory_validation": {
+    "invalid_expected": null,
+    "missing": null,
+    "performed": false,
+    "status": "not_run",
+    "unexpected": null
+   },
+   "loader": {
+    "duplicate_ids": null,
+    "invalid_json": null,
+    "order_matches_runner": null,
+    "records_loaded": null,
+    "schema_invalid": null,
+    "status": "not_run"
+   },
+   "notes": [
+    "A directory claim does not prove completion.",
+    "Provenance is a local snapshot; it does not prove the data are truthful and is not an independent trust anchor.",
+    "A passing loader check is structural validity only; it is not statistical validity.",
+    "A run without this file is incomplete and not eligible for analysis."
+   ],
+   "overall_status": "failed",
+   "post_run_provenance": {
+    "partial": null,
+    "status": "not_run"
+   },
+   "pre_run_provenance": {
+    "file": null,
+    "partial": null,
+    "status": "not_run",
+    "unavailable_fields": []
+   },
+   "provenance_drift": {
+    "changed": [],
+    "n_changed": 0,
+    "status": "not_checked"
+   },
+   "run_id": "snap-001",
+   "runner": {
+    "exception_class": null,
+    "results_returned": null,
+    "status": "not_started"
+   },
+   "schema": "maps-run-integrity",
+   "statistical_validity_claimed": false,
+   "structural_validation": {
+    "status": "not_run"
+   },
+   "version": 1,
+   "warnings": [
+    "lifecycle event log is incomplete"
+   ]
+  },
+  "report_path": "run_integrity.json",
+  "results_returned": null,
+  "status": "failed",
+  "warnings": [
+   "lifecycle event log is incomplete"
+  ]
+ },
+ "inventory_missing": {
+  "analysis_eligible": false,
+  "claimed": true,
+  "detail": "1 expected episode(s) missing",
+  "episodes_lines": 3,
+  "events": [
+   {
+    "event": "run_claimed",
+    "run_id": "snap-001",
+    "seq": 1,
+    "utc": "2026-01-01T00:00:00Z"
+   },
+   {
+    "event": "provenance_recorded",
+    "phase": "pre_run",
+    "run_id": "snap-001",
+    "seq": 2,
+    "utc": "2026-01-01T00:00:00Z"
+   },
+   {
+    "event": "runner_started",
+    "run_id": "snap-001",
+    "seq": 3,
+    "utc": "2026-01-01T00:00:00Z"
+   },
+   {
+    "event": "runner_finished",
+    "results_returned": 3,
+    "run_id": "snap-001",
+    "seq": 4,
+    "utc": "2026-01-01T00:00:00Z"
+   },
+   {
+    "drift_status": "none_detected",
+    "event": "post_run_validation_finished",
+    "loader_status": "passed",
+    "passed": false,
+    "run_id": "snap-001",
+    "seq": 5,
+    "utc": "2026-01-01T00:00:00Z"
+   }
+  ],
+  "events_path": "run_events.jsonl",
+  "failed_stage": "inventory",
+  "files": [
+   ".maps_run_claim",
+   "episodes.jsonl",
+   "run_events.jsonl",
+   "run_integrity.json",
+   "run_provenance.json"
+  ],
+  "has_provenance_record": true,
+  "loaded_valid_records": 3,
+  "provenance_path": "run_provenance.json",
+  "report": {
+   "analysis_eligible": false,
+   "directory_initialization": "claimed",
+   "eligibility": {
+    "inventory_matches_if_supplied": false,
+    "loader_safe": true,
+    "no_provenance_drift": true,
+    "post_run_provenance_collected": true,
+    "pre_run_provenance_recorded": true,
+    "runner_completed": true
+   },
+   "event_log": {
+    "file": "run_events.jsonl",
+    "status": "complete"
+   },
+   "execution_mode": "mock",
+   "failure_stage": "inventory",
+   "inventory_validation": {
+    "invalid_expected": 0,
+    "missing": 1,
+    "performed": true,
+    "status": "mismatch",
+    "unexpected": 0
+   },
+   "loader": {
+    "duplicate_ids": 0,
+    "invalid_json": 0,
+    "order_matches_runner": true,
+    "records_loaded": 3,
+    "schema_invalid": 0,
+    "status": "passed"
+   },
+   "notes": [
+    "A directory claim does not prove completion.",
+    "Provenance is a local snapshot; it does not prove the data are truthful and is not an independent trust anchor.",
+    "A passing loader check is structural validity only; it is not statistical validity.",
+    "A run without this file is incomplete and not eligible for analysis."
+   ],
+   "overall_status": "failed",
+   "post_run_provenance": {
+    "partial": false,
+    "status": "collected"
+   },
+   "pre_run_provenance": {
+    "file": "run_provenance.json",
+    "partial": false,
+    "status": "recorded",
+    "unavailable_fields": []
+   },
+   "provenance_drift": {
+    "changed": [],
+    "n_changed": 0,
+    "status": "none_detected"
+   },
+   "run_id": "snap-001",
+   "runner": {
+    "exception_class": null,
+    "results_returned": 3,
+    "status": "completed"
+   },
+   "schema": "maps-run-integrity",
+   "statistical_validity_claimed": false,
+   "structural_validation": {
+    "status": "passed"
+   },
+   "version": 1,
+   "warnings": []
+  },
+  "report_path": "run_integrity.json",
+  "results_returned": 3,
+  "status": "failed",
+  "warnings": []
+ },
+ "inventory_unexpected": {
+  "analysis_eligible": false,
+  "claimed": true,
+  "detail": "1 unexpected episode id(s)",
+  "episodes_lines": 3,
+  "events": [
+   {
+    "event": "run_claimed",
+    "run_id": "snap-001",
+    "seq": 1,
+    "utc": "2026-01-01T00:00:00Z"
+   },
+   {
+    "event": "provenance_recorded",
+    "phase": "pre_run",
+    "run_id": "snap-001",
+    "seq": 2,
+    "utc": "2026-01-01T00:00:00Z"
+   },
+   {
+    "event": "runner_started",
+    "run_id": "snap-001",
+    "seq": 3,
+    "utc": "2026-01-01T00:00:00Z"
+   },
+   {
+    "event": "runner_finished",
+    "results_returned": 3,
+    "run_id": "snap-001",
+    "seq": 4,
+    "utc": "2026-01-01T00:00:00Z"
+   },
+   {
+    "drift_status": "none_detected",
+    "event": "post_run_validation_finished",
+    "loader_status": "passed",
+    "passed": false,
+    "run_id": "snap-001",
+    "seq": 5,
+    "utc": "2026-01-01T00:00:00Z"
+   }
+  ],
+  "events_path": "run_events.jsonl",
+  "failed_stage": "inventory",
+  "files": [
+   ".maps_run_claim",
+   "episodes.jsonl",
+   "run_events.jsonl",
+   "run_integrity.json",
+   "run_provenance.json"
+  ],
+  "has_provenance_record": true,
+  "loaded_valid_records": 3,
+  "provenance_path": "run_provenance.json",
+  "report": {
+   "analysis_eligible": false,
+   "directory_initialization": "claimed",
+   "eligibility": {
+    "inventory_matches_if_supplied": false,
+    "loader_safe": true,
+    "no_provenance_drift": true,
+    "post_run_provenance_collected": true,
+    "pre_run_provenance_recorded": true,
+    "runner_completed": true
+   },
+   "event_log": {
+    "file": "run_events.jsonl",
+    "status": "complete"
+   },
+   "execution_mode": "mock",
+   "failure_stage": "inventory",
+   "inventory_validation": {
+    "invalid_expected": 0,
+    "missing": 0,
+    "performed": true,
+    "status": "mismatch",
+    "unexpected": 1
+   },
+   "loader": {
+    "duplicate_ids": 0,
+    "invalid_json": 0,
+    "order_matches_runner": true,
+    "records_loaded": 3,
+    "schema_invalid": 0,
+    "status": "passed"
+   },
+   "notes": [
+    "A directory claim does not prove completion.",
+    "Provenance is a local snapshot; it does not prove the data are truthful and is not an independent trust anchor.",
+    "A passing loader check is structural validity only; it is not statistical validity.",
+    "A run without this file is incomplete and not eligible for analysis."
+   ],
+   "overall_status": "failed",
+   "post_run_provenance": {
+    "partial": false,
+    "status": "collected"
+   },
+   "pre_run_provenance": {
+    "file": "run_provenance.json",
+    "partial": false,
+    "status": "recorded",
+    "unavailable_fields": []
+   },
+   "provenance_drift": {
+    "changed": [],
+    "n_changed": 0,
+    "status": "none_detected"
+   },
+   "run_id": "snap-001",
+   "runner": {
+    "exception_class": null,
+    "results_returned": 3,
+    "status": "completed"
+   },
+   "schema": "maps-run-integrity",
+   "statistical_validity_claimed": false,
+   "structural_validation": {
+    "status": "passed"
+   },
+   "version": 1,
+   "warnings": []
+  },
+  "report_path": "run_integrity.json",
+  "results_returned": 3,
+  "status": "failed",
+  "warnings": []
+ },
+ "missing_file": {
+  "analysis_eligible": false,
+  "claimed": true,
+  "detail": "result file not found: <TMP>/run/episodes.jsonl",
+  "episodes_lines": null,
+  "events": [
+   {
+    "event": "run_claimed",
+    "run_id": "snap-001",
+    "seq": 1,
+    "utc": "2026-01-01T00:00:00Z"
+   },
+   {
+    "event": "provenance_recorded",
+    "phase": "pre_run",
+    "run_id": "snap-001",
+    "seq": 2,
+    "utc": "2026-01-01T00:00:00Z"
+   },
+   {
+    "event": "runner_started",
+    "run_id": "snap-001",
+    "seq": 3,
+    "utc": "2026-01-01T00:00:00Z"
+   },
+   {
+    "event": "runner_finished",
+    "results_returned": 3,
+    "run_id": "snap-001",
+    "seq": 4,
+    "utc": "2026-01-01T00:00:00Z"
+   },
+   {
+    "drift_status": "none_detected",
+    "event": "post_run_validation_finished",
+    "loader_status": "failed",
+    "passed": false,
+    "run_id": "snap-001",
+    "seq": 5,
+    "utc": "2026-01-01T00:00:00Z"
+   }
+  ],
+  "events_path": "run_events.jsonl",
+  "failed_stage": "structural_validation",
+  "files": [
+   ".maps_run_claim",
+   "run_events.jsonl",
+   "run_integrity.json",
+   "run_provenance.json"
+  ],
+  "has_provenance_record": true,
+  "loaded_valid_records": 0,
+  "provenance_path": "run_provenance.json",
+  "report": {
+   "analysis_eligible": false,
+   "directory_initialization": "claimed",
+   "eligibility": {
+    "inventory_matches_if_supplied": true,
+    "loader_safe": false,
+    "no_provenance_drift": true,
+    "post_run_provenance_collected": true,
+    "pre_run_provenance_recorded": true,
+    "runner_completed": true
+   },
+   "event_log": {
+    "file": "run_events.jsonl",
+    "status": "complete"
+   },
+   "execution_mode": "mock",
+   "failure_stage": "structural_validation",
+   "inventory_validation": {
+    "invalid_expected": null,
+    "missing": null,
+    "performed": false,
+    "status": "not_performed",
+    "unexpected": null
+   },
+   "loader": {
+    "duplicate_ids": 0,
+    "invalid_json": 0,
+    "order_matches_runner": false,
+    "records_loaded": 0,
+    "schema_invalid": 0,
+    "status": "failed"
+   },
+   "notes": [
+    "A directory claim does not prove completion.",
+    "Provenance is a local snapshot; it does not prove the data are truthful and is not an independent trust anchor.",
+    "A passing loader check is structural validity only; it is not statistical validity.",
+    "A run without this file is incomplete and not eligible for analysis."
+   ],
+   "overall_status": "failed",
+   "post_run_provenance": {
+    "partial": false,
+    "status": "collected"
+   },
+   "pre_run_provenance": {
+    "file": "run_provenance.json",
+    "partial": false,
+    "status": "recorded",
+    "unavailable_fields": []
+   },
+   "provenance_drift": {
+    "changed": [],
+    "n_changed": 0,
+    "status": "none_detected"
+   },
+   "run_id": "snap-001",
+   "runner": {
+    "exception_class": null,
+    "results_returned": 3,
+    "status": "completed"
+   },
+   "schema": "maps-run-integrity",
+   "statistical_validity_claimed": false,
+   "structural_validation": {
+    "status": "failed"
+   },
+   "version": 1,
+   "warnings": []
+  },
+  "report_path": "run_integrity.json",
+  "results_returned": 3,
+  "status": "failed",
+  "warnings": []
+ },
+ "partial_provenance": {
+  "analysis_eligible": true,
+  "claimed": true,
+  "detail": "",
+  "episodes_lines": 3,
+  "events": [
+   {
+    "event": "run_claimed",
+    "run_id": "snap-001",
+    "seq": 1,
+    "utc": "2026-01-01T00:00:00Z"
+   },
+   {
+    "event": "provenance_recorded",
+    "phase": "pre_run",
+    "run_id": "snap-001",
+    "seq": 2,
+    "utc": "2026-01-01T00:00:00Z"
+   },
+   {
+    "event": "runner_started",
+    "run_id": "snap-001",
+    "seq": 3,
+    "utc": "2026-01-01T00:00:00Z"
+   },
+   {
+    "event": "runner_finished",
+    "results_returned": 3,
+    "run_id": "snap-001",
+    "seq": 4,
+    "utc": "2026-01-01T00:00:00Z"
+   },
+   {
+    "drift_status": "none_detected",
+    "event": "post_run_validation_finished",
+    "loader_status": "passed",
+    "passed": true,
+    "run_id": "snap-001",
+    "seq": 5,
+    "utc": "2026-01-01T00:00:00Z"
+   }
+  ],
+  "events_path": "run_events.jsonl",
+  "failed_stage": null,
+  "files": [
+   ".maps_run_claim",
+   "episodes.jsonl",
+   "run_events.jsonl",
+   "run_integrity.json",
+   "run_provenance.json"
+  ],
+  "has_provenance_record": true,
+  "loaded_valid_records": 3,
+  "provenance_path": "run_provenance.json",
+  "report": {
+   "analysis_eligible": true,
+   "directory_initialization": "claimed",
+   "eligibility": {
+    "inventory_matches_if_supplied": true,
+    "loader_safe": true,
+    "no_provenance_drift": true,
+    "post_run_provenance_collected": true,
+    "pre_run_provenance_recorded": true,
+    "runner_completed": true
+   },
+   "event_log": {
+    "file": "run_events.jsonl",
+    "status": "complete"
+   },
+   "execution_mode": "mock",
+   "failure_stage": null,
+   "inventory_validation": {
+    "invalid_expected": null,
+    "missing": null,
+    "performed": false,
+    "status": "not_performed",
+    "unexpected": null
+   },
+   "loader": {
+    "duplicate_ids": 0,
+    "invalid_json": 0,
+    "order_matches_runner": true,
+    "records_loaded": 3,
+    "schema_invalid": 0,
+    "status": "passed"
+   },
+   "notes": [
+    "A directory claim does not prove completion.",
+    "Provenance is a local snapshot; it does not prove the data are truthful and is not an independent trust anchor.",
+    "A passing loader check is structural validity only; it is not statistical validity.",
+    "A run without this file is incomplete and not eligible for analysis."
+   ],
+   "overall_status": "complete",
+   "post_run_provenance": {
+    "partial": true,
+    "status": "collected"
+   },
+   "pre_run_provenance": {
+    "file": "run_provenance.json",
+    "partial": true,
+    "status": "recorded",
+    "unavailable_fields": [
+     "lock_file(missing)"
+    ]
+   },
+   "provenance_drift": {
+    "changed": [],
+    "n_changed": 0,
+    "status": "none_detected"
+   },
+   "run_id": "snap-001",
+   "runner": {
+    "exception_class": null,
+    "results_returned": 3,
+    "status": "completed"
+   },
+   "schema": "maps-run-integrity",
+   "statistical_validity_claimed": false,
+   "structural_validation": {
+    "status": "passed"
+   },
+   "version": 1,
+   "warnings": []
+  },
+  "report_path": "run_integrity.json",
+  "results_returned": 3,
+  "status": "complete",
+  "warnings": []
+ },
+ "post_collect_fails": {
+  "analysis_eligible": false,
+  "claimed": true,
+  "detail": "OSError (message withheld)",
+  "episodes_lines": 3,
+  "events": [
+   {
+    "event": "run_claimed",
+    "run_id": "snap-001",
+    "seq": 1,
+    "utc": "2026-01-01T00:00:00Z"
+   },
+   {
+    "event": "provenance_recorded",
+    "phase": "pre_run",
+    "run_id": "snap-001",
+    "seq": 2,
+    "utc": "2026-01-01T00:00:00Z"
+   },
+   {
+    "event": "runner_started",
+    "run_id": "snap-001",
+    "seq": 3,
+    "utc": "2026-01-01T00:00:00Z"
+   },
+   {
+    "event": "runner_finished",
+    "results_returned": 3,
+    "run_id": "snap-001",
+    "seq": 4,
+    "utc": "2026-01-01T00:00:00Z"
+   },
+   {
+    "drift_status": "not_checked",
+    "event": "post_run_validation_finished",
+    "loader_status": "passed",
+    "passed": false,
+    "run_id": "snap-001",
+    "seq": 5,
+    "utc": "2026-01-01T00:00:00Z"
+   }
+  ],
+  "events_path": "run_events.jsonl",
+  "failed_stage": "post_run_provenance",
+  "files": [
+   ".maps_run_claim",
+   "episodes.jsonl",
+   "run_events.jsonl",
+   "run_integrity.json",
+   "run_provenance.json"
+  ],
+  "has_provenance_record": true,
+  "loaded_valid_records": 3,
+  "provenance_path": "run_provenance.json",
+  "report": {
+   "analysis_eligible": false,
+   "directory_initialization": "claimed",
+   "eligibility": {
+    "inventory_matches_if_supplied": true,
+    "loader_safe": true,
+    "no_provenance_drift": false,
+    "post_run_provenance_collected": false,
+    "pre_run_provenance_recorded": true,
+    "runner_completed": true
+   },
+   "event_log": {
+    "file": "run_events.jsonl",
+    "status": "complete"
+   },
+   "execution_mode": "mock",
+   "failure_stage": "post_run_provenance",
+   "inventory_validation": {
+    "invalid_expected": null,
+    "missing": null,
+    "performed": false,
+    "status": "not_performed",
+    "unexpected": null
+   },
+   "loader": {
+    "duplicate_ids": 0,
+    "invalid_json": 0,
+    "order_matches_runner": true,
+    "records_loaded": 3,
+    "schema_invalid": 0,
+    "status": "passed"
+   },
+   "notes": [
+    "A directory claim does not prove completion.",
+    "Provenance is a local snapshot; it does not prove the data are truthful and is not an independent trust anchor.",
+    "A passing loader check is structural validity only; it is not statistical validity.",
+    "A run without this file is incomplete and not eligible for analysis."
+   ],
+   "overall_status": "failed",
+   "post_run_provenance": {
+    "partial": null,
+    "status": "failed"
+   },
+   "pre_run_provenance": {
+    "file": "run_provenance.json",
+    "partial": false,
+    "status": "recorded",
+    "unavailable_fields": []
+   },
+   "provenance_drift": {
+    "changed": [],
+    "n_changed": 0,
+    "status": "not_checked"
+   },
+   "run_id": "snap-001",
+   "runner": {
+    "exception_class": null,
+    "results_returned": 3,
+    "status": "completed"
+   },
+   "schema": "maps-run-integrity",
+   "statistical_validity_claimed": false,
+   "structural_validation": {
+    "status": "passed"
+   },
+   "version": 1,
+   "warnings": []
+  },
+  "report_path": "run_integrity.json",
+  "results_returned": 3,
+  "status": "failed",
+  "warnings": []
+ },
+ "pre_collect_fails": {
+  "analysis_eligible": false,
+  "claimed": true,
+  "detail": "OSError (message withheld)",
+  "episodes_lines": null,
+  "events": [
+   {
+    "event": "run_claimed",
+    "run_id": "snap-001",
+    "seq": 1,
+    "utc": "2026-01-01T00:00:00Z"
+   },
+   {
+    "event": "provenance_failed",
+    "exception_class": "OSError",
+    "phase": "pre_run",
+    "run_id": "snap-001",
+    "seq": 2,
+    "utc": "2026-01-01T00:00:00Z"
+   }
+  ],
+  "events_path": "run_events.jsonl",
+  "failed_stage": "pre_run_provenance",
+  "files": [
+   ".maps_run_claim",
+   "run_events.jsonl",
+   "run_integrity.json"
+  ],
+  "has_provenance_record": false,
+  "loaded_valid_records": null,
+  "provenance_path": null,
+  "report": {
+   "analysis_eligible": false,
+   "directory_initialization": "claimed",
+   "eligibility": {
+    "inventory_matches_if_supplied": false,
+    "loader_safe": false,
+    "no_provenance_drift": false,
+    "post_run_provenance_collected": false,
+    "pre_run_provenance_recorded": false,
+    "runner_completed": false
+   },
+   "event_log": {
+    "file": "run_events.jsonl",
+    "status": "complete"
+   },
+   "execution_mode": "mock",
+   "failure_stage": "pre_run_provenance",
+   "inventory_validation": {
+    "invalid_expected": null,
+    "missing": null,
+    "performed": false,
+    "status": "not_run",
+    "unexpected": null
+   },
+   "loader": {
+    "duplicate_ids": null,
+    "invalid_json": null,
+    "order_matches_runner": null,
+    "records_loaded": null,
+    "schema_invalid": null,
+    "status": "not_run"
+   },
+   "notes": [
+    "A directory claim does not prove completion.",
+    "Provenance is a local snapshot; it does not prove the data are truthful and is not an independent trust anchor.",
+    "A passing loader check is structural validity only; it is not statistical validity.",
+    "A run without this file is incomplete and not eligible for analysis."
+   ],
+   "overall_status": "failed",
+   "post_run_provenance": {
+    "partial": null,
+    "status": "not_run"
+   },
+   "pre_run_provenance": {
+    "file": null,
+    "partial": null,
+    "status": "failed",
+    "unavailable_fields": []
+   },
+   "provenance_drift": {
+    "changed": [],
+    "n_changed": 0,
+    "status": "not_checked"
+   },
+   "run_id": "snap-001",
+   "runner": {
+    "exception_class": null,
+    "results_returned": null,
+    "status": "not_started"
+   },
+   "schema": "maps-run-integrity",
+   "statistical_validity_claimed": false,
+   "structural_validation": {
+    "status": "not_run"
+   },
+   "version": 1,
+   "warnings": []
+  },
+  "report_path": "run_integrity.json",
+  "results_returned": null,
+  "status": "failed",
+  "warnings": []
+ },
+ "pre_write_fails": {
+  "analysis_eligible": false,
+  "claimed": true,
+  "detail": "OSError (message withheld)",
+  "episodes_lines": null,
+  "events": [
+   {
+    "event": "run_claimed",
+    "run_id": "snap-001",
+    "seq": 1,
+    "utc": "2026-01-01T00:00:00Z"
+   },
+   {
+    "event": "provenance_failed",
+    "exception_class": "OSError",
+    "phase": "pre_run",
+    "run_id": "snap-001",
+    "seq": 2,
+    "utc": "2026-01-01T00:00:00Z"
+   }
+  ],
+  "events_path": "run_events.jsonl",
+  "failed_stage": "pre_run_provenance",
+  "files": [
+   ".maps_run_claim",
+   "run_events.jsonl",
+   "run_integrity.json"
+  ],
+  "has_provenance_record": false,
+  "loaded_valid_records": null,
+  "provenance_path": null,
+  "report": {
+   "analysis_eligible": false,
+   "directory_initialization": "claimed",
+   "eligibility": {
+    "inventory_matches_if_supplied": false,
+    "loader_safe": false,
+    "no_provenance_drift": false,
+    "post_run_provenance_collected": false,
+    "pre_run_provenance_recorded": false,
+    "runner_completed": false
+   },
+   "event_log": {
+    "file": "run_events.jsonl",
+    "status": "complete"
+   },
+   "execution_mode": "mock",
+   "failure_stage": "pre_run_provenance",
+   "inventory_validation": {
+    "invalid_expected": null,
+    "missing": null,
+    "performed": false,
+    "status": "not_run",
+    "unexpected": null
+   },
+   "loader": {
+    "duplicate_ids": null,
+    "invalid_json": null,
+    "order_matches_runner": null,
+    "records_loaded": null,
+    "schema_invalid": null,
+    "status": "not_run"
+   },
+   "notes": [
+    "A directory claim does not prove completion.",
+    "Provenance is a local snapshot; it does not prove the data are truthful and is not an independent trust anchor.",
+    "A passing loader check is structural validity only; it is not statistical validity.",
+    "A run without this file is incomplete and not eligible for analysis."
+   ],
+   "overall_status": "failed",
+   "post_run_provenance": {
+    "partial": null,
+    "status": "not_run"
+   },
+   "pre_run_provenance": {
+    "file": null,
+    "partial": null,
+    "status": "failed",
+    "unavailable_fields": []
+   },
+   "provenance_drift": {
+    "changed": [],
+    "n_changed": 0,
+    "status": "not_checked"
+   },
+   "run_id": "snap-001",
+   "runner": {
+    "exception_class": null,
+    "results_returned": null,
+    "status": "not_started"
+   },
+   "schema": "maps-run-integrity",
+   "statistical_validity_claimed": false,
+   "structural_validation": {
+    "status": "not_run"
+   },
+   "version": 1,
+   "warnings": []
+  },
+  "report_path": "run_integrity.json",
+  "results_returned": null,
+  "status": "failed",
+  "warnings": []
+ },
+ "refused_bad_inventory": {
+  "analysis_eligible": false,
+  "claimed": false,
+  "detail": "expected_episode_ids must be non-empty strings",
+  "episodes_lines": null,
+  "events": null,
+  "events_path": null,
+  "failed_stage": "inputs",
+  "files": null,
+  "has_provenance_record": false,
+  "loaded_valid_records": null,
+  "provenance_path": null,
+  "report": null,
+  "report_path": null,
+  "results_returned": null,
+  "status": "refused",
+  "warnings": []
+ },
+ "refused_bad_option": {
+  "analysis_eligible": false,
+  "claimed": false,
+  "detail": "unsupported provenance option",
+  "episodes_lines": null,
+  "events": null,
+  "events_path": null,
+  "failed_stage": "inputs",
+  "files": null,
+  "has_provenance_record": false,
+  "loaded_valid_records": null,
+  "provenance_path": null,
+  "report": null,
+  "report_path": null,
+  "results_returned": null,
+  "status": "refused",
+  "warnings": []
+ },
+ "refused_collision": {
+  "analysis_eligible": false,
+  "claimed": false,
+  "detail": "Refusing to use run directory <TMP>/run: it already contains 1 entry (old.txt). Choose a new run directory (for example a new run id). Existing files are never deleted, overwritten, truncated or renamed by this guard.",
+  "episodes_lines": null,
+  "events": null,
+  "events_path": null,
+  "failed_stage": "run_directory",
+  "files": [
+   "old.txt"
+  ],
+  "has_provenance_record": false,
+  "loaded_valid_records": null,
+  "provenance_path": null,
+  "report": null,
+  "report_path": null,
+  "results_returned": null,
+  "status": "refused",
+  "warnings": []
+ },
+ "refused_dot_id": {
+  "analysis_eligible": false,
+  "claimed": false,
+  "detail": "run_id must not be a relative-path component",
+  "episodes_lines": null,
+  "events": null,
+  "events_path": null,
+  "failed_stage": "inputs",
+  "files": null,
+  "has_provenance_record": false,
+  "loaded_valid_records": null,
+  "provenance_path": null,
+  "report": null,
+  "report_path": null,
+  "results_returned": null,
+  "status": "refused",
+  "warnings": []
+ },
+ "refused_invalid_id": {
+  "analysis_eligible": false,
+  "claimed": false,
+  "detail": "run_id must be 1-128 characters from A-Z a-z 0-9 . _ -",
+  "episodes_lines": null,
+  "events": null,
+  "events_path": null,
+  "failed_stage": "inputs",
+  "files": null,
+  "has_provenance_record": false,
+  "loaded_valid_records": null,
+  "provenance_path": null,
+  "report": null,
+  "report_path": null,
+  "results_returned": null,
+  "status": "refused",
+  "warnings": []
+ },
+ "refused_live_client": {
+  "analysis_eligible": false,
+  "claimed": false,
+  "detail": "only a client named 'mock' is allowed",
+  "episodes_lines": null,
+  "events": null,
+  "events_path": null,
+  "failed_stage": "inputs",
+  "files": null,
+  "has_provenance_record": false,
+  "loaded_valid_records": null,
+  "provenance_path": null,
+  "report": null,
+  "report_path": null,
+  "results_returned": null,
+  "status": "refused",
+  "warnings": []
+ },
+ "refused_live_config": {
+  "analysis_eligible": false,
+  "claimed": false,
+  "detail": "the configuration enables live API calls; the mock executor refuses it",
+  "episodes_lines": null,
+  "events": null,
+  "events_path": null,
+  "failed_stage": "inputs",
+  "files": null,
+  "has_provenance_record": false,
+  "loaded_valid_records": null,
+  "provenance_path": null,
+  "report": null,
+  "report_path": null,
+  "results_returned": null,
+  "status": "refused",
+  "warnings": []
+ },
+ "refused_no_client": {
+  "analysis_eligible": false,
+  "claimed": false,
+  "detail": "only a client named 'mock' is allowed",
+  "episodes_lines": null,
+  "events": null,
+  "events_path": null,
+  "failed_stage": "inputs",
+  "files": null,
+  "has_provenance_record": false,
+  "loaded_valid_records": null,
+  "provenance_path": null,
+  "report": null,
+  "report_path": null,
+  "results_returned": null,
+  "status": "refused",
+  "warnings": []
+ },
+ "reordered": {
+  "analysis_eligible": false,
+  "claimed": true,
+  "detail": "loaded record order differs from the order written by the run",
+  "episodes_lines": 3,
+  "events": [
+   {
+    "event": "run_claimed",
+    "run_id": "snap-001",
+    "seq": 1,
+    "utc": "2026-01-01T00:00:00Z"
+   },
+   {
+    "event": "provenance_recorded",
+    "phase": "pre_run",
+    "run_id": "snap-001",
+    "seq": 2,
+    "utc": "2026-01-01T00:00:00Z"
+   },
+   {
+    "event": "runner_started",
+    "run_id": "snap-001",
+    "seq": 3,
+    "utc": "2026-01-01T00:00:00Z"
+   },
+   {
+    "event": "runner_finished",
+    "results_returned": 3,
+    "run_id": "snap-001",
+    "seq": 4,
+    "utc": "2026-01-01T00:00:00Z"
+   },
+   {
+    "drift_status": "none_detected",
+    "event": "post_run_validation_finished",
+    "loader_status": "failed",
+    "passed": false,
+    "run_id": "snap-001",
+    "seq": 5,
+    "utc": "2026-01-01T00:00:00Z"
+   }
+  ],
+  "events_path": "run_events.jsonl",
+  "failed_stage": "loader",
+  "files": [
+   ".maps_run_claim",
+   "episodes.jsonl",
+   "run_events.jsonl",
+   "run_integrity.json",
+   "run_provenance.json"
+  ],
+  "has_provenance_record": true,
+  "loaded_valid_records": 3,
+  "provenance_path": "run_provenance.json",
+  "report": {
+   "analysis_eligible": false,
+   "directory_initialization": "claimed",
+   "eligibility": {
+    "inventory_matches_if_supplied": true,
+    "loader_safe": false,
+    "no_provenance_drift": true,
+    "post_run_provenance_collected": true,
+    "pre_run_provenance_recorded": true,
+    "runner_completed": true
+   },
+   "event_log": {
+    "file": "run_events.jsonl",
+    "status": "complete"
+   },
+   "execution_mode": "mock",
+   "failure_stage": "loader",
+   "inventory_validation": {
+    "invalid_expected": null,
+    "missing": null,
+    "performed": false,
+    "status": "not_performed",
+    "unexpected": null
+   },
+   "loader": {
+    "duplicate_ids": 0,
+    "invalid_json": 0,
+    "order_matches_runner": false,
+    "records_loaded": 3,
+    "schema_invalid": 0,
+    "status": "failed"
+   },
+   "notes": [
+    "A directory claim does not prove completion.",
+    "Provenance is a local snapshot; it does not prove the data are truthful and is not an independent trust anchor.",
+    "A passing loader check is structural validity only; it is not statistical validity.",
+    "A run without this file is incomplete and not eligible for analysis."
+   ],
+   "overall_status": "failed",
+   "post_run_provenance": {
+    "partial": false,
+    "status": "collected"
+   },
+   "pre_run_provenance": {
+    "file": "run_provenance.json",
+    "partial": false,
+    "status": "recorded",
+    "unavailable_fields": []
+   },
+   "provenance_drift": {
+    "changed": [],
+    "n_changed": 0,
+    "status": "none_detected"
+   },
+   "run_id": "snap-001",
+   "runner": {
+    "exception_class": null,
+    "results_returned": 3,
+    "status": "completed"
+   },
+   "schema": "maps-run-integrity",
+   "statistical_validity_claimed": false,
+   "structural_validation": {
+    "status": "passed"
+   },
+   "version": 1,
+   "warnings": []
+  },
+  "report_path": "run_integrity.json",
+  "results_returned": 3,
+  "status": "failed",
+  "warnings": []
+ },
+ "report_write_fails": {
+  "analysis_eligible": false,
+  "claimed": true,
+  "detail": "integrity report could not be written",
+  "episodes_lines": 3,
+  "events": [
+   {
+    "event": "run_claimed",
+    "run_id": "snap-001",
+    "seq": 1,
+    "utc": "2026-01-01T00:00:00Z"
+   },
+   {
+    "event": "provenance_recorded",
+    "phase": "pre_run",
+    "run_id": "snap-001",
+    "seq": 2,
+    "utc": "2026-01-01T00:00:00Z"
+   },
+   {
+    "event": "runner_started",
+    "run_id": "snap-001",
+    "seq": 3,
+    "utc": "2026-01-01T00:00:00Z"
+   },
+   {
+    "event": "runner_finished",
+    "results_returned": 3,
+    "run_id": "snap-001",
+    "seq": 4,
+    "utc": "2026-01-01T00:00:00Z"
+   },
+   {
+    "drift_status": "none_detected",
+    "event": "post_run_validation_finished",
+    "loader_status": "passed",
+    "passed": true,
+    "run_id": "snap-001",
+    "seq": 5,
+    "utc": "2026-01-01T00:00:00Z"
+   }
+  ],
+  "events_path": "run_events.jsonl",
+  "failed_stage": "report",
+  "files": [
+   ".maps_run_claim",
+   "episodes.jsonl",
+   "run_events.jsonl",
+   "run_integrity.json",
+   "run_provenance.json"
+  ],
+  "has_provenance_record": true,
+  "loaded_valid_records": 3,
+  "provenance_path": "run_provenance.json",
+  "report": {
+   "analysis_eligible": false,
+   "directory_initialization": "claimed",
+   "eligibility": {
+    "inventory_matches_if_supplied": true,
+    "loader_safe": true,
+    "no_provenance_drift": true,
+    "post_run_provenance_collected": true,
+    "pre_run_provenance_recorded": true,
+    "runner_completed": true
+   },
+   "event_log": {
+    "file": "run_events.jsonl",
+    "status": "complete"
+   },
+   "execution_mode": "mock",
+   "failure_stage": null,
+   "inventory_validation": {
+    "invalid_expected": null,
+    "missing": null,
+    "performed": false,
+    "status": "not_performed",
+    "unexpected": null
+   },
+   "loader": {
+    "duplicate_ids": 0,
+    "invalid_json": 0,
+    "order_matches_runner": true,
+    "records_loaded": 3,
+    "schema_invalid": 0,
+    "status": "passed"
+   },
+   "notes": [
+    "A directory claim does not prove completion.",
+    "Provenance is a local snapshot; it does not prove the data are truthful and is not an independent trust anchor.",
+    "A passing loader check is structural validity only; it is not statistical validity.",
+    "A run without this file is incomplete and not eligible for analysis."
+   ],
+   "overall_status": "complete",
+   "post_run_provenance": {
+    "partial": false,
+    "status": "collected"
+   },
+   "pre_run_provenance": {
+    "file": "run_provenance.json",
+    "partial": false,
+    "status": "recorded",
+    "unavailable_fields": []
+   },
+   "provenance_drift": {
+    "changed": [],
+    "n_changed": 0,
+    "status": "none_detected"
+   },
+   "run_id": "snap-001",
+   "runner": {
+    "exception_class": null,
+    "results_returned": 3,
+    "status": "completed"
+   },
+   "schema": "maps-run-integrity",
+   "statistical_validity_claimed": false,
+   "structural_validation": {
+    "status": "passed"
+   },
+   "version": 1,
+   "warnings": [
+    "integrity report could not be written (FileExistsError); the run is incomplete"
+   ]
+  },
+  "report_path": null,
+  "results_returned": 3,
+  "status": "failed",
+  "warnings": [
+   "integrity report could not be written (FileExistsError); the run is incomplete"
+  ]
+ },
+ "runner_exception": {
+  "analysis_eligible": false,
+  "claimed": true,
+  "detail": "RuntimeError (message withheld)",
+  "episodes_lines": 2,
+  "events": [
+   {
+    "event": "run_claimed",
+    "run_id": "snap-001",
+    "seq": 1,
+    "utc": "2026-01-01T00:00:00Z"
+   },
+   {
+    "event": "provenance_recorded",
+    "phase": "pre_run",
+    "run_id": "snap-001",
+    "seq": 2,
+    "utc": "2026-01-01T00:00:00Z"
+   },
+   {
+    "event": "runner_started",
+    "run_id": "snap-001",
+    "seq": 3,
+    "utc": "2026-01-01T00:00:00Z"
+   },
+   {
+    "event": "runner_failed",
+    "exception_class": "RuntimeError",
+    "run_id": "snap-001",
+    "seq": 4,
+    "utc": "2026-01-01T00:00:00Z"
+   }
+  ],
+  "events_path": "run_events.jsonl",
+  "failed_stage": "runner",
+  "files": [
+   ".maps_run_claim",
+   "episodes.jsonl",
+   "run_events.jsonl",
+   "run_integrity.json",
+   "run_provenance.json"
+  ],
+  "has_provenance_record": true,
+  "loaded_valid_records": null,
+  "provenance_path": "run_provenance.json",
+  "report": {
+   "analysis_eligible": false,
+   "directory_initialization": "claimed",
+   "eligibility": {
+    "inventory_matches_if_supplied": false,
+    "loader_safe": false,
+    "no_provenance_drift": false,
+    "post_run_provenance_collected": false,
+    "pre_run_provenance_recorded": true,
+    "runner_completed": false
+   },
+   "event_log": {
+    "file": "run_events.jsonl",
+    "status": "complete"
+   },
+   "execution_mode": "mock",
+   "failure_stage": "runner",
+   "inventory_validation": {
+    "invalid_expected": null,
+    "missing": null,
+    "performed": false,
+    "status": "not_run",
+    "unexpected": null
+   },
+   "loader": {
+    "duplicate_ids": null,
+    "invalid_json": null,
+    "order_matches_runner": null,
+    "records_loaded": null,
+    "schema_invalid": null,
+    "status": "not_run"
+   },
+   "notes": [
+    "A directory claim does not prove completion.",
+    "Provenance is a local snapshot; it does not prove the data are truthful and is not an independent trust anchor.",
+    "A passing loader check is structural validity only; it is not statistical validity.",
+    "A run without this file is incomplete and not eligible for analysis."
+   ],
+   "overall_status": "failed",
+   "post_run_provenance": {
+    "partial": null,
+    "status": "not_run"
+   },
+   "pre_run_provenance": {
+    "file": "run_provenance.json",
+    "partial": false,
+    "status": "recorded",
+    "unavailable_fields": []
+   },
+   "provenance_drift": {
+    "changed": [],
+    "n_changed": 0,
+    "status": "not_checked"
+   },
+   "run_id": "snap-001",
+   "runner": {
+    "exception_class": "RuntimeError",
+    "results_returned": null,
+    "status": "failed"
+   },
+   "schema": "maps-run-integrity",
+   "statistical_validity_claimed": false,
+   "structural_validation": {
+    "status": "not_run"
+   },
+   "version": 1,
+   "warnings": []
+  },
+  "report_path": "run_integrity.json",
+  "results_returned": null,
+  "status": "failed",
+  "warnings": []
+ },
+ "runner_returns_none": {
+  "analysis_eligible": false,
+  "claimed": true,
+  "detail": "TypeError (message withheld)",
+  "episodes_lines": 3,
+  "events": [
+   {
+    "event": "run_claimed",
+    "run_id": "snap-001",
+    "seq": 1,
+    "utc": "2026-01-01T00:00:00Z"
+   },
+   {
+    "event": "provenance_recorded",
+    "phase": "pre_run",
+    "run_id": "snap-001",
+    "seq": 2,
+    "utc": "2026-01-01T00:00:00Z"
+   },
+   {
+    "event": "runner_started",
+    "run_id": "snap-001",
+    "seq": 3,
+    "utc": "2026-01-01T00:00:00Z"
+   },
+   {
+    "event": "runner_failed",
+    "exception_class": "TypeError",
+    "run_id": "snap-001",
+    "seq": 4,
+    "utc": "2026-01-01T00:00:00Z"
+   }
+  ],
+  "events_path": "run_events.jsonl",
+  "failed_stage": "runner",
+  "files": [
+   ".maps_run_claim",
+   "episodes.jsonl",
+   "run_events.jsonl",
+   "run_integrity.json",
+   "run_provenance.json"
+  ],
+  "has_provenance_record": true,
+  "loaded_valid_records": null,
+  "provenance_path": "run_provenance.json",
+  "report": {
+   "analysis_eligible": false,
+   "directory_initialization": "claimed",
+   "eligibility": {
+    "inventory_matches_if_supplied": false,
+    "loader_safe": false,
+    "no_provenance_drift": false,
+    "post_run_provenance_collected": false,
+    "pre_run_provenance_recorded": true,
+    "runner_completed": false
+   },
+   "event_log": {
+    "file": "run_events.jsonl",
+    "status": "complete"
+   },
+   "execution_mode": "mock",
+   "failure_stage": "runner",
+   "inventory_validation": {
+    "invalid_expected": null,
+    "missing": null,
+    "performed": false,
+    "status": "not_run",
+    "unexpected": null
+   },
+   "loader": {
+    "duplicate_ids": null,
+    "invalid_json": null,
+    "order_matches_runner": null,
+    "records_loaded": null,
+    "schema_invalid": null,
+    "status": "not_run"
+   },
+   "notes": [
+    "A directory claim does not prove completion.",
+    "Provenance is a local snapshot; it does not prove the data are truthful and is not an independent trust anchor.",
+    "A passing loader check is structural validity only; it is not statistical validity.",
+    "A run without this file is incomplete and not eligible for analysis."
+   ],
+   "overall_status": "failed",
+   "post_run_provenance": {
+    "partial": null,
+    "status": "not_run"
+   },
+   "pre_run_provenance": {
+    "file": "run_provenance.json",
+    "partial": false,
+    "status": "recorded",
+    "unavailable_fields": []
+   },
+   "provenance_drift": {
+    "changed": [],
+    "n_changed": 0,
+    "status": "not_checked"
+   },
+   "run_id": "snap-001",
+   "runner": {
+    "exception_class": "TypeError",
+    "results_returned": null,
+    "status": "failed"
+   },
+   "schema": "maps-run-integrity",
+   "statistical_validity_claimed": false,
+   "structural_validation": {
+    "status": "not_run"
+   },
+   "version": 1,
+   "warnings": []
+  },
+  "report_path": "run_integrity.json",
+  "results_returned": null,
+  "status": "failed",
+  "warnings": []
+ },
+ "second_run_same_dir": {
+  "analysis_eligible": false,
+  "claimed": false,
+  "detail": "Refusing to use run directory <TMP>/run: it already contains 5 entries (.maps_run_claim, episodes.jsonl, run_events.jsonl, run_integrity.json, run_provenance.json). Choose a new run directory (for example a new run id). Existing files are never deleted, overwritten, truncated or renamed by this guard.",
+  "episodes_lines": 3,
+  "events": [
+   {
+    "event": "run_claimed",
+    "run_id": "snap-001",
+    "seq": 1,
+    "utc": "2026-01-01T00:00:00Z"
+   },
+   {
+    "event": "provenance_recorded",
+    "phase": "pre_run",
+    "run_id": "snap-001",
+    "seq": 2,
+    "utc": "2026-01-01T00:00:00Z"
+   },
+   {
+    "event": "runner_started",
+    "run_id": "snap-001",
+    "seq": 3,
+    "utc": "2026-01-01T00:00:00Z"
+   },
+   {
+    "event": "runner_finished",
+    "results_returned": 3,
+    "run_id": "snap-001",
+    "seq": 4,
+    "utc": "2026-01-01T00:00:00Z"
+   },
+   {
+    "drift_status": "none_detected",
+    "event": "post_run_validation_finished",
+    "loader_status": "passed",
+    "passed": true,
+    "run_id": "snap-001",
+    "seq": 5,
+    "utc": "2026-01-01T00:00:00Z"
+   }
+  ],
+  "events_path": null,
+  "failed_stage": "run_directory",
+  "files": [
+   ".maps_run_claim",
+   "episodes.jsonl",
+   "run_events.jsonl",
+   "run_integrity.json",
+   "run_provenance.json"
+  ],
+  "has_provenance_record": false,
+  "loaded_valid_records": null,
+  "provenance_path": null,
+  "report": null,
+  "report_path": null,
+  "results_returned": null,
+  "status": "refused",
+  "warnings": []
+ },
+ "success": {
+  "analysis_eligible": true,
+  "claimed": true,
+  "detail": "",
+  "episodes_lines": 3,
+  "events": [
+   {
+    "event": "run_claimed",
+    "run_id": "snap-001",
+    "seq": 1,
+    "utc": "2026-01-01T00:00:00Z"
+   },
+   {
+    "event": "provenance_recorded",
+    "phase": "pre_run",
+    "run_id": "snap-001",
+    "seq": 2,
+    "utc": "2026-01-01T00:00:00Z"
+   },
+   {
+    "event": "runner_started",
+    "run_id": "snap-001",
+    "seq": 3,
+    "utc": "2026-01-01T00:00:00Z"
+   },
+   {
+    "event": "runner_finished",
+    "results_returned": 3,
+    "run_id": "snap-001",
+    "seq": 4,
+    "utc": "2026-01-01T00:00:00Z"
+   },
+   {
+    "drift_status": "none_detected",
+    "event": "post_run_validation_finished",
+    "loader_status": "passed",
+    "passed": true,
+    "run_id": "snap-001",
+    "seq": 5,
+    "utc": "2026-01-01T00:00:00Z"
+   }
+  ],
+  "events_path": "run_events.jsonl",
+  "failed_stage": null,
+  "files": [
+   ".maps_run_claim",
+   "episodes.jsonl",
+   "run_events.jsonl",
+   "run_integrity.json",
+   "run_provenance.json"
+  ],
+  "has_provenance_record": true,
+  "loaded_valid_records": 3,
+  "provenance_path": "run_provenance.json",
+  "report": {
+   "analysis_eligible": true,
+   "directory_initialization": "claimed",
+   "eligibility": {
+    "inventory_matches_if_supplied": true,
+    "loader_safe": true,
+    "no_provenance_drift": true,
+    "post_run_provenance_collected": true,
+    "pre_run_provenance_recorded": true,
+    "runner_completed": true
+   },
+   "event_log": {
+    "file": "run_events.jsonl",
+    "status": "complete"
+   },
+   "execution_mode": "mock",
+   "failure_stage": null,
+   "inventory_validation": {
+    "invalid_expected": null,
+    "missing": null,
+    "performed": false,
+    "status": "not_performed",
+    "unexpected": null
+   },
+   "loader": {
+    "duplicate_ids": 0,
+    "invalid_json": 0,
+    "order_matches_runner": true,
+    "records_loaded": 3,
+    "schema_invalid": 0,
+    "status": "passed"
+   },
+   "notes": [
+    "A directory claim does not prove completion.",
+    "Provenance is a local snapshot; it does not prove the data are truthful and is not an independent trust anchor.",
+    "A passing loader check is structural validity only; it is not statistical validity.",
+    "A run without this file is incomplete and not eligible for analysis."
+   ],
+   "overall_status": "complete",
+   "post_run_provenance": {
+    "partial": false,
+    "status": "collected"
+   },
+   "pre_run_provenance": {
+    "file": "run_provenance.json",
+    "partial": false,
+    "status": "recorded",
+    "unavailable_fields": []
+   },
+   "provenance_drift": {
+    "changed": [],
+    "n_changed": 0,
+    "status": "none_detected"
+   },
+   "run_id": "snap-001",
+   "runner": {
+    "exception_class": null,
+    "results_returned": 3,
+    "status": "completed"
+   },
+   "schema": "maps-run-integrity",
+   "statistical_validity_claimed": false,
+   "structural_validation": {
+    "status": "passed"
+   },
+   "version": 1,
+   "warnings": []
+  },
+  "report_path": "run_integrity.json",
+  "results_returned": 3,
+  "status": "complete",
+  "warnings": []
+ },
+ "success_inventory": {
+  "analysis_eligible": true,
+  "claimed": true,
+  "detail": "",
+  "episodes_lines": 3,
+  "events": [
+   {
+    "event": "run_claimed",
+    "run_id": "snap-001",
+    "seq": 1,
+    "utc": "2026-01-01T00:00:00Z"
+   },
+   {
+    "event": "provenance_recorded",
+    "phase": "pre_run",
+    "run_id": "snap-001",
+    "seq": 2,
+    "utc": "2026-01-01T00:00:00Z"
+   },
+   {
+    "event": "runner_started",
+    "run_id": "snap-001",
+    "seq": 3,
+    "utc": "2026-01-01T00:00:00Z"
+   },
+   {
+    "event": "runner_finished",
+    "results_returned": 3,
+    "run_id": "snap-001",
+    "seq": 4,
+    "utc": "2026-01-01T00:00:00Z"
+   },
+   {
+    "drift_status": "none_detected",
+    "event": "post_run_validation_finished",
+    "loader_status": "passed",
+    "passed": true,
+    "run_id": "snap-001",
+    "seq": 5,
+    "utc": "2026-01-01T00:00:00Z"
+   }
+  ],
+  "events_path": "run_events.jsonl",
+  "failed_stage": null,
+  "files": [
+   ".maps_run_claim",
+   "episodes.jsonl",
+   "run_events.jsonl",
+   "run_integrity.json",
+   "run_provenance.json"
+  ],
+  "has_provenance_record": true,
+  "loaded_valid_records": 3,
+  "provenance_path": "run_provenance.json",
+  "report": {
+   "analysis_eligible": true,
+   "directory_initialization": "claimed",
+   "eligibility": {
+    "inventory_matches_if_supplied": true,
+    "loader_safe": true,
+    "no_provenance_drift": true,
+    "post_run_provenance_collected": true,
+    "pre_run_provenance_recorded": true,
+    "runner_completed": true
+   },
+   "event_log": {
+    "file": "run_events.jsonl",
+    "status": "complete"
+   },
+   "execution_mode": "mock",
+   "failure_stage": null,
+   "inventory_validation": {
+    "invalid_expected": 0,
+    "missing": 0,
+    "performed": true,
+    "status": "matched",
+    "unexpected": 0
+   },
+   "loader": {
+    "duplicate_ids": 0,
+    "invalid_json": 0,
+    "order_matches_runner": true,
+    "records_loaded": 3,
+    "schema_invalid": 0,
+    "status": "passed"
+   },
+   "notes": [
+    "A directory claim does not prove completion.",
+    "Provenance is a local snapshot; it does not prove the data are truthful and is not an independent trust anchor.",
+    "A passing loader check is structural validity only; it is not statistical validity.",
+    "A run without this file is incomplete and not eligible for analysis."
+   ],
+   "overall_status": "complete",
+   "post_run_provenance": {
+    "partial": false,
+    "status": "collected"
+   },
+   "pre_run_provenance": {
+    "file": "run_provenance.json",
+    "partial": false,
+    "status": "recorded",
+    "unavailable_fields": []
+   },
+   "provenance_drift": {
+    "changed": [],
+    "n_changed": 0,
+    "status": "none_detected"
+   },
+   "run_id": "snap-001",
+   "runner": {
+    "exception_class": null,
+    "results_returned": 3,
+    "status": "completed"
+   },
+   "schema": "maps-run-integrity",
+   "statistical_validity_claimed": false,
+   "structural_validation": {
+    "status": "passed"
+   },
+   "version": 1,
+   "warnings": []
+  },
+  "report_path": "run_integrity.json",
+  "results_returned": 3,
+  "status": "complete",
+  "warnings": []
+ }
+}

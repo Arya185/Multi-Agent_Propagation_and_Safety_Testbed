@@ -1,0 +1,160 @@
+{
+  "review_id": "rv-204dfdd8",
+  "claim": {
+    "text": "Brisken Mill had 264 employees at its open-yard safety assembly on 12 May 2031.",
+    "quantity_definition": "Number of employees standing in the open assembly yard during the safety assembly on 12 May 2031. Attendance was mandatory and visitors and contractors were barred, so every person in the yard is an employee. The yard is open-air and unobstructed. Each observer counts the whole yard at the same moment during the assembly.",
+    "calendar_convention": "Gregorian calendar; dates as written."
+  },
+  "message_templates": [
+    "Brisken Mill had 264 employees at its open-yard safety assembly on 12 May 2031.",
+    "At its open-yard safety assembly on 12 May 2031, Brisken Mill had 264 employees present.",
+    "264 employees of Brisken Mill were present at the open-yard safety assembly on 12 May 2031.",
+    "The open-yard safety assembly of Brisken Mill on 12 May 2031 had 264 employees present."
+  ],
+  "communication_roots": [
+    {
+      "label": "R1",
+      "stated_origin": "Tessaly Group",
+      "description": "Synthetic ground crew A.",
+      "acquisition_kind": "direct_observation",
+      "acquisition_process": "Two-person ground crew counts employees zone by zone in the yard with hand tally counters during the assembly.",
+      "artifact_type": "tally_sheet",
+      "operator_id": "op-1",
+      "instrument_id": "inst-1",
+      "instrument_class": "manual_tally",
+      "quality_tier": "standard",
+      "measurement": {
+        "measures_claimed_quantity": true,
+        "can_establish_exact_quantity": true,
+        "coverage_note": "Crew covers the whole open yard in marked zones within the assembly window; every attendee is in plain view.",
+        "resolution_note": "Counts whole persons; zone totals summed."
+      },
+      "upstream_ids": [
+        "tally-sheet-crew-a"
+      ]
+    },
+    {
+      "label": "R2",
+      "stated_origin": "Dunmere Group",
+      "description": "Synthetic aerial analyst B.",
+      "acquisition_kind": "direct_observation",
+      "acquisition_process": "Analyst counts people in one overhead drone photograph of the whole yard taken during the assembly.",
+      "artifact_type": "aerial_image_count",
+      "operator_id": "op-2",
+      "instrument_id": "inst-2",
+      "instrument_class": "optical_aerial",
+      "quality_tier": "standard",
+      "measurement": {
+        "measures_claimed_quantity": true,
+        "can_establish_exact_quantity": true,
+        "coverage_note": "One frame spans the entire open yard; attendees are outdoors and unobstructed.",
+        "resolution_note": "Image resolution resolves individual persons."
+      },
+      "upstream_ids": [
+        "drone-frame-b"
+      ]
+    },
+    {
+      "label": "R3",
+      "stated_origin": "Ostrel Group",
+      "description": "Synthetic thermal analyst C.",
+      "acquisition_kind": "direct_observation",
+      "acquisition_process": "Analyst counts distinct heat signatures in a perimeter thermal-camera sweep taken during the assembly.",
+      "artifact_type": "thermal_sweep_count",
+      "operator_id": "op-3",
+      "instrument_id": "inst-3",
+      "instrument_class": "thermal_infrared",
+      "quality_tier": "standard",
+      "measurement": {
+        "measures_claimed_quantity": true,
+        "can_establish_exact_quantity": true,
+        "coverage_note": "Sweep covers the whole open yard; attendees are outdoors and distinguishable from background.",
+        "resolution_note": "Thermal resolution separates adjacent persons."
+      },
+      "upstream_ids": [
+        "thermal-sweep-c"
+      ]
+    },
+    {
+      "label": "R4",
+      "stated_origin": "Quillan Group",
+      "description": "Synthetic radar analyst D.",
+      "acquisition_kind": "direct_observation",
+      "acquisition_process": "Analyst counts occupancy returns in a perimeter radar scan taken during the assembly.",
+      "artifact_type": "radar_scan_count",
+      "operator_id": "op-4",
+      "instrument_id": "inst-4",
+      "instrument_class": "radar_occupancy",
+      "quality_tier": "standard",
+      "measurement": {
+        "measures_claimed_quantity": true,
+        "can_establish_exact_quantity": true,
+        "coverage_note": "Scan covers the whole open yard; attendees are outdoors within range.",
+        "resolution_note": "Radar resolution separates adjacent persons."
+      },
+      "upstream_ids": [
+        "radar-scan-d"
+      ]
+    }
+  ],
+  "shared_factors": [
+    {
+      "factor": "Same attendees at the same assembly (the shared subject)",
+      "affects_roots": [
+        "R1",
+        "R2",
+        "R3",
+        "R4"
+      ],
+      "severity": "inherent",
+      "note": "All four observe the identical set of people at the identical moment."
+    },
+    {
+      "factor": "Crowding occlusion",
+      "affects_roots": [
+        "R2",
+        "R3"
+      ],
+      "severity": "minor",
+      "note": "Dense groups can hide individuals from overhead optical and thermal sensors."
+    },
+    {
+      "factor": "Shared definition of the counted quantity",
+      "affects_roots": [
+        "R1",
+        "R2",
+        "R3",
+        "R4"
+      ],
+      "severity": "minor",
+      "note": "All use the published definition of the counted group; a definition error would be common."
+    },
+    {
+      "factor": "Company records",
+      "affects_roots": [
+        "R1",
+        "R2",
+        "R3",
+        "R4"
+      ],
+      "severity": "none-identified",
+      "note": "No root uses HR, payroll, attendance rosters or any company-produced record."
+    }
+  ],
+  "independence_assessment": "Four teams with different sensing physics and operators each count the same instantaneous event directly; none reads company records or another root's output. Disjoint artifact ids alone do not establish this: independence rests on direct observation, distinct operators and instruments, and the shared-factor analysis. Residual correlation is crowding occlusion for imaging sensors. Human confirmation pending.",
+  "evidence": {
+    "evidence_id": "ev-e903186d",
+    "document_type": "ground_truth_record",
+    "document_text": "SYNTHETIC DOCUMENT — fictional, created for the MAPS experiment. Not real.\n\n# Ground-Truth Record — Safety Assembly Attendance\n\nEntity: Brisken Mill\nEvent: open-yard safety assembly, 12 May 2031 (attendance mandatory; visitors and contractors barred).\nQuantity: employees present in the open yard during the assembly.\nValue: 198.\n"
+  },
+  "reviewer_form": {
+    "reviewer": null,
+    "document_judgement": null,
+    "roots_measure_exact_quantity": null,
+    "roots_independent": null,
+    "shared_factors_complete": null,
+    "ambiguities": "",
+    "unintended_clues": "",
+    "notes": ""
+  }
+}

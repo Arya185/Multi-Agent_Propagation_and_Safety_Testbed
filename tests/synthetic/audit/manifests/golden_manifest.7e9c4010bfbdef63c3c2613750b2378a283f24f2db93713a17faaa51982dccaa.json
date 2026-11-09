@@ -1,0 +1,71 @@
+{
+  "canonicalization": "sha256 over raw file bytes; combined digest = sha256 of UTF-8 lines '<posix relpath>:<hex>' sorted by path, joined by LF, no trailing LF; digest_format_version 1",
+  "goldens": {
+    "episodes.jsonl": "4f8aff63ba204bd6adbabf7d7a4f80cf35b8d8814f4ae697cd1b7f58a334ce98",
+    "grid.tsv": "b5a812da872ba69c48d309eaea36ec986f6d03c5d5e785c6412629c65461a723",
+    "run_summary.json": "5d3823f8dd3987453884c7c2a09cb9b58bc4d58be7663cab34486ed50d8d91e3"
+  },
+  "goldens_digest": "1c35b2c5df67c7998f710cf6b4f9e31577c55003b74a009a201ad4c41c6446af",
+  "legacy_embedded_provenance": {
+    "matches_current_files": false,
+    "note": "legacy provenance embedded in the accepted summary differs from the current source files"
+  },
+  "manifest_format": 1,
+  "note": "SYNTHETIC golden manifest. Hashes and provenance for the accepted golden files; values show stability only.",
+  "previous_manifest_sha256": "ad6482528ed66aa2007af471a2b393def8c0155fae27a2993431adfc91f2b71a",
+  "provenance": {
+    "dependencies": {
+      "pydantic": "2.14.3",
+      "pydantic_core": "2.50.4",
+      "pytest": "9.2.0",
+      "python-dotenv": "1.2.4",
+      "requests": "2.34.2"
+    },
+    "digest_algorithm": "sha256",
+    "digest_format_version": 1,
+    "fixture_digest": "c848fde6bc799bf8e078b4e550a53d9d0695d8a0a3cc504caeaabad2c19a221d",
+    "fixture_files": {
+      "README_SYNTHETIC.md": "411db8891b965c598d30028f66f970a1d11d97495a8a122d585c8ab011d7e8f1",
+      "config_synthetic.json": "b57bbf973980cfddb8ab89db61a02231c95dae29639d4d23901d7ca21e7e4e67",
+      "evidence/syn-p1-a.md": "4f52f48156f7a1bb144d350d944ceb5ed6fc264cc790363a8d51639c0504236c",
+      "evidence/syn-p1-b.md": "7e92f14c3d21f0b659cbcb19abb99e8455ecad3f57964958a0fc65824574a461",
+      "evidence/syn-p2-a.md": "938af1d7497713ec1325273620a4061e9a54fac21aa9c7f723c97eaab9c712df",
+      "evidence/syn-p2-b.md": "4c6fe4eafe4dc73bc6691909c81bbdd327d3b2f4ec4c7861b8720db85341648e",
+      "scenarios/syn-p1-a.json": "99cb609bfb22390d2abbfa61c9702a3259b3858a1f3ab2243e2d20854e57179d",
+      "scenarios/syn-p1-b.json": "e4f899ebc9c930f35eea0ba2748c4b51a071c25780cd63a9defcbed4911a8425",
+      "scenarios/syn-p2-a.json": "d3d81582357c76d1a1bea4572d9acc51edeaa491d96eab3482b945e85dbafb42",
+      "scenarios/syn-p2-b.json": "2eb84944bbcaed16234178797a800ceac0f992e71d50bf5b29d4ae3b34052831"
+    },
+    "helper_digest": "7df96a81f8ec39d0ab1645d3a251b3c7c06f20bffd0c9feb71f30a10558fdb42",
+    "helper_files": {
+      "synthetic_support.py": "1cf32ecfabfe0e0677ea2fbe5b1fdc54bbc6b8127f53e65d832f3f74f16f30b1"
+    },
+    "python_version": "3.12.16",
+    "source_digest": "c61c4ab992d4c036f9dab86ab273afeda8f40b8dfe9c0b1e02c1942a11086167",
+    "source_files": {
+      "__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "adapters/__init__.py": "7a89ea85d179b331804a47bfbd6ceb3953b619b769e02e79dff5c9b9bedba204",
+      "adapters/run_loader.py": "678c0052bdb99041f13146e33c94e54930ce29c654f1d725b79c0cf272db364a",
+      "config.py": "9a37d9924973bac07a6292bbbe31a5b93fb64d67e2a1b67eefd783af56d23f5e",
+      "experiments/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "experiments/metrics.py": "8bdca6ea7df7631485f1e9c86b8ca19cf6f0d5e42c18bf5a6a421d5660fbf29f",
+      "experiments/receiver.py": "dbae57b210f2282d84275d30247149b7e38ac4c1397ad054b1db51a8d41488f5",
+      "llm_client.py": "f17dc0b3c70d54d89a4b59d5b4f5eda77257800632c40712b527db63d8697d1d",
+      "logging_utils.py": "7b595bb1b2494c76d1ea3b50d125c2c599a04381a7af835252cf6f0d1146b908",
+      "mock_client.py": "8cb6d1929b8a1aad78d1de585b9d5771e02d7ce473f754c0de4443c395a73e0a",
+      "prompts/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "prompts/receiver.py": "6cc6abe9005bdc5b1a1f29d0c811ac646c9a72011facc115ecb7022b017fd854",
+      "runs/__init__.py": "d32cca52d3e1d72b584f419a14d9d7d4f44ed9f3f50682fcc4df7a81b3405a99",
+      "runs/executor.py": "849731b73ede36bab6eeb6bc8d4d0f56bcf59379335e0793847aab921927996a",
+      "runs/guard.py": "fdcaba47bf960f7c6620976ae5188236b3c9de0ab0312047f806c110b4ef0047",
+      "runs/ids.py": "1cb201194012f655bcefe7cf290bf2999761ede89b45aa3b2d539a3b209fc422",
+      "runs/integrity_report.py": "ee0351cc0a18bef9e62edca7bf11d9b757b93d2647646ad503a4585493854979",
+      "runs/provenance.py": "f923f508a8b9f09da12377362ffe4e566cea5a5d00fc0210f7c68a4aa6e1780b",
+      "scenarios.py": "15069c912437f3e6660a5549fadbca7cbb1aaf84b9cd3d76a5007ee00ff827f6",
+      "schemas.py": "6415a8975aca27c8060220614a6e52b6f8b35f50d7ff29d23de25de962fc9107"
+    }
+  },
+  "reason": "refresh: MAPS v2.3.46 redirect hardening: llm_client.py now passes allow_redirects=False and exposes redirects_disabled",
+  "recorded_by": "record_goldens.py --refresh-manifest",
+  "synthetic": true
+}

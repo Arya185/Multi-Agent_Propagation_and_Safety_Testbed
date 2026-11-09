@@ -1,0 +1,35 @@
+{
+  "experiment_id": "synthetic_fixture_experiment",
+  "config_version": "synthetic-1",
+  "seed": 424242,
+  "prompt_version": "receiver-v2",
+  "models": [
+    {"alias": "synalpha", "family": "synthetic", "model_id": "synthetic/mock-alpha"},
+    {"alias": "synbeta", "family": "synthetic", "model_id": "synthetic/mock-beta"}
+  ],
+  "design": {
+    "conditions": [
+      {"id": "C0", "n_messages": 0, "n_roots": 0},
+      {"id": "C1", "n_messages": 1, "n_roots": 1},
+      {"id": "C2", "n_messages": 2, "n_roots": 1},
+      {"id": "C3", "n_messages": 4, "n_roots": 1},
+      {"id": "C4", "n_messages": 2, "n_roots": 2},
+      {"id": "C5", "n_messages": 4, "n_roots": 4}
+    ],
+    "prompt_variants": ["neutral", "source-aware"],
+    "repetitions": 1,
+    "rotate_templates_and_roots": true,
+    "scenario_dir": "tests/synthetic/data/scenarios",
+    "evidence_visible_to_receiver": false
+  },
+  "sampling": {"temperature": 0.0, "max_tokens": 800},
+  "api": {
+    "enabled": false,
+    "base_url": "https://synthetic.invalid/api/v1",
+    "api_key_env": "SYNTHETIC_UNUSED_KEY_ENV",
+    "timeout_s": 60.0,
+    "max_retries": 2,
+    "backoff_s": 1.0
+  },
+  "output": {"results_dir": "synthetic_results_unused", "stage": "pilot"}
+}

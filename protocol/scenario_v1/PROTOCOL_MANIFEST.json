@@ -1,0 +1,76 @@
+{
+  "manifest_note": "Informal manifest. No schema or validator exists in the repository. This file is a draft record and is not an approval.",
+  "protocol_id": "scenario_v1",
+  "protocol_version": "scenario_v1-draft-1",
+  "status": "DRAFT — NOT APPROVED",
+  "documents_drafted_on": "2026-11-08",
+  "manifest_generated_on": "2026-11-08",
+  "stage_authorization": {
+    "stage": "STAGE_4J.1",
+    "scope": "drafting and hashing only; not protocol approval",
+    "recorded_in": "docs/stage_reports/owner_decision_ledger.md"
+  },
+  "digest_method": {
+    "description": "SHA-256 of the UTF-8 text of lines '<posix path>:<sha256 hex of file bytes>', sorted by path, joined by LF, no trailing newline",
+    "implementation_reference": "src/maps/runs/provenance.py (_combined); tests/synthetic/synthetic_support.py (combined_digest)",
+    "paths_relative_to": "protocol/scenario_v1/",
+    "files_covered": "documents 01 to 07 only",
+    "manifest_excluded_from_combined_digest": true
+  },
+  "files": [
+    {
+      "path": "01_authoring_protocol.md",
+      "sha256": "403038be6c59498846bb0e2625a81b68d4a2f415761c42dca0ed011b6f29cd39",
+      "bytes": 12390
+    },
+    {
+      "path": "02_quality_rubric.md",
+      "sha256": "5945f5b5e39df6224c1b0ee87815836ae8d17d2a118e12dc3ee3add79c7736fb",
+      "bytes": 4300
+    },
+    {
+      "path": "03_reviewer_checklists.md",
+      "sha256": "8e500c53e0d08820ad1a3df19eab8c824a5c156db0394f115ca82f955b302c97",
+      "bytes": 4871
+    },
+    {
+      "path": "04_pair_construction_checklist.md",
+      "sha256": "f35e501ba90c7d310fc46dad9f43d40697f1effaaabf186f5377f147414f4de8",
+      "bytes": 4439
+    },
+    {
+      "path": "05_review_and_adjudication.md",
+      "sha256": "652e7d4b84a5e35e67dfca26167b9d93afe992d5a176efe3b10b20d201e83cb9",
+      "bytes": 5779
+    },
+    {
+      "path": "06_versioning_change_control.md",
+      "sha256": "d31744270a84aa09286185de9afd99a4d387d86a772d6dc7cb376220759a80a2",
+      "bytes": 6287
+    },
+    {
+      "path": "07_answer_key_custody.md",
+      "sha256": "128c7ba2ffb46d4cd52c928ed051309b42c72e23d7f538c4235c2c71a3060a32",
+      "bytes": 3617
+    }
+  ],
+  "combined_digest": "e7f42387c396fc089c12e40b2a16b35dfcb6eafa2958d08b87cf741529e0a125",
+  "manifest_own_sha256": "Not recorded in this file; a file cannot contain its own hash. Reported separately in the Stage 4J.1 report and ledger.",
+  "approval": {
+    "status": "NOT APPROVED",
+    "required_approver_role": "project owner (sole researcher)",
+    "approved_by": "PENDING OWNER CONFIRMATION",
+    "approved_on": "PENDING FINAL PROTOCOL APPROVAL"
+  },
+  "pending_items": [
+    "SCHEMA_EXTENSION",
+    "MEANINGFUL_EFFECT_THRESHOLD",
+    "C0_TOLERANCE",
+    "evidence-length formula",
+    "direction-balance measure",
+    "avoid-extremes test",
+    "answer-key destination",
+    "scoring scale and descriptors",
+    "external storage location for digests"
+  ]
+}

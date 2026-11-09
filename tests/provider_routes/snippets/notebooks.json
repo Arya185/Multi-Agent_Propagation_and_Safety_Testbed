@@ -1,0 +1,163 @@
+{
+ "bad_json": "{not json",
+ "bad_python": {
+  "cells": [
+   {
+    "cell_type": "code",
+    "execution_count": null,
+    "metadata": {},
+    "outputs": [],
+    "source": "def broken(:"
+   }
+  ],
+  "metadata": {},
+  "nbformat": 4,
+  "nbformat_minor": 5
+ },
+ "bash_cell": {
+  "cells": [
+   {
+    "cell_type": "code",
+    "execution_count": null,
+    "metadata": {},
+    "outputs": [],
+    "source": "%%bash\nwget http://x.invalid/f"
+   }
+  ],
+  "metadata": {},
+  "nbformat": 4,
+  "nbformat_minor": 5
+ },
+ "clean": {
+  "cells": [
+   {
+    "cell_type": "markdown",
+    "metadata": {},
+    "source": "import requests  # markdown mention is not code"
+   },
+   {
+    "cell_type": "code",
+    "execution_count": null,
+    "metadata": {},
+    "outputs": [],
+    "source": [
+     "x = 1\n",
+     "y = 2"
+    ]
+   }
+  ],
+  "metadata": {},
+  "nbformat": 4,
+  "nbformat_minor": 5
+ },
+ "client": {
+  "cells": [
+   {
+    "cell_type": "code",
+    "execution_count": null,
+    "metadata": {},
+    "outputs": [],
+    "source": [
+     "from maps.llm_client import OpenRouterClient\n",
+     "c = OpenRouterClient('k')"
+    ]
+   }
+  ],
+  "metadata": {},
+  "nbformat": 4,
+  "nbformat_minor": 5
+ },
+ "complete": {
+  "cells": [
+   {
+    "cell_type": "code",
+    "execution_count": null,
+    "metadata": {},
+    "outputs": [],
+    "source": "def f(c):\n    return c.complete(1)"
+   }
+  ],
+  "metadata": {},
+  "nbformat": 4,
+  "nbformat_minor": 5
+ },
+ "dynamic": {
+  "cells": [
+   {
+    "cell_type": "code",
+    "execution_count": null,
+    "metadata": {},
+    "outputs": [],
+    "source": "exec('1')"
+   }
+  ],
+  "metadata": {},
+  "nbformat": 4,
+  "nbformat_minor": 5
+ },
+ "empty": {
+  "cells": [],
+  "metadata": {},
+  "nbformat": 4,
+  "nbformat_minor": 5
+ },
+ "magic_curl": {
+  "cells": [
+   {
+    "cell_type": "code",
+    "execution_count": null,
+    "metadata": {},
+    "outputs": [],
+    "source": "!curl -s https://x.invalid/\nx = 1"
+   }
+  ],
+  "metadata": {},
+  "nbformat": 4,
+  "nbformat_minor": 5
+ },
+ "magic_pip_clean": {
+  "cells": [
+   {
+    "cell_type": "code",
+    "execution_count": null,
+    "metadata": {},
+    "outputs": [],
+    "source": "%matplotlib inline\nx = 1"
+   }
+  ],
+  "metadata": {},
+  "nbformat": 4,
+  "nbformat_minor": 5
+ },
+ "no_cells": {
+  "metadata": {}
+ },
+ "requests": {
+  "cells": [
+   {
+    "cell_type": "code",
+    "execution_count": null,
+    "metadata": {},
+    "outputs": [],
+    "source": "import requests\nrequests.get('x')"
+   }
+  ],
+  "metadata": {},
+  "nbformat": 4,
+  "nbformat_minor": 5
+ },
+ "string_source": {
+  "cells": [
+   {
+    "cell_type": "code",
+    "execution_count": null,
+    "metadata": {},
+    "outputs": [],
+    "source": "import socket"
+   }
+  ],
+  "metadata": {},
+  "nbformat": 4,
+  "nbformat_minor": 5
+ }
+}

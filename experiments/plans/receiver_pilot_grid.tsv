@@ -1,0 +1,241 @@
+idx	episode_id	model_alias	model_id	scenario_id	truth_status	condition_id	n_messages	n_roots	prompt_variant	repetition	seed	template_order	root_ids
+0	ep_86697ce33bf0	qwen	qwen/qwen3.6-flash	sci-b	false	C0	0	0	neutral	0	1037333345		
+1	ep_fab5ad42547c	gemini	google/gemini-3.8-flash	geo-a	true	C2	2	1	neutral	0	1918371832	0,1	geo-a-R4,geo-a-R4
+2	ep_0ea2652d1f18	qwen	qwen/qwen3.6-flash	hist-b	true	C3	4	1	source-aware	0	3780238753	2,3,0,1	hist-b-R1,hist-b-R1,hist-b-R1,hist-b-R1
+3	ep_82dd5b9ba87d	qwen	qwen/qwen3.6-flash	hist-b	true	C5	4	4	neutral	0	3763371051	2,3,0,1	hist-b-R1,hist-b-R2,hist-b-R3,hist-b-R4
+4	ep_51368abdfd3e	qwen	qwen/qwen3.6-flash	sw-b	true	C5	4	4	neutral	0	3613611506	2,3,1,0	sw-b-R3,sw-b-R4,sw-b-R2,sw-b-R1
+5	ep_70497b726091	gemini	google/gemini-3.8-flash	sci-b	false	C0	0	0	neutral	0	2676948782		
+6	ep_d729dc70dd0c	gemini	google/gemini-3.8-flash	geo-b	false	C3	4	1	source-aware	0	2923689339	0,1,3,2	geo-b-R4,geo-b-R4,geo-b-R4,geo-b-R4
+7	ep_570b127a8145	gemini	google/gemini-3.8-flash	sw-a	false	C3	4	1	source-aware	0	3518396025	2,3,1,0	sw-a-R3,sw-a-R3,sw-a-R3,sw-a-R3
+8	ep_17a11a4f468e	qwen	qwen/qwen3.6-flash	biz-a	true	C3	4	1	neutral	0	869245674	3,0,2,1	biz-a-R3,biz-a-R3,biz-a-R3,biz-a-R3
+9	ep_647ef31e48ef	qwen	qwen/qwen3.6-flash	sw-a	false	C1	1	1	neutral	0	697337584	2	sw-a-R3
+10	ep_8fa8e86124f4	qwen	qwen/qwen3.6-flash	sw-a	false	C0	0	0	neutral	0	2029088498		
+11	ep_4b9e118f29c1	gemini	google/gemini-3.8-flash	geo-b	false	C2	2	1	neutral	0	1944424206	0,1	geo-b-R4,geo-b-R4
+12	ep_f572a5443237	gemini	google/gemini-3.8-flash	geo-a	true	C0	0	0	neutral	0	1968583528		
+13	ep_19b6640497c0	qwen	qwen/qwen3.6-flash	biz-a	true	C1	1	1	source-aware	0	2160206976	3	biz-a-R3
+14	ep_e41c1e8bd7ca	qwen	qwen/qwen3.6-flash	hist-a	false	C0	0	0	neutral	0	2594037667		
+15	ep_08e43649b3e0	qwen	qwen/qwen3.6-flash	geo-a	true	C1	1	1	neutral	0	698557780	0	geo-a-R4
+16	ep_853a3f6fe3a5	gemini	google/gemini-3.8-flash	sw-b	true	C4	2	2	source-aware	0	371910555	2,3	sw-b-R3,sw-b-R4
+17	ep_7c9cd3f1da14	qwen	qwen/qwen3.6-flash	hist-b	true	C0	0	0	source-aware	0	3581785952		
+18	ep_1c53f359869a	qwen	qwen/qwen3.6-flash	biz-b	false	C3	4	1	source-aware	0	1592029216	3,0,2,1	biz-b-R3,biz-b-R3,biz-b-R3,biz-b-R3
+19	ep_df089b8bc3e6	gemini	google/gemini-3.8-flash	biz-b	false	C4	2	2	source-aware	0	798697339	3,0	biz-b-R3,biz-b-R2
+20	ep_503769d37662	gemini	google/gemini-3.8-flash	geo-b	false	C0	0	0	neutral	0	2523388179		
+21	ep_95f4e9911553	gemini	google/gemini-3.8-flash	hist-a	false	C4	2	2	source-aware	0	1526467343	2,3	hist-a-R1,hist-a-R2
+22	ep_34ac5981bcf2	gemini	google/gemini-3.8-flash	biz-b	false	C2	2	1	source-aware	0	2010968319	3,0	biz-b-R3,biz-b-R3
+23	ep_d993d9bbf707	qwen	qwen/qwen3.6-flash	biz-a	true	C5	4	4	source-aware	0	4193669968	3,0,2,1	biz-a-R3,biz-a-R2,biz-a-R4,biz-a-R1
+24	ep_0c65eff8523e	qwen	qwen/qwen3.6-flash	biz-b	false	C5	4	4	source-aware	0	4226168352	3,0,2,1	biz-b-R3,biz-b-R2,biz-b-R4,biz-b-R1
+25	ep_83635d690235	qwen	qwen/qwen3.6-flash	biz-b	false	C2	2	1	source-aware	0	1173592510	3,0	biz-b-R3,biz-b-R3
+26	ep_d1d5f5816d81	gemini	google/gemini-3.8-flash	biz-b	false	C5	4	4	source-aware	0	3198403912	3,0,2,1	biz-b-R3,biz-b-R2,biz-b-R4,biz-b-R1
+27	ep_56c24b1b5836	qwen	qwen/qwen3.6-flash	biz-b	false	C3	4	1	neutral	0	24244738	3,0,2,1	biz-b-R3,biz-b-R3,biz-b-R3,biz-b-R3
+28	ep_a6f4538d794d	gemini	google/gemini-3.8-flash	sci-a	true	C2	2	1	source-aware	0	3239974822	3,0	sci-a-R4,sci-a-R4
+29	ep_13a96a45a56a	qwen	qwen/qwen3.6-flash	biz-a	true	C3	4	1	source-aware	0	2142552551	3,0,2,1	biz-a-R3,biz-a-R3,biz-a-R3,biz-a-R3
+30	ep_872964371580	gemini	google/gemini-3.8-flash	geo-b	false	C0	0	0	source-aware	0	3016817409		
+31	ep_41e87c784b8e	gemini	google/gemini-3.8-flash	biz-a	true	C1	1	1	neutral	0	3254191216	3	biz-a-R3
+32	ep_52159b8845ba	gemini	google/gemini-3.8-flash	sw-b	true	C4	2	2	neutral	0	2115520831	2,3	sw-b-R3,sw-b-R4
+33	ep_35a260a26446	gemini	google/gemini-3.8-flash	sci-b	false	C2	2	1	source-aware	0	496269571	3,0	sci-b-R4,sci-b-R4
+34	ep_c225a8a9a496	gemini	google/gemini-3.8-flash	sci-b	false	C5	4	4	source-aware	0	3878320665	3,0,2,1	sci-b-R4,sci-b-R3,sci-b-R2,sci-b-R1
+35	ep_c48709eb34db	gemini	google/gemini-3.8-flash	sw-a	false	C2	2	1	source-aware	0	812694661	2,3	sw-a-R3,sw-a-R3
+36	ep_00f757860037	gemini	google/gemini-3.8-flash	hist-a	false	C0	0	0	neutral	0	908074264		
+37	ep_3786db8757c9	gemini	google/gemini-3.8-flash	hist-a	false	C1	1	1	neutral	0	2128094236	2	hist-a-R1
+38	ep_27bb32cc9238	qwen	qwen/qwen3.6-flash	biz-a	true	C5	4	4	neutral	0	2335664259	3,0,2,1	biz-a-R3,biz-a-R2,biz-a-R4,biz-a-R1
+39	ep_2c9af516b5e2	gemini	google/gemini-3.8-flash	geo-a	true	C1	1	1	source-aware	0	1525192101	0	geo-a-R4
+40	ep_348147552157	qwen	qwen/qwen3.6-flash	sci-a	true	C3	4	1	neutral	0	558180524	3,0,2,1	sci-a-R4,sci-a-R4,sci-a-R4,sci-a-R4
+41	ep_8414e1cf859e	qwen	qwen/qwen3.6-flash	hist-b	true	C2	2	1	source-aware	0	1140273660	2,3	hist-b-R1,hist-b-R1
+42	ep_7eb6699a3454	qwen	qwen/qwen3.6-flash	hist-a	false	C2	2	1	neutral	0	2092041335	2,3	hist-a-R1,hist-a-R1
+43	ep_55e10a41c1b4	qwen	qwen/qwen3.6-flash	sw-b	true	C1	1	1	neutral	0	1178653573	2	sw-b-R3
+44	ep_22e97dc0f72d	qwen	qwen/qwen3.6-flash	biz-b	false	C2	2	1	neutral	0	649770050	3,0	biz-b-R3,biz-b-R3
+45	ep_3c97485c3b5a	qwen	qwen/qwen3.6-flash	geo-b	false	C5	4	4	source-aware	0	3375158444	0,1,3,2	geo-b-R4,geo-b-R1,geo-b-R2,geo-b-R3
+46	ep_c651c15c86e5	gemini	google/gemini-3.8-flash	hist-b	true	C2	2	1	source-aware	0	637737838	2,3	hist-b-R1,hist-b-R1
+47	ep_5145799a8dca	qwen	qwen/qwen3.6-flash	biz-a	true	C2	2	1	source-aware	0	863009062	3,0	biz-a-R3,biz-a-R3
+48	ep_73c676ad48a3	gemini	google/gemini-3.8-flash	sw-b	true	C1	1	1	neutral	0	800348157	2	sw-b-R3
+49	ep_2cc520d62ab2	gemini	google/gemini-3.8-flash	sw-a	false	C1	1	1	neutral	0	3363358545	2	sw-a-R3
+50	ep_aa57d914446b	gemini	google/gemini-3.8-flash	biz-b	false	C3	4	1	source-aware	0	1548370500	3,0,2,1	biz-b-R3,biz-b-R3,biz-b-R3,biz-b-R3
+51	ep_347ae6bc197c	gemini	google/gemini-3.8-flash	geo-b	false	C4	2	2	source-aware	0	2115120708	0,1	geo-b-R4,geo-b-R1
+52	ep_0209e1c7b1a3	gemini	google/gemini-3.8-flash	hist-b	true	C1	1	1	neutral	0	2311802469	2	hist-b-R1
+53	ep_8c82af645a8e	gemini	google/gemini-3.8-flash	sw-b	true	C5	4	4	neutral	0	602273189	2,3,1,0	sw-b-R3,sw-b-R4,sw-b-R2,sw-b-R1
+54	ep_6ef863102e60	qwen	qwen/qwen3.6-flash	hist-b	true	C4	2	2	source-aware	0	3130147480	2,3	hist-b-R1,hist-b-R2
+55	ep_7b8101d9d76a	qwen	qwen/qwen3.6-flash	geo-a	true	C5	4	4	neutral	0	1958064476	0,1,3,2	geo-a-R4,geo-a-R1,geo-a-R2,geo-a-R3
+56	ep_165517087a9f	gemini	google/gemini-3.8-flash	hist-b	true	C0	0	0	neutral	0	1688695717		
+57	ep_d0cc5995ae0a	gemini	google/gemini-3.8-flash	hist-b	true	C2	2	1	neutral	0	1448127782	2,3	hist-b-R1,hist-b-R1
+58	ep_208e57ee165d	gemini	google/gemini-3.8-flash	sw-b	true	C3	4	1	source-aware	0	1117413359	2,3,1,0	sw-b-R3,sw-b-R3,sw-b-R3,sw-b-R3
+59	ep_98b14f32091b	qwen	qwen/qwen3.6-flash	geo-b	false	C4	2	2	neutral	0	628636223	0,1	geo-b-R4,geo-b-R1
+60	ep_58410742367b	qwen	qwen/qwen3.6-flash	geo-b	false	C2	2	1	source-aware	0	1773623557	0,1	geo-b-R4,geo-b-R4
+61	ep_7b33aa56c845	qwen	qwen/qwen3.6-flash	sw-a	false	C3	4	1	neutral	0	1290212716	2,3,1,0	sw-a-R3,sw-a-R3,sw-a-R3,sw-a-R3
+62	ep_3e4856cd1000	qwen	qwen/qwen3.6-flash	geo-a	true	C1	1	1	source-aware	0	3517672345	0	geo-a-R4
+63	ep_ebcf35304ee2	qwen	qwen/qwen3.6-flash	hist-b	true	C4	2	2	neutral	0	1889165661	2,3	hist-b-R1,hist-b-R2
+64	ep_389b2ee2bc75	qwen	qwen/qwen3.6-flash	sw-b	true	C4	2	2	neutral	0	1030870997	2,3	sw-b-R3,sw-b-R4
+65	ep_b53224c147b9	qwen	qwen/qwen3.6-flash	biz-a	true	C2	2	1	neutral	0	2244125596	3,0	biz-a-R3,biz-a-R3
+66	ep_20b91d35cf87	gemini	google/gemini-3.8-flash	sci-b	false	C2	2	1	neutral	0	1291709703	3,0	sci-b-R4,sci-b-R4
+67	ep_6ecd87096a5c	qwen	qwen/qwen3.6-flash	biz-a	true	C4	2	2	neutral	0	52522899	3,0	biz-a-R3,biz-a-R2
+68	ep_b772686aa75e	gemini	google/gemini-3.8-flash	sw-b	true	C2	2	1	neutral	0	4199174753	2,3	sw-b-R3,sw-b-R3
+69	ep_509a503fdc8f	gemini	google/gemini-3.8-flash	biz-a	true	C0	0	0	source-aware	0	319453555		
+70	ep_c5b377286058	qwen	qwen/qwen3.6-flash	hist-b	true	C5	4	4	source-aware	0	2110198393	2,3,0,1	hist-b-R1,hist-b-R2,hist-b-R3,hist-b-R4
+71	ep_92d223b7555f	gemini	google/gemini-3.8-flash	biz-b	false	C5	4	4	neutral	0	2751311231	3,0,2,1	biz-b-R3,biz-b-R2,biz-b-R4,biz-b-R1
+72	ep_9c710ba143f0	qwen	qwen/qwen3.6-flash	geo-b	false	C3	4	1	source-aware	0	2485855862	0,1,3,2	geo-b-R4,geo-b-R4,geo-b-R4,geo-b-R4
+73	ep_ab92a8ac4fcf	qwen	qwen/qwen3.6-flash	hist-b	true	C1	1	1	source-aware	0	4089939492	2	hist-b-R1
+74	ep_13bf0d1d3170	gemini	google/gemini-3.8-flash	biz-b	false	C1	1	1	neutral	0	559410324	3	biz-b-R3
+75	ep_be66478633e0	gemini	google/gemini-3.8-flash	biz-a	true	C1	1	1	source-aware	0	828362887	3	biz-a-R3
+76	ep_cfa9e0157169	gemini	google/gemini-3.8-flash	sw-b	true	C2	2	1	source-aware	0	1281984508	2,3	sw-b-R3,sw-b-R3
+77	ep_6d8923dd6058	qwen	qwen/qwen3.6-flash	hist-a	false	C1	1	1	source-aware	0	4186046195	2	hist-a-R1
+78	ep_577c10e7cd96	qwen	qwen/qwen3.6-flash	sw-b	true	C3	4	1	neutral	0	3157747352	2,3,1,0	sw-b-R3,sw-b-R3,sw-b-R3,sw-b-R3
+79	ep_272cbc0925a4	qwen	qwen/qwen3.6-flash	sw-b	true	C1	1	1	source-aware	0	3927877701	2	sw-b-R3
+80	ep_6d41b209b5e0	qwen	qwen/qwen3.6-flash	biz-b	false	C4	2	2	source-aware	0	269827521	3,0	biz-b-R3,biz-b-R2
+81	ep_07125d831c06	qwen	qwen/qwen3.6-flash	sw-b	true	C4	2	2	source-aware	0	265675225	2,3	sw-b-R3,sw-b-R4
+82	ep_5c988a77dd92	gemini	google/gemini-3.8-flash	biz-b	false	C0	0	0	neutral	0	2688344031		
+83	ep_4fd04b53d4b1	gemini	google/gemini-3.8-flash	geo-a	true	C0	0	0	source-aware	0	654791198		
+84	ep_361a435a3293	qwen	qwen/qwen3.6-flash	sci-b	false	C0	0	0	source-aware	0	3358584572		
+85	ep_48b4d8b64ba0	qwen	qwen/qwen3.6-flash	geo-a	true	C3	4	1	source-aware	0	4183614783	0,1,3,2	geo-a-R4,geo-a-R4,geo-a-R4,geo-a-R4
+86	ep_d2b00350081c	gemini	google/gemini-3.8-flash	sw-a	false	C4	2	2	source-aware	0	2336297423	2,3	sw-a-R3,sw-a-R4
+87	ep_52005a04b1b2	gemini	google/gemini-3.8-flash	hist-a	false	C0	0	0	source-aware	0	476586580		
+88	ep_961ae92d1ffe	qwen	qwen/qwen3.6-flash	hist-a	false	C2	2	1	source-aware	0	809386444	2,3	hist-a-R1,hist-a-R1
+89	ep_538ad0ddf95a	gemini	google/gemini-3.8-flash	geo-a	true	C2	2	1	source-aware	0	1072680857	0,1	geo-a-R4,geo-a-R4
+90	ep_7a2755d5739e	gemini	google/gemini-3.8-flash	biz-b	false	C0	0	0	source-aware	0	3115181845		
+91	ep_0dccf201bea8	qwen	qwen/qwen3.6-flash	sw-a	false	C2	2	1	source-aware	0	2997005024	2,3	sw-a-R3,sw-a-R3
+92	ep_355715f205a2	qwen	qwen/qwen3.6-flash	geo-a	true	C5	4	4	source-aware	0	3306126280	0,1,3,2	geo-a-R4,geo-a-R1,geo-a-R2,geo-a-R3
+93	ep_a4e1a00394a4	gemini	google/gemini-3.8-flash	sci-a	true	C1	1	1	source-aware	0	2003190028	3	sci-a-R4
+94	ep_0617fe2a776a	qwen	qwen/qwen3.6-flash	hist-a	false	C0	0	0	source-aware	0	3204067135		
+95	ep_fb0fa904d9e9	qwen	qwen/qwen3.6-flash	hist-a	false	C5	4	4	source-aware	0	2888691338	2,3,0,1	hist-a-R1,hist-a-R2,hist-a-R3,hist-a-R4
+96	ep_35c3eac5f400	gemini	google/gemini-3.8-flash	sci-b	false	C4	2	2	source-aware	0	1379093129	3,0	sci-b-R4,sci-b-R3
+97	ep_8858ec2c1484	gemini	google/gemini-3.8-flash	hist-b	true	C4	2	2	neutral	0	2903575959	2,3	hist-b-R1,hist-b-R2
+98	ep_fccfdffc03a5	gemini	google/gemini-3.8-flash	geo-a	true	C3	4	1	neutral	0	3240395569	0,1,3,2	geo-a-R4,geo-a-R4,geo-a-R4,geo-a-R4
+99	ep_c9bc0a03a0c7	gemini	google/gemini-3.8-flash	biz-a	true	C2	2	1	neutral	0	1087602203	3,0	biz-a-R3,biz-a-R3
+100	ep_8b7c0a6bd922	gemini	google/gemini-3.8-flash	biz-b	false	C4	2	2	neutral	0	2371755343	3,0	biz-b-R3,biz-b-R2
+101	ep_e7dfbeb61698	qwen	qwen/qwen3.6-flash	sci-a	true	C1	1	1	neutral	0	3269843701	3	sci-a-R4
+102	ep_83994a73ebdf	qwen	qwen/qwen3.6-flash	biz-a	true	C4	2	2	source-aware	0	527061442	3,0	biz-a-R3,biz-a-R2
+103	ep_db58c52c6931	gemini	google/gemini-3.8-flash	hist-a	false	C5	4	4	source-aware	0	866575544	2,3,0,1	hist-a-R1,hist-a-R2,hist-a-R3,hist-a-R4
+104	ep_8902db59857b	qwen	qwen/qwen3.6-flash	sw-b	true	C0	0	0	source-aware	0	2747052092		
+105	ep_7b828b250a9b	gemini	google/gemini-3.8-flash	hist-a	false	C2	2	1	source-aware	0	1861960777	2,3	hist-a-R1,hist-a-R1
+106	ep_1b5ea072f8fd	gemini	google/gemini-3.8-flash	sci-b	false	C0	0	0	source-aware	0	3643430215		
+107	ep_bb33d17e28f5	gemini	google/gemini-3.8-flash	biz-b	false	C3	4	1	neutral	0	896688251	3,0,2,1	biz-b-R3,biz-b-R3,biz-b-R3,biz-b-R3
+108	ep_0f76b2dc9063	qwen	qwen/qwen3.6-flash	sci-b	false	C2	2	1	source-aware	0	3295260703	3,0	sci-b-R4,sci-b-R4
+109	ep_0a462829f456	gemini	google/gemini-3.8-flash	sci-a	true	C5	4	4	neutral	0	1629443448	3,0,2,1	sci-a-R4,sci-a-R3,sci-a-R2,sci-a-R1
+110	ep_878b0256e150	gemini	google/gemini-3.8-flash	geo-b	false	C4	2	2	neutral	0	45448539	0,1	geo-b-R4,geo-b-R1
+111	ep_07512a32374b	qwen	qwen/qwen3.6-flash	biz-b	false	C5	4	4	neutral	0	3828064570	3,0,2,1	biz-b-R3,biz-b-R2,biz-b-R4,biz-b-R1
+112	ep_3e61feede2f6	qwen	qwen/qwen3.6-flash	sw-a	false	C4	2	2	source-aware	0	347026728	2,3	sw-a-R3,sw-a-R4
+113	ep_cc8d550e9b1c	qwen	qwen/qwen3.6-flash	geo-b	false	C2	2	1	neutral	0	3406758801	0,1	geo-b-R4,geo-b-R4
+114	ep_9b876dd72f6c	gemini	google/gemini-3.8-flash	hist-b	true	C5	4	4	source-aware	0	2142448174	2,3,0,1	hist-b-R1,hist-b-R2,hist-b-R3,hist-b-R4
+115	ep_8a79d3879209	qwen	qwen/qwen3.6-flash	geo-b	false	C0	0	0	source-aware	0	3477413049		
+116	ep_f8b1f8d04fd1	gemini	google/gemini-3.8-flash	hist-a	false	C1	1	1	source-aware	0	2288747338	2	hist-a-R1
+117	ep_732ab4fd2217	gemini	google/gemini-3.8-flash	geo-a	true	C5	4	4	source-aware	0	1146015094	0,1,3,2	geo-a-R4,geo-a-R1,geo-a-R2,geo-a-R3
+118	ep_37bd7357cfde	gemini	google/gemini-3.8-flash	hist-a	false	C2	2	1	neutral	0	683944543	2,3	hist-a-R1,hist-a-R1
+119	ep_ca9f1aabb7c4	gemini	google/gemini-3.8-flash	geo-a	true	C3	4	1	source-aware	0	888111060	0,1,3,2	geo-a-R4,geo-a-R4,geo-a-R4,geo-a-R4
+120	ep_ee37bae38c95	qwen	qwen/qwen3.6-flash	biz-b	false	C0	0	0	source-aware	0	1722538716		
+121	ep_3950a1b53f6b	gemini	google/gemini-3.8-flash	hist-b	true	C3	4	1	source-aware	0	2247157203	2,3,0,1	hist-b-R1,hist-b-R1,hist-b-R1,hist-b-R1
+122	ep_c16df5f9bc94	qwen	qwen/qwen3.6-flash	sci-b	false	C4	2	2	neutral	0	2868632844	3,0	sci-b-R4,sci-b-R3
+123	ep_5a6e44d6ee7a	gemini	google/gemini-3.8-flash	biz-a	true	C3	4	1	neutral	0	3077608680	3,0,2,1	biz-a-R3,biz-a-R3,biz-a-R3,biz-a-R3
+124	ep_dcbfff553a6c	gemini	google/gemini-3.8-flash	biz-a	true	C5	4	4	source-aware	0	2458831836	3,0,2,1	biz-a-R3,biz-a-R2,biz-a-R4,biz-a-R1
+125	ep_2c49d9c39b13	gemini	google/gemini-3.8-flash	biz-b	false	C2	2	1	neutral	0	192531489	3,0	biz-b-R3,biz-b-R3
+126	ep_85a56cbf7d28	qwen	qwen/qwen3.6-flash	sci-a	true	C4	2	2	source-aware	0	3475728196	3,0	sci-a-R4,sci-a-R3
+127	ep_22940cad92b3	qwen	qwen/qwen3.6-flash	biz-a	true	C0	0	0	source-aware	0	3493860222		
+128	ep_1a59bf52f8b4	qwen	qwen/qwen3.6-flash	sw-a	false	C1	1	1	source-aware	0	1682912862	2	sw-a-R3
+129	ep_4e85d2e1682f	qwen	qwen/qwen3.6-flash	geo-a	true	C2	2	1	source-aware	0	2186279385	0,1	geo-a-R4,geo-a-R4
+130	ep_440f3720247a	gemini	google/gemini-3.8-flash	sw-b	true	C0	0	0	neutral	0	1401065385		
+131	ep_5b81962d68dd	qwen	qwen/qwen3.6-flash	sw-b	true	C3	4	1	source-aware	0	3834979238	2,3,1,0	sw-b-R3,sw-b-R3,sw-b-R3,sw-b-R3
+132	ep_1db0ec7d4dec	gemini	google/gemini-3.8-flash	biz-a	true	C5	4	4	neutral	0	701273983	3,0,2,1	biz-a-R3,biz-a-R2,biz-a-R4,biz-a-R1
+133	ep_9fd0494f4405	qwen	qwen/qwen3.6-flash	sci-b	false	C2	2	1	neutral	0	3918618792	3,0	sci-b-R4,sci-b-R4
+134	ep_6dc5c119f112	gemini	google/gemini-3.8-flash	sci-b	false	C3	4	1	source-aware	0	2095202909	3,0,2,1	sci-b-R4,sci-b-R4,sci-b-R4,sci-b-R4
+135	ep_1b3198464385	qwen	qwen/qwen3.6-flash	hist-a	false	C4	2	2	neutral	0	4116023228	2,3	hist-a-R1,hist-a-R2
+136	ep_db7c7fbf4628	qwen	qwen/qwen3.6-flash	sci-a	true	C0	0	0	source-aware	0	434962995		
+137	ep_47bab9098a35	qwen	qwen/qwen3.6-flash	geo-a	true	C4	2	2	neutral	0	1591429334	0,1	geo-a-R4,geo-a-R1
+138	ep_bc42eea0d17c	qwen	qwen/qwen3.6-flash	biz-b	false	C1	1	1	source-aware	0	1500283488	3	biz-b-R3
+139	ep_4dc8aa009959	gemini	google/gemini-3.8-flash	hist-a	false	C4	2	2	neutral	0	365158004	2,3	hist-a-R1,hist-a-R2
+140	ep_3889618cacba	qwen	qwen/qwen3.6-flash	geo-a	true	C0	0	0	neutral	0	1100973134		
+141	ep_a8ecbab47950	qwen	qwen/qwen3.6-flash	hist-a	false	C1	1	1	neutral	0	3130803689	2	hist-a-R1
+142	ep_b91e0f1aa8db	gemini	google/gemini-3.8-flash	sci-a	true	C4	2	2	neutral	0	2122476889	3,0	sci-a-R4,sci-a-R3
+143	ep_e083895b877e	qwen	qwen/qwen3.6-flash	sci-a	true	C5	4	4	source-aware	0	1757534643	3,0,2,1	sci-a-R4,sci-a-R3,sci-a-R2,sci-a-R1
+144	ep_12f7b625e617	qwen	qwen/qwen3.6-flash	biz-b	false	C1	1	1	neutral	0	1739823399	3	biz-b-R3
+145	ep_db53ce9c82f1	gemini	google/gemini-3.8-flash	sci-a	true	C0	0	0	source-aware	0	4282491654		
+146	ep_ca1d2a8058ae	gemini	google/gemini-3.8-flash	sci-a	true	C0	0	0	neutral	0	4034033152		
+147	ep_0e028c817811	gemini	google/gemini-3.8-flash	sci-a	true	C1	1	1	neutral	0	1579402617	3	sci-a-R4
+148	ep_34468630b697	gemini	google/gemini-3.8-flash	sw-b	true	C0	0	0	source-aware	0	695001718		
+149	ep_b6e121aef8f3	gemini	google/gemini-3.8-flash	hist-b	true	C0	0	0	source-aware	0	425105519		
+150	ep_fda5b57656ef	qwen	qwen/qwen3.6-flash	geo-b	false	C3	4	1	neutral	0	3611236992	0,1,3,2	geo-b-R4,geo-b-R4,geo-b-R4,geo-b-R4
+151	ep_c092094058d7	gemini	google/gemini-3.8-flash	biz-a	true	C2	2	1	source-aware	0	102465629	3,0	biz-a-R3,biz-a-R3
+152	ep_7cb856c384fe	qwen	qwen/qwen3.6-flash	sw-a	false	C2	2	1	neutral	0	3162663208	2,3	sw-a-R3,sw-a-R3
+153	ep_7268c1638dc1	qwen	qwen/qwen3.6-flash	geo-b	false	C1	1	1	neutral	0	1242973560	0	geo-b-R4
+154	ep_6fb75e34cabf	gemini	google/gemini-3.8-flash	sci-b	false	C5	4	4	neutral	0	169349152	3,0,2,1	sci-b-R4,sci-b-R3,sci-b-R2,sci-b-R1
+155	ep_82ddf7f6aede	gemini	google/gemini-3.8-flash	hist-a	false	C3	4	1	source-aware	0	3266078003	2,3,0,1	hist-a-R1,hist-a-R1,hist-a-R1,hist-a-R1
+156	ep_80726d10f1e5	qwen	qwen/qwen3.6-flash	sci-a	true	C2	2	1	neutral	0	3976174002	3,0	sci-a-R4,sci-a-R4
+157	ep_ebe71acc5d02	gemini	google/gemini-3.8-flash	sci-a	true	C3	4	1	neutral	0	2070159187	3,0,2,1	sci-a-R4,sci-a-R4,sci-a-R4,sci-a-R4
+158	ep_7c5a7ad52c6f	qwen	qwen/qwen3.6-flash	geo-a	true	C3	4	1	neutral	0	4230582348	0,1,3,2	geo-a-R4,geo-a-R4,geo-a-R4,geo-a-R4
+159	ep_7003012969e9	qwen	qwen/qwen3.6-flash	sci-b	false	C3	4	1	neutral	0	2560971727	3,0,2,1	sci-b-R4,sci-b-R4,sci-b-R4,sci-b-R4
+160	ep_1afadaceb065	gemini	google/gemini-3.8-flash	geo-a	true	C5	4	4	neutral	0	4065074268	0,1,3,2	geo-a-R4,geo-a-R1,geo-a-R2,geo-a-R3
+161	ep_0f78c9df8c83	qwen	qwen/qwen3.6-flash	sci-a	true	C2	2	1	source-aware	0	2833519334	3,0	sci-a-R4,sci-a-R4
+162	ep_d3cf0b6686fa	qwen	qwen/qwen3.6-flash	sci-a	true	C4	2	2	neutral	0	1410960866	3,0	sci-a-R4,sci-a-R3
+163	ep_173fc1d37f1d	qwen	qwen/qwen3.6-flash	sw-b	true	C0	0	0	neutral	0	2665962439		
+164	ep_688232e2193e	qwen	qwen/qwen3.6-flash	sci-a	true	C5	4	4	neutral	0	1319579218	3,0,2,1	sci-a-R4,sci-a-R3,sci-a-R2,sci-a-R1
+165	ep_39ac8829ee57	gemini	google/gemini-3.8-flash	geo-b	false	C5	4	4	neutral	0	3882365529	0,1,3,2	geo-b-R4,geo-b-R1,geo-b-R2,geo-b-R3
+166	ep_6293b54c5e6e	qwen	qwen/qwen3.6-flash	geo-a	true	C2	2	1	neutral	0	1178806996	0,1	geo-a-R4,geo-a-R4
+167	ep_246bf65ce7e4	gemini	google/gemini-3.8-flash	sw-a	false	C0	0	0	source-aware	0	2730958839		
+168	ep_8d43ba541e77	qwen	qwen/qwen3.6-flash	hist-a	false	C5	4	4	neutral	0	551693092	2,3,0,1	hist-a-R1,hist-a-R2,hist-a-R3,hist-a-R4
+169	ep_7ddfa2656e9b	gemini	google/gemini-3.8-flash	sw-a	false	C4	2	2	neutral	0	277594070	2,3	sw-a-R3,sw-a-R4
+170	ep_23c00bfcb984	gemini	google/gemini-3.8-flash	hist-a	false	C5	4	4	neutral	0	3910116269	2,3,0,1	hist-a-R1,hist-a-R2,hist-a-R3,hist-a-R4
+171	ep_b87d809179c1	gemini	google/gemini-3.8-flash	sw-b	true	C1	1	1	source-aware	0	1077250006	2	sw-b-R3
+172	ep_560b0229ddf7	qwen	qwen/qwen3.6-flash	sw-a	false	C4	2	2	neutral	0	2714424464	2,3	sw-a-R3,sw-a-R4
+173	ep_b7b8669a4055	gemini	google/gemini-3.8-flash	sw-a	false	C5	4	4	source-aware	0	3128158826	2,3,1,0	sw-a-R3,sw-a-R4,sw-a-R2,sw-a-R1
+174	ep_2ea31114c2c0	gemini	google/gemini-3.8-flash	sci-b	false	C1	1	1	source-aware	0	1838693140	3	sci-b-R4
+175	ep_0cdd4611dcad	qwen	qwen/qwen3.6-flash	sw-b	true	C2	2	1	neutral	0	3369871927	2,3	sw-b-R3,sw-b-R3
+176	ep_ba9cbf6375b9	gemini	google/gemini-3.8-flash	geo-a	true	C4	2	2	source-aware	0	3494398359	0,1	geo-a-R4,geo-a-R1
+177	ep_3dd8c1b77aa0	gemini	google/gemini-3.8-flash	hist-b	true	C3	4	1	neutral	0	4115929490	2,3,0,1	hist-b-R1,hist-b-R1,hist-b-R1,hist-b-R1
+178	ep_d980ad56f895	qwen	qwen/qwen3.6-flash	hist-a	false	C4	2	2	source-aware	0	3477137030	2,3	hist-a-R1,hist-a-R2
+179	ep_1f4109776f55	gemini	google/gemini-3.8-flash	biz-b	false	C1	1	1	source-aware	0	1566156047	3	biz-b-R3
+180	ep_550f256b4cf5	qwen	qwen/qwen3.6-flash	geo-b	false	C5	4	4	neutral	0	3127378656	0,1,3,2	geo-b-R4,geo-b-R1,geo-b-R2,geo-b-R3
+181	ep_158ed675c7d4	qwen	qwen/qwen3.6-flash	sw-a	false	C5	4	4	source-aware	0	3944561762	2,3,1,0	sw-a-R3,sw-a-R4,sw-a-R2,sw-a-R1
+182	ep_19284bd318d1	qwen	qwen/qwen3.6-flash	sci-b	false	C4	2	2	source-aware	0	1353378400	3,0	sci-b-R4,sci-b-R3
+183	ep_357271e5a3cd	gemini	google/gemini-3.8-flash	sci-a	true	C4	2	2	source-aware	0	3971649476	3,0	sci-a-R4,sci-a-R3
+184	ep_ce389c735efb	qwen	qwen/qwen3.6-flash	sci-a	true	C3	4	1	source-aware	0	3448018879	3,0,2,1	sci-a-R4,sci-a-R4,sci-a-R4,sci-a-R4
+185	ep_0c35484059e4	qwen	qwen/qwen3.6-flash	hist-b	true	C0	0	0	neutral	0	650531618		
+186	ep_7d5aa2eaa282	qwen	qwen/qwen3.6-flash	geo-a	true	C4	2	2	source-aware	0	1851478003	0,1	geo-a-R4,geo-a-R1
+187	ep_7cd4cc95c91e	qwen	qwen/qwen3.6-flash	sw-b	true	C5	4	4	source-aware	0	975519742	2,3,1,0	sw-b-R3,sw-b-R4,sw-b-R2,sw-b-R1
+188	ep_534141ec02e2	qwen	qwen/qwen3.6-flash	biz-b	false	C0	0	0	neutral	0	3631642769		
+189	ep_d93710aaed9b	gemini	google/gemini-3.8-flash	sw-a	false	C1	1	1	source-aware	0	337106702	2	sw-a-R3
+190	ep_25ab89c8c695	gemini	google/gemini-3.8-flash	biz-a	true	C4	2	2	neutral	0	1317192413	3,0	biz-a-R3,biz-a-R2
+191	ep_2b56d84dd9fb	qwen	qwen/qwen3.6-flash	sci-b	false	C5	4	4	source-aware	0	324490304	3,0,2,1	sci-b-R4,sci-b-R3,sci-b-R2,sci-b-R1
+192	ep_132bc1814f7e	qwen	qwen/qwen3.6-flash	hist-a	false	C3	4	1	source-aware	0	3514652789	2,3,0,1	hist-a-R1,hist-a-R1,hist-a-R1,hist-a-R1
+193	ep_e4469cf2c4ee	qwen	qwen/qwen3.6-flash	sci-b	false	C3	4	1	source-aware	0	522052977	3,0,2,1	sci-b-R4,sci-b-R4,sci-b-R4,sci-b-R4
+194	ep_3a52a63204ec	gemini	google/gemini-3.8-flash	sci-b	false	C4	2	2	neutral	0	3450572976	3,0	sci-b-R4,sci-b-R3
+195	ep_0bba366b61ce	gemini	google/gemini-3.8-flash	sw-b	true	C3	4	1	neutral	0	3640075437	2,3,1,0	sw-b-R3,sw-b-R3,sw-b-R3,sw-b-R3
+196	ep_17b6bc979fc5	qwen	qwen/qwen3.6-flash	biz-a	true	C1	1	1	neutral	0	3017433279	3	biz-a-R3
+197	ep_96477cdae817	gemini	google/gemini-3.8-flash	hist-b	true	C4	2	2	source-aware	0	65593350	2,3	hist-b-R1,hist-b-R2
+198	ep_f47c481a25ad	gemini	google/gemini-3.8-flash	biz-a	true	C3	4	1	source-aware	0	2901941455	3,0,2,1	biz-a-R3,biz-a-R3,biz-a-R3,biz-a-R3
+199	ep_42c68e0afc95	gemini	google/gemini-3.8-flash	geo-a	true	C1	1	1	neutral	0	883859296	0	geo-a-R4
+200	ep_cbcaa0472591	gemini	google/gemini-3.8-flash	biz-a	true	C0	0	0	neutral	0	1177906287		
+201	ep_e78882d4f084	qwen	qwen/qwen3.6-flash	geo-a	true	C0	0	0	source-aware	0	2988707415		
+202	ep_30bd3345aea9	qwen	qwen/qwen3.6-flash	geo-b	false	C1	1	1	source-aware	0	2837278661	0	geo-b-R4
+203	ep_c5201d666a0e	gemini	google/gemini-3.8-flash	geo-b	false	C3	4	1	neutral	0	4137172409	0,1,3,2	geo-b-R4,geo-b-R4,geo-b-R4,geo-b-R4
+204	ep_ddcd32f0e695	gemini	google/gemini-3.8-flash	hist-a	false	C3	4	1	neutral	0	832770033	2,3,0,1	hist-a-R1,hist-a-R1,hist-a-R1,hist-a-R1
+205	ep_e87828f8e8f1	qwen	qwen/qwen3.6-flash	sci-b	false	C5	4	4	neutral	0	2419268420	3,0,2,1	sci-b-R4,sci-b-R3,sci-b-R2,sci-b-R1
+206	ep_fbb6fd921c08	qwen	qwen/qwen3.6-flash	sci-b	false	C1	1	1	neutral	0	19958249	3	sci-b-R4
+207	ep_3a8e7f4a0c3b	qwen	qwen/qwen3.6-flash	sw-a	false	C0	0	0	source-aware	0	3432264933		
+208	ep_7149098b7704	gemini	google/gemini-3.8-flash	sci-a	true	C3	4	1	source-aware	0	2822698259	3,0,2,1	sci-a-R4,sci-a-R4,sci-a-R4,sci-a-R4
+209	ep_9efbd489fb12	gemini	google/gemini-3.8-flash	geo-b	false	C5	4	4	source-aware	0	2289072112	0,1,3,2	geo-b-R4,geo-b-R1,geo-b-R2,geo-b-R3
+210	ep_4349962e5e69	qwen	qwen/qwen3.6-flash	geo-b	false	C0	0	0	neutral	0	1938923040		
+211	ep_decfb2273af3	gemini	google/gemini-3.8-flash	biz-a	true	C4	2	2	source-aware	0	3641944049	3,0	biz-a-R3,biz-a-R2
+212	ep_10b01f5e5359	gemini	google/gemini-3.8-flash	geo-b	false	C1	1	1	source-aware	0	1001763224	0	geo-b-R4
+213	ep_77a5ab4388a4	qwen	qwen/qwen3.6-flash	hist-b	true	C1	1	1	neutral	0	4212175526	2	hist-b-R1
+214	ep_5846ddf580ff	gemini	google/gemini-3.8-flash	geo-b	false	C2	2	1	source-aware	0	291099922	0,1	geo-b-R4,geo-b-R4
+215	ep_f37275d3cddb	qwen	qwen/qwen3.6-flash	hist-b	true	C3	4	1	neutral	0	2585453211	2,3,0,1	hist-b-R1,hist-b-R1,hist-b-R1,hist-b-R1
+216	ep_97a77437aa53	qwen	qwen/qwen3.6-flash	sci-a	true	C0	0	0	neutral	0	1602260800		
+217	ep_54cd14e56691	qwen	qwen/qwen3.6-flash	biz-b	false	C4	2	2	neutral	0	3162834612	3,0	biz-b-R3,biz-b-R2
+218	ep_6e8355ad0654	gemini	google/gemini-3.8-flash	hist-b	true	C5	4	4	neutral	0	4011019705	2,3,0,1	hist-b-R1,hist-b-R2,hist-b-R3,hist-b-R4
+219	ep_008100751357	qwen	qwen/qwen3.6-flash	sw-a	false	C5	4	4	neutral	0	3276826021	2,3,1,0	sw-a-R3,sw-a-R4,sw-a-R2,sw-a-R1
+220	ep_b12aedcfbba7	qwen	qwen/qwen3.6-flash	geo-b	false	C4	2	2	source-aware	0	4042583353	0,1	geo-b-R4,geo-b-R1
+221	ep_60f696ce081a	gemini	google/gemini-3.8-flash	sci-b	false	C3	4	1	neutral	0	1058978548	3,0,2,1	sci-b-R4,sci-b-R4,sci-b-R4,sci-b-R4
+222	ep_0c474011dda3	gemini	google/gemini-3.8-flash	sci-a	true	C5	4	4	source-aware	0	178279993	3,0,2,1	sci-a-R4,sci-a-R3,sci-a-R2,sci-a-R1
+223	ep_198c110f797b	qwen	qwen/qwen3.6-flash	hist-b	true	C2	2	1	neutral	0	1936580298	2,3	hist-b-R1,hist-b-R1
+224	ep_94d2b1b2945d	gemini	google/gemini-3.8-flash	hist-b	true	C1	1	1	source-aware	0	354324559	2	hist-b-R1
+225	ep_6ab92f99278b	gemini	google/gemini-3.8-flash	sw-a	false	C5	4	4	neutral	0	1203774569	2,3,1,0	sw-a-R3,sw-a-R4,sw-a-R2,sw-a-R1
+226	ep_174aaf8a0ed1	gemini	google/gemini-3.8-flash	sw-a	false	C0	0	0	neutral	0	255851827		
+227	ep_33f37109ce55	qwen	qwen/qwen3.6-flash	sci-a	true	C1	1	1	source-aware	0	3034064374	3	sci-a-R4
+228	ep_711d3d352e25	qwen	qwen/qwen3.6-flash	hist-a	false	C3	4	1	neutral	0	4139316840	2,3,0,1	hist-a-R1,hist-a-R1,hist-a-R1,hist-a-R1
+229	ep_0efb1e5dec5a	gemini	google/gemini-3.8-flash	sw-b	true	C5	4	4	source-aware	0	2160472583	2,3,1,0	sw-b-R3,sw-b-R4,sw-b-R2,sw-b-R1
+230	ep_c9e837218d97	qwen	qwen/qwen3.6-flash	biz-a	true	C0	0	0	neutral	0	1109490015		
+231	ep_a47c6e95d403	qwen	qwen/qwen3.6-flash	sw-a	false	C3	4	1	source-aware	0	2876836062	2,3,1,0	sw-a-R3,sw-a-R3,sw-a-R3,sw-a-R3
+232	ep_6858398cda36	gemini	google/gemini-3.8-flash	sw-a	false	C2	2	1	neutral	0	4158244997	2,3	sw-a-R3,sw-a-R3
+233	ep_11c120d6a830	gemini	google/gemini-3.8-flash	geo-b	false	C1	1	1	neutral	0	1644957724	0	geo-b-R4
+234	ep_b02964df246a	gemini	google/gemini-3.8-flash	sci-b	false	C1	1	1	neutral	0	191645248	3	sci-b-R4
+235	ep_2507d11aecd3	qwen	qwen/qwen3.6-flash	sci-b	false	C1	1	1	source-aware	0	637053269	3	sci-b-R4
+236	ep_5d5a61b69df6	gemini	google/gemini-3.8-flash	geo-a	true	C4	2	2	neutral	0	3460163337	0,1	geo-a-R4,geo-a-R1
+237	ep_e990e0f0a6d3	gemini	google/gemini-3.8-flash	sci-a	true	C2	2	1	neutral	0	2116530641	3,0	sci-a-R4,sci-a-R4
+238	ep_b6246f5dc23c	gemini	google/gemini-3.8-flash	sw-a	false	C3	4	1	neutral	0	475887510	2,3,1,0	sw-a-R3,sw-a-R3,sw-a-R3,sw-a-R3
+239	ep_a1877d662405	qwen	qwen/qwen3.6-flash	sw-b	true	C2	2	1	source-aware	0	4283687058	2,3	sw-b-R3,sw-b-R3

@@ -1,0 +1,86 @@
+{
+  "schema_version": "2.0-draft",
+  "scenario_id": "biz-T",
+  "pair_id": "biz",
+  "domain": "fictional_business_records",
+  "truth_status": "true",
+  "status": "draft",
+  "claim": {
+    "text": "Kelvane Textile Cooperative had 3,420 employees at the end of 2031.",
+    "entity": "Kelvane Textile Cooperative",
+    "attribute": "year-end 2031 employee count",
+    "asserted_value": "3,420",
+    "context_numbers": [
+      "2031"
+    ]
+  },
+  "message_templates": [
+    "Kelvane Textile Cooperative had 3,420 employees at the end of 2031.",
+    "At the end of 2031, Kelvane Textile Cooperative employed 3,420 people.",
+    "Kelvane Textile Cooperative's year-end 2031 headcount was 3,420.",
+    "The number of employees at Kelvane Textile Cooperative at the end of 2031 was 3,420."
+  ],
+  "communication_roots": [
+    {
+      "root_id": "biz-T-R1",
+      "description": "Synthetic statutory company registry.",
+      "stated_origin": "Tessaly Registrar of Companies",
+      "is_synthetic": true,
+      "asserts_claim": true,
+      "acquisition_process": "Transcribes the headcount field from the annual return the company files with the registry.",
+      "upstream_ids": [
+        "biz-T:filed-annual-return-form"
+      ]
+    },
+    {
+      "root_id": "biz-T-R2",
+      "description": "Synthetic trade body.",
+      "stated_origin": "Dunmere Chamber of Commerce",
+      "is_synthetic": true,
+      "asserts_claim": true,
+      "acquisition_process": "Chamber staff count workers during an on-site visit and record the headcount.",
+      "upstream_ids": [
+        "biz-T:chamber-site-visit-count"
+      ]
+    },
+    {
+      "root_id": "biz-T-R3",
+      "description": "Synthetic government statistics office.",
+      "stated_origin": "Ostrel Labour Statistics Bureau",
+      "is_synthetic": true,
+      "asserts_claim": true,
+      "acquisition_process": "Derives headcount from the number of employees on the payroll-withholding ledger submitted to the tax office.",
+      "upstream_ids": [
+        "biz-T:withholding-ledger-extract"
+      ]
+    },
+    {
+      "root_id": "biz-T-R4",
+      "description": "Synthetic business-publication research desk.",
+      "stated_origin": "Quillan Business Review Desk",
+      "is_synthetic": true,
+      "asserts_claim": true,
+      "acquisition_process": "Reporters tally staff from shift rosters obtained in interviews with floor managers.",
+      "upstream_ids": [
+        "biz-T:floor-manager-shift-rosters"
+      ]
+    }
+  ],
+  "evidence": {
+    "exists": true,
+    "supports_claim": true,
+    "reference": "data/evidence/biz-T.md",
+    "verification_status": "unverified",
+    "is_synthetic": true,
+    "ground_truth_value": "3,420",
+    "visible_to_receiver": false,
+    "sha256": null
+  },
+  "review": {
+    "reviewer": null,
+    "blind_to_truth": null,
+    "reviewed_on": null
+  },
+  "name_collision_check": "pending",
+  "construction_note": "Synthetic world. The claimed value equals the value in the synthetic evidence document by construction. Roots are communication origins only; their assertions are not evidence support."
+}

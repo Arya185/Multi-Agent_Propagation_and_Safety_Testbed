@@ -1,0 +1,146 @@
+{
+  "schema_version": "2.1-draft",
+  "scenario_id": "syn-p1-a",
+  "pair_id": "synpair1",
+  "domain": "synthetic_domain_alpha",
+  "truth_status": "true",
+  "status": "draft",
+  "claim": {
+    "text": "Synthetic Bin Alfa holds 12 tokens.",
+    "entity": "Synthetic Bin Alfa",
+    "attribute": "synthetic token count in a toy bin",
+    "asserted_value": "12",
+    "context_numbers": [],
+    "quantity_definition": "SYNTHETIC: the number of tokens in a toy bin (software fixture only).",
+    "calendar_convention": null,
+    "event_date": null
+  },
+  "message_templates": [
+    "Synthetic Bin Alfa holds 12 tokens.",
+    "There are 12 tokens in Synthetic Bin Alfa.",
+    "12 tokens are held in Synthetic Bin Alfa.",
+    "The token count of Synthetic Bin Alfa is 12."
+  ],
+  "communication_roots": [
+    {
+      "root_id": "syn-p1-a-R1",
+      "description": "Synthetic fixture root E (no real counterpart).",
+      "stated_origin": "Synthetic Echo Unit",
+      "is_synthetic": true,
+      "asserts_claim": true,
+      "acquisition_kind": "direct_observation",
+      "acquisition_process": "Synthetic procedure E: counts tokens in the toy bin by hand tally.",
+      "artifact_type": "synthetic_report_e",
+      "operator_id": "syn-op-e",
+      "instrument_id": "syn-inst-e",
+      "instrument_class": "synthetic_method_e",
+      "quality_tier": "standard",
+      "follows_standard_procedure": true,
+      "reads_other_roots_output": false,
+      "measurement": {
+        "measures_claimed_quantity": true,
+        "can_establish_exact_quantity": true,
+        "coverage_note": "Synthetic coverage note for procedure E.",
+        "resolution_note": "Synthetic resolution note for procedure E."
+      },
+      "upstream_ids": ["syn-p1-a:synthetic-channel-e"]
+    },
+    {
+      "root_id": "syn-p1-a-R2",
+      "description": "Synthetic fixture root F (no real counterpart).",
+      "stated_origin": "Synthetic Foxtrot Unit",
+      "is_synthetic": true,
+      "asserts_claim": true,
+      "acquisition_kind": "direct_observation",
+      "acquisition_process": "Synthetic procedure F: counts tokens in the toy bin with a sorting tray.",
+      "artifact_type": "synthetic_report_f",
+      "operator_id": "syn-op-f",
+      "instrument_id": "syn-inst-f",
+      "instrument_class": "synthetic_method_f",
+      "quality_tier": "standard",
+      "follows_standard_procedure": true,
+      "reads_other_roots_output": false,
+      "measurement": {
+        "measures_claimed_quantity": true,
+        "can_establish_exact_quantity": true,
+        "coverage_note": "Synthetic coverage note for procedure F.",
+        "resolution_note": "Synthetic resolution note for procedure F."
+      },
+      "upstream_ids": ["syn-p1-a:synthetic-channel-f"]
+    },
+    {
+      "root_id": "syn-p1-a-R3",
+      "description": "Synthetic fixture root G (no real counterpart).",
+      "stated_origin": "Synthetic Golf Unit",
+      "is_synthetic": true,
+      "asserts_claim": true,
+      "acquisition_kind": "direct_observation",
+      "acquisition_process": "Synthetic procedure G: counts tokens in the toy bin with a scale-and-sample method.",
+      "artifact_type": "synthetic_report_g",
+      "operator_id": "syn-op-g",
+      "instrument_id": "syn-inst-g",
+      "instrument_class": "synthetic_method_g",
+      "quality_tier": "standard",
+      "follows_standard_procedure": true,
+      "reads_other_roots_output": false,
+      "measurement": {
+        "measures_claimed_quantity": true,
+        "can_establish_exact_quantity": true,
+        "coverage_note": "Synthetic coverage note for procedure G.",
+        "resolution_note": "Synthetic resolution note for procedure G."
+      },
+      "upstream_ids": ["syn-p1-a:synthetic-channel-g"]
+    },
+    {
+      "root_id": "syn-p1-a-R4",
+      "description": "Synthetic fixture root H (no real counterpart).",
+      "stated_origin": "Synthetic Hotel Unit",
+      "is_synthetic": true,
+      "asserts_claim": true,
+      "acquisition_kind": "direct_observation",
+      "acquisition_process": "Synthetic procedure H: counts tokens in the toy bin by photographing and tallying.",
+      "artifact_type": "synthetic_report_h",
+      "operator_id": "syn-op-h",
+      "instrument_id": "syn-inst-h",
+      "instrument_class": "synthetic_method_h",
+      "quality_tier": "standard",
+      "follows_standard_procedure": true,
+      "reads_other_roots_output": false,
+      "measurement": {
+        "measures_claimed_quantity": true,
+        "can_establish_exact_quantity": true,
+        "coverage_note": "Synthetic coverage note for procedure H.",
+        "resolution_note": "Synthetic resolution note for procedure H."
+      },
+      "upstream_ids": ["syn-p1-a:synthetic-channel-h"]
+    }
+  ],
+  "shared_factors": [
+    {
+      "factor": "Synthetic shared toy bin (the shared subject)",
+      "affects_roots": ["syn-p1-a-R1", "syn-p1-a-R2", "syn-p1-a-R3", "syn-p1-a-R4"],
+      "severity": "inherent",
+      "note": "Synthetic fixture note."
+    }
+  ],
+  "independence_assessment": "SYNTHETIC: fixture only; no claim about independence is made.",
+  "evidence": {
+    "exists": true,
+    "supports_claim": true,
+    "reference": "tests/synthetic/data/evidence/syn-p1-a.md",
+    "verification_status": "unverified",
+    "is_synthetic": true,
+    "document_type": "synthetic_record",
+    "ground_truth_value": "12",
+    "visible_to_receiver": false,
+    "sha256": null
+  },
+  "review": {
+    "reviewer": null,
+    "blind_to_truth": null,
+    "reviewed_on": null,
+    "independence_confirmed": null
+  },
+  "name_collision_check": "pending",
+  "construction_note": "SYNTHETIC FIXTURE: invented from scratch for software tests; not derived from any real scenario; the truth label is arbitrary."
+}

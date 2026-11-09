@@ -1,0 +1,111 @@
+{
+  "units": "(scenario, repetition) pairs",
+  "single_root_index_by_truth": {
+    "true": {
+      "1": 1,
+      "3": 2,
+      "4": 2
+    },
+    "false": {
+      "1": 1,
+      "3": 2,
+      "4": 2
+    }
+  },
+  "first_template_index_by_truth": {
+    "true": {
+      "1": 1,
+      "3": 2,
+      "4": 2
+    },
+    "false": {
+      "1": 1,
+      "3": 2,
+      "4": 2
+    }
+  },
+  "per_scenario": {
+    "geo-a": [
+      {
+        "repetition": 0,
+        "single_root": 4,
+        "first_template": 1
+      }
+    ],
+    "hist-b": [
+      {
+        "repetition": 0,
+        "single_root": 1,
+        "first_template": 3
+      }
+    ],
+    "sw-b": [
+      {
+        "repetition": 0,
+        "single_root": 3,
+        "first_template": 3
+      }
+    ],
+    "geo-b": [
+      {
+        "repetition": 0,
+        "single_root": 4,
+        "first_template": 1
+      }
+    ],
+    "sw-a": [
+      {
+        "repetition": 0,
+        "single_root": 3,
+        "first_template": 3
+      }
+    ],
+    "biz-a": [
+      {
+        "repetition": 0,
+        "single_root": 3,
+        "first_template": 4
+      }
+    ],
+    "biz-b": [
+      {
+        "repetition": 0,
+        "single_root": 3,
+        "first_template": 4
+      }
+    ],
+    "hist-a": [
+      {
+        "repetition": 0,
+        "single_root": 1,
+        "first_template": 3
+      }
+    ],
+    "sci-a": [
+      {
+        "repetition": 0,
+        "single_root": 4,
+        "first_template": 4
+      }
+    ],
+    "sci-b": [
+      {
+        "repetition": 0,
+        "single_root": 4,
+        "first_template": 4
+      }
+    ]
+  },
+  "scenario_truth": {
+    "biz-a": "true",
+    "biz-b": "false",
+    "geo-a": "true",
+    "geo-b": "false",
+    "hist-a": "false",
+    "hist-b": "true",
+    "sci-a": "true",
+    "sci-b": "false",
+    "sw-a": "false",
+    "sw-b": "true"
+  }
+}

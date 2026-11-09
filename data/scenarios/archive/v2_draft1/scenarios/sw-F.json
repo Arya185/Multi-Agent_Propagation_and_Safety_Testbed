@@ -1,0 +1,86 @@
+{
+  "schema_version": "2.0-draft",
+  "scenario_id": "sw-F",
+  "pair_id": "sw",
+  "domain": "fictional_software_release_histories",
+  "truth_status": "false",
+  "status": "draft",
+  "claim": {
+    "text": "Quarrel 6.1 was released on 22 September 2031.",
+    "entity": "Quarrel 6.1",
+    "attribute": "release date",
+    "asserted_value": "22 September 2031",
+    "context_numbers": [
+      "6.1"
+    ]
+  },
+  "message_templates": [
+    "Quarrel 6.1 was released on 22 September 2031.",
+    "The release date of Quarrel 6.1 was 22 September 2031.",
+    "Quarrel 6.1 shipped on 22 September 2031.",
+    "According to the release history, Quarrel 6.1 came out on 22 September 2031."
+  ],
+  "communication_roots": [
+    {
+      "root_id": "sw-F-R1",
+      "description": "Synthetic package registry.",
+      "stated_origin": "Open Package Index",
+      "is_synthetic": true,
+      "asserts_claim": true,
+      "acquisition_process": "Reads the publish timestamp recorded when the release was uploaded.",
+      "upstream_ids": [
+        "sw-F:index-upload-timestamp"
+      ]
+    },
+    {
+      "root_id": "sw-F-R2",
+      "description": "Synthetic mailing-list archive.",
+      "stated_origin": "Maintainers' Mailing List",
+      "is_synthetic": true,
+      "asserts_claim": true,
+      "acquisition_process": "Reads the date in the header of the human-written announcement post.",
+      "upstream_ids": [
+        "sw-F:announcement-post-header"
+      ]
+    },
+    {
+      "root_id": "sw-F-R3",
+      "description": "Synthetic automated build service.",
+      "stated_origin": "Build Verification Service",
+      "is_synthetic": true,
+      "asserts_claim": true,
+      "acquisition_process": "Reads the completion time of the automated release build run.",
+      "upstream_ids": [
+        "sw-F:release-build-run-record"
+      ]
+    },
+    {
+      "root_id": "sw-F-R4",
+      "description": "Synthetic signing service.",
+      "stated_origin": "Release Signing Authority",
+      "is_synthetic": true,
+      "asserts_claim": true,
+      "acquisition_process": "Reads the time the release artifacts were cryptographically signed.",
+      "upstream_ids": [
+        "sw-F:signing-service-log"
+      ]
+    }
+  ],
+  "evidence": {
+    "exists": true,
+    "supports_claim": false,
+    "reference": "data/evidence/sw-F.md",
+    "verification_status": "unverified",
+    "is_synthetic": true,
+    "ground_truth_value": "22 June 2031",
+    "visible_to_receiver": false,
+    "sha256": null
+  },
+  "review": {
+    "reviewer": null,
+    "blind_to_truth": null,
+    "reviewed_on": null
+  },
+  "name_collision_check": "pending",
+  "construction_note": "Synthetic world. The claimed value deliberately differs from the synthetic evidence document by construction. That four roots with disjoint acquisition processes report the same wrong value is a construction assumption (coinciding independent errors), not a realistic process. Roots are communication origins only."
+}

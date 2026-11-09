@@ -1,0 +1,13 @@
+# Direct dependencies of MAPS (unpinned), copied from the existing requirements.txt.
+# Exact versions currently in use are recorded in requirements.lock.
+requests
+python-dotenv
+pydantic
+jsonschema
+networkx
+numpy
+pandas
+scipy
+statsmodels
+matplotlib
+pytest

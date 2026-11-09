@@ -1,0 +1,35 @@
+{
+  "experiment_id": "receiver_belief_formation",
+  "config_version": "2.1-draft",
+  "seed": 20260,
+  "prompt_version": "receiver-v2",
+  "models": [
+    {"alias": "gemini", "family": "google", "model_id": "google/gemini-3.8-flash"},
+    {"alias": "qwen", "family": "qwen", "model_id": "qwen/qwen3.6-flash"}
+  ],
+  "design": {
+    "conditions": [
+      {"id": "C0", "n_messages": 0, "n_roots": 0},
+      {"id": "C1", "n_messages": 1, "n_roots": 1},
+      {"id": "C2", "n_messages": 2, "n_roots": 1},
+      {"id": "C3", "n_messages": 4, "n_roots": 1},
+      {"id": "C4", "n_messages": 2, "n_roots": 2},
+      {"id": "C5", "n_messages": 4, "n_roots": 4}
+    ],
+    "prompt_variants": ["neutral", "source-aware"],
+    "repetitions": 1,
+    "rotate_templates_and_roots": true,
+    "scenario_dir": "data/scenarios/v2",
+    "evidence_visible_to_receiver": false
+  },
+  "sampling": {"temperature": 0.0, "max_tokens": 800},
+  "api": {
+    "enabled": false,
+    "base_url": "https://openrouter.ai/api/v1",
+    "api_key_env": "OPENROUTER_API_KEY",
+    "timeout_s": 60.0,
+    "max_retries": 2,
+    "backoff_s": 1.0
+  },
+  "output": {"results_dir": "experiments/results", "stage": "pilot"}
+}

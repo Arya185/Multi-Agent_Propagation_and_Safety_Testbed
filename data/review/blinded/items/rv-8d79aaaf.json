@@ -1,0 +1,160 @@
+{
+  "review_id": "rv-8d79aaaf",
+  "claim": {
+    "text": "Lake Vessa has a maximum depth of 64 metres.",
+    "quantity_definition": "Greatest vertical distance, in metres, from the lake surface to the lake bed anywhere in the lake, at the water level present during the survey week. All four surveys were carried out in the same week with no water-level change, so no level correction is applied. Each method covers the whole lake bed densely enough to locate the deepest point.",
+    "calendar_convention": null
+  },
+  "message_templates": [
+    "Lake Vessa has a maximum depth of 64 metres.",
+    "The maximum depth of Lake Vessa is 64 metres.",
+    "At its deepest point, Lake Vessa is 64 metres deep.",
+    "Lake Vessa reaches a maximum depth of 64 metres."
+  ],
+  "communication_roots": [
+    {
+      "label": "R1",
+      "stated_origin": "Alder Group",
+      "description": "Synthetic survey crew A.",
+      "acquisition_kind": "direct_observation",
+      "acquisition_process": "Boat-mounted multibeam echosounder survey with overlapping swaths over the full lake; the maximum is read from the complete depth grid.",
+      "artifact_type": "depth_survey_report",
+      "operator_id": "op-1",
+      "instrument_id": "inst-1",
+      "instrument_class": "multibeam_echosounder",
+      "quality_tier": "standard",
+      "measurement": {
+        "measures_claimed_quantity": true,
+        "can_establish_exact_quantity": true,
+        "coverage_note": "Overlapping swaths cover the entire lake bed; the deepest cell is identified directly.",
+        "resolution_note": "Grid cells fine enough to resolve the deepest point to the metre."
+      },
+      "upstream_ids": [
+        "multibeam-grid-a"
+      ]
+    },
+    {
+      "label": "R2",
+      "stated_origin": "Brevik Group",
+      "description": "Synthetic survey crew B.",
+      "acquisition_kind": "direct_observation",
+      "acquisition_process": "Underwater vehicle with a pressure-depth sensor runs a full-coverage parallel-line grid over the lake bed; the deepest reading is taken.",
+      "artifact_type": "depth_survey_report",
+      "operator_id": "op-2",
+      "instrument_id": "inst-2",
+      "instrument_class": "auv_pressure_depth",
+      "quality_tier": "standard",
+      "measurement": {
+        "measures_claimed_quantity": true,
+        "can_establish_exact_quantity": true,
+        "coverage_note": "Parallel lines at spacing finer than the bed's steepest feature cover the entire lake bed.",
+        "resolution_note": "Pressure sensor resolution of better than one metre."
+      },
+      "upstream_ids": [
+        "auv-grid-b"
+      ]
+    },
+    {
+      "label": "R3",
+      "stated_origin": "Corran Group",
+      "description": "Synthetic survey crew C.",
+      "acquisition_kind": "direct_observation",
+      "acquisition_process": "Hand-lowered weighted-line soundings at every node of a fine positioned grid across the whole lake; the deepest sounding is taken.",
+      "artifact_type": "depth_survey_report",
+      "operator_id": "op-3",
+      "instrument_id": "inst-3",
+      "instrument_class": "weighted_line_grid",
+      "quality_tier": "standard",
+      "measurement": {
+        "measures_claimed_quantity": true,
+        "can_establish_exact_quantity": true,
+        "coverage_note": "Grid nodes at 25 m spacing cover the whole lake; spacing is finer than the smallest deep basin.",
+        "resolution_note": "Line marks read to the metre."
+      },
+      "upstream_ids": [
+        "line-grid-c"
+      ]
+    },
+    {
+      "label": "R4",
+      "stated_origin": "Delmar Group",
+      "description": "Synthetic survey crew D.",
+      "acquisition_kind": "direct_observation",
+      "acquisition_process": "Towed single-beam echosounder along dense parallel lines and cross-lines covering the whole lake; the deepest return is taken.",
+      "artifact_type": "depth_survey_report",
+      "operator_id": "op-4",
+      "instrument_id": "inst-4",
+      "instrument_class": "single_beam_echosounder",
+      "quality_tier": "standard",
+      "measurement": {
+        "measures_claimed_quantity": true,
+        "can_establish_exact_quantity": true,
+        "coverage_note": "Lines at 25 m spacing with cross-lines cover the whole lake bed.",
+        "resolution_note": "Echo timing resolves depth to the metre."
+      },
+      "upstream_ids": [
+        "single-beam-d"
+      ]
+    }
+  ],
+  "shared_factors": [
+    {
+      "factor": "Same lake bed and water level (the shared subject)",
+      "affects_roots": [
+        "R1",
+        "R2",
+        "R3",
+        "R4"
+      ],
+      "severity": "inherent",
+      "note": "All four survey the same lake in the same week."
+    },
+    {
+      "factor": "Acoustic sound-speed assumption",
+      "affects_roots": [
+        "R1",
+        "R4"
+      ],
+      "severity": "minor",
+      "note": "Both echosounder methods assume a water sound speed; a common bias is possible."
+    },
+    {
+      "factor": "Positioning receivers",
+      "affects_roots": [
+        "R1",
+        "R2",
+        "R3",
+        "R4"
+      ],
+      "severity": "minor",
+      "note": "Each crew uses its own positioning receiver, but all rely on one satellite system."
+    },
+    {
+      "factor": "Gauge stations, lidar, single-point instruments",
+      "affects_roots": [
+        "R1",
+        "R2",
+        "R3",
+        "R4"
+      ],
+      "severity": "none-identified",
+      "note": "None used; every method surveys the whole lake bed."
+    }
+  ],
+  "independence_assessment": "Four crews with different sensing physics and operators each establish the same quantity from full-coverage surveys; no method relies on a fixed point, a single location or lidar. None reads another's data. Disjoint survey ids alone do not establish independence. Residual correlation: acoustic sound speed and a common satellite positioning system. Human confirmation pending.",
+  "evidence": {
+    "evidence_id": "ev-9f5ef2d1",
+    "document_type": "ground_truth_record",
+    "document_text": "SYNTHETIC DOCUMENT — fictional, created for the MAPS experiment. Not real.\n\n# Ground-Truth Record — Lake Maximum Depth\n\nEntity: Lake Vessa\nQuantity: greatest vertical distance, in metres, from the lake surface to the lake bed anywhere in the lake, at the water level present during the survey week.\nValue: 41 metres.\n"
+  },
+  "reviewer_form": {
+    "reviewer": null,
+    "document_judgement": null,
+    "roots_measure_exact_quantity": null,
+    "roots_independent": null,
+    "shared_factors_complete": null,
+    "ambiguities": "",
+    "unintended_clues": "",
+    "notes": ""
+  }
+}

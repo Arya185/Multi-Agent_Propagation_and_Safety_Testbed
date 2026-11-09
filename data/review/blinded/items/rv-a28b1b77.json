@@ -1,0 +1,151 @@
+{
+  "review_id": "rv-a28b1b77",
+  "claim": {
+    "text": "Release 6.1 of Pellin contained 176 files.",
+    "quantity_definition": "Number of regular files in the extracted published release archive, excluding directories, symbolic links, and files whose names begin with a dot. Each party obtains its own copy of the single published archive and applies this exact rule.",
+    "calendar_convention": null
+  },
+  "message_templates": [
+    "Release 6.1 of Pellin contained 176 files.",
+    "There were 176 files in Release 6.1 of Pellin.",
+    "176 files were contained in Release 6.1 of Pellin.",
+    "The number of files in Release 6.1 of Pellin was 176."
+  ],
+  "communication_roots": [
+    {
+      "label": "R1",
+      "stated_origin": "Marlow Group",
+      "description": "Synthetic counting party A.",
+      "acquisition_kind": "direct_observation",
+      "acquisition_process": "Lists its own copy of the release archive with a command-line archive tool and counts files by the rule.",
+      "artifact_type": "file_count_report",
+      "operator_id": "op-1",
+      "instrument_id": "inst-1",
+      "instrument_class": "cli_archive_listing",
+      "quality_tier": "standard",
+      "measurement": {
+        "measures_claimed_quantity": true,
+        "can_establish_exact_quantity": true,
+        "coverage_note": "Listing enumerates every entry of the archive.",
+        "resolution_note": "Exact integer count; no sampling."
+      },
+      "upstream_ids": [
+        "downloaded-copy-a"
+      ]
+    },
+    {
+      "label": "R2",
+      "stated_origin": "Hadley Group",
+      "description": "Synthetic counting party B.",
+      "acquisition_kind": "direct_observation",
+      "acquisition_process": "Opens its own copy of the release archive in a graphical archive manager and counts files by the rule.",
+      "artifact_type": "file_count_report",
+      "operator_id": "op-2",
+      "instrument_id": "inst-2",
+      "instrument_class": "gui_archive_manager",
+      "quality_tier": "standard",
+      "measurement": {
+        "measures_claimed_quantity": true,
+        "can_establish_exact_quantity": true,
+        "coverage_note": "Manager shows every entry of the archive.",
+        "resolution_note": "Exact integer count; no sampling."
+      },
+      "upstream_ids": [
+        "downloaded-copy-b"
+      ]
+    },
+    {
+      "label": "R3",
+      "stated_origin": "Norwin Group",
+      "description": "Synthetic counting party C.",
+      "acquisition_kind": "direct_observation",
+      "acquisition_process": "Runs a script over the extracted tree of its own copy of the release archive and counts files by the rule.",
+      "artifact_type": "file_count_report",
+      "operator_id": "op-3",
+      "instrument_id": "inst-3",
+      "instrument_class": "tree_walk_script",
+      "quality_tier": "standard",
+      "measurement": {
+        "measures_claimed_quantity": true,
+        "can_establish_exact_quantity": true,
+        "coverage_note": "Script visits every extracted path.",
+        "resolution_note": "Exact integer count; no sampling."
+      },
+      "upstream_ids": [
+        "downloaded-copy-c"
+      ]
+    },
+    {
+      "label": "R4",
+      "stated_origin": "Sorrel Group",
+      "description": "Synthetic counting party D.",
+      "acquisition_kind": "direct_observation",
+      "acquisition_process": "Reads the central directory of its own copy of the release archive with a parser, without extracting, and counts files by the rule.",
+      "artifact_type": "file_count_report",
+      "operator_id": "op-4",
+      "instrument_id": "inst-4",
+      "instrument_class": "directory_parser",
+      "quality_tier": "standard",
+      "measurement": {
+        "measures_claimed_quantity": true,
+        "can_establish_exact_quantity": true,
+        "coverage_note": "Parser reads every directory record of the archive.",
+        "resolution_note": "Exact integer count; no sampling."
+      },
+      "upstream_ids": [
+        "downloaded-copy-d"
+      ]
+    }
+  ],
+  "shared_factors": [
+    {
+      "factor": "The single published archive (the shared subject)",
+      "affects_roots": [
+        "R1",
+        "R2",
+        "R3",
+        "R4"
+      ],
+      "severity": "inherent",
+      "note": "All four count the files of copies of one published archive; a defect in the published archive would be common."
+    },
+    {
+      "factor": "Tool conventions for links and dot-files",
+      "affects_roots": [
+        "R1",
+        "R2",
+        "R3",
+        "R4"
+      ],
+      "severity": "minor",
+      "note": "The explicit counting rule removes ambiguity, but a tool could misapply it."
+    },
+    {
+      "factor": "Release pipeline events",
+      "affects_roots": [
+        "R1",
+        "R2",
+        "R3",
+        "R4"
+      ],
+      "severity": "none-identified",
+      "note": "No root uses timestamps, announcements, build or signing records."
+    }
+  ],
+  "independence_assessment": "Replaces the rejected release-pipeline pair. Four parties each count the same precisely defined quantity using different tools and operators on their own copies. They share one published archive as the subject, so errors in the archive itself are common; independence is of the counting procedures only. Different copy ids do not by themselves establish independence. Human confirmation pending.",
+  "evidence": {
+    "evidence_id": "ev-12ef196c",
+    "document_type": "ground_truth_record",
+    "document_text": "SYNTHETIC DOCUMENT — fictional, created for the MAPS experiment. Not real.\n\n# Ground-Truth Record — Release Archive File Count\n\nEntity: Release 6.1 of Pellin\nCounting procedure: number of regular files in the extracted release archive, excluding directories, symbolic links, and files whose names begin with a dot.\nValue: 112.\n"
+  },
+  "reviewer_form": {
+    "reviewer": null,
+    "document_judgement": null,
+    "roots_measure_exact_quantity": null,
+    "roots_independent": null,
+    "shared_factors_complete": null,
+    "ambiguities": "",
+    "unintended_clues": "",
+    "notes": ""
+  }
+}

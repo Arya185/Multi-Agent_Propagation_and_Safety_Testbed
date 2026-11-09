@@ -1,0 +1,87 @@
+{
+  "schema_version": "2.0-draft",
+  "scenario_id": "sci-T",
+  "pair_id": "sci",
+  "domain": "fictional_scientific_observations",
+  "truth_status": "true",
+  "status": "draft",
+  "claim": {
+    "text": "Kesta-9 emitted 17 radio pulses on observation night 6.",
+    "entity": "Kesta-9",
+    "attribute": "pulse count on observation night 6",
+    "asserted_value": "17",
+    "context_numbers": [
+      "9",
+      "6"
+    ]
+  },
+  "message_templates": [
+    "Kesta-9 emitted 17 radio pulses on observation night 6.",
+    "On observation night 6, Kesta-9 produced 17 radio pulses.",
+    "Kesta-9's night-6 pulse count was 17.",
+    "The number of radio pulses from Kesta-9 on observation night 6 was 17."
+  ],
+  "communication_roots": [
+    {
+      "root_id": "sci-T-R1",
+      "description": "Synthetic observatory with its own radio dish.",
+      "stated_origin": "Ilvane Observatory",
+      "is_synthetic": true,
+      "asserts_claim": true,
+      "acquisition_process": "Counts pulses in the recorded receiver output of its own dish.",
+      "upstream_ids": [
+        "sci-T:ilvane-dish-receiver-output"
+      ]
+    },
+    {
+      "root_id": "sci-T-R2",
+      "description": "Synthetic research institute with a separate radio array.",
+      "stated_origin": "Calder Institute",
+      "is_synthetic": true,
+      "asserts_claim": true,
+      "acquisition_process": "Counts pulses in the spectrogram archive of a separate radio array.",
+      "upstream_ids": [
+        "sci-T:calder-array-spectrogram-archive"
+      ]
+    },
+    {
+      "root_id": "sci-T-R3",
+      "description": "Synthetic volunteer observer network.",
+      "stated_origin": "Voss Amateur Network",
+      "is_synthetic": true,
+      "asserts_claim": true,
+      "acquisition_process": "Volunteers count audible pulses in audio recordings from their own receivers.",
+      "upstream_ids": [
+        "sci-T:voss-volunteer-audio-recordings"
+      ]
+    },
+    {
+      "root_id": "sci-T-R4",
+      "description": "Synthetic scheduled sky survey.",
+      "stated_origin": "Pelham Sky Survey",
+      "is_synthetic": true,
+      "asserts_claim": true,
+      "acquisition_process": "Counts pulses in the scheduled scan frames of a survey telescope.",
+      "upstream_ids": [
+        "sci-T:pelham-survey-scan-frames"
+      ]
+    }
+  ],
+  "evidence": {
+    "exists": true,
+    "supports_claim": true,
+    "reference": "data/evidence/sci-T.md",
+    "verification_status": "unverified",
+    "is_synthetic": true,
+    "ground_truth_value": "17",
+    "visible_to_receiver": false,
+    "sha256": null
+  },
+  "review": {
+    "reviewer": null,
+    "blind_to_truth": null,
+    "reviewed_on": null
+  },
+  "name_collision_check": "pending",
+  "construction_note": "Synthetic world. The claimed value equals the value in the synthetic evidence document by construction. Roots are communication origins only; their assertions are not evidence support."
+}

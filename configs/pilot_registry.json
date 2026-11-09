@@ -1,0 +1,54 @@
+{
+  "registry_version": 1,
+  "cohorts": [
+    {
+      "cohort_id": "pilot-1",
+      "family": "pilot",
+      "members": [
+        {
+          "scenario_id": "biz-a",
+          "scenario_version": 1
+        },
+        {
+          "scenario_id": "biz-b",
+          "scenario_version": 1
+        },
+        {
+          "scenario_id": "geo-a",
+          "scenario_version": 1
+        },
+        {
+          "scenario_id": "geo-b",
+          "scenario_version": 1
+        },
+        {
+          "scenario_id": "hist-a",
+          "scenario_version": 1
+        },
+        {
+          "scenario_id": "hist-b",
+          "scenario_version": 1
+        },
+        {
+          "scenario_id": "sci-a",
+          "scenario_version": 1
+        },
+        {
+          "scenario_id": "sci-b",
+          "scenario_version": 1
+        },
+        {
+          "scenario_id": "sw-a",
+          "scenario_version": 1
+        },
+        {
+          "scenario_id": "sw-b",
+          "scenario_version": 1
+        }
+      ],
+      "fixed_on": "2026-11-09T00:00:00+00:00"
+    }
+  ],
+  "exposures": [],
+  "lineage": []
+}

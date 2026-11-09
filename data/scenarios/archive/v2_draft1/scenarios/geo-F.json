@@ -1,0 +1,84 @@
+{
+  "schema_version": "2.0-draft",
+  "scenario_id": "geo-F",
+  "pair_id": "geo",
+  "domain": "fictional_geographical_records",
+  "truth_status": "false",
+  "status": "draft",
+  "claim": {
+    "text": "Lake Vessa in the Dunhollow Highlands has a maximum depth of 148 metres.",
+    "entity": "Lake Vessa in the Dunhollow Highlands",
+    "attribute": "maximum lake depth",
+    "asserted_value": "148",
+    "context_numbers": []
+  },
+  "message_templates": [
+    "Lake Vessa in the Dunhollow Highlands has a maximum depth of 148 metres.",
+    "The maximum depth of Lake Vessa in the Dunhollow Highlands is recorded as 148 metres.",
+    "Lake Vessa in the Dunhollow Highlands reaches 148 metres at its deepest point.",
+    "Surveys put the deepest point of Lake Vessa in the Dunhollow Highlands at 148 metres."
+  ],
+  "communication_roots": [
+    {
+      "root_id": "geo-F-R1",
+      "description": "Synthetic survey body.",
+      "stated_origin": "Regional Hydrographic Survey",
+      "is_synthetic": true,
+      "asserts_claim": true,
+      "acquisition_process": "Boat-mounted sonar transects across the lake.",
+      "upstream_ids": [
+        "geo-F:sonar-transect-soundings"
+      ]
+    },
+    {
+      "root_id": "geo-F-R2",
+      "description": "Synthetic water authority.",
+      "stated_origin": "Provincial Water Authority",
+      "is_synthetic": true,
+      "asserts_claim": true,
+      "acquisition_process": "Weighted lead-line soundings taken at gauge stations.",
+      "upstream_ids": [
+        "geo-F:leadline-gauge-soundings"
+      ]
+    },
+    {
+      "root_id": "geo-F-R3",
+      "description": "Synthetic university research group.",
+      "stated_origin": "University Limnology Group",
+      "is_synthetic": true,
+      "asserts_claim": true,
+      "acquisition_process": "Depth profiles from an autonomous sensor buoy.",
+      "upstream_ids": [
+        "geo-F:buoy-depth-profiles"
+      ]
+    },
+    {
+      "root_id": "geo-F-R4",
+      "description": "Synthetic mapping agency.",
+      "stated_origin": "National Mapping Agency",
+      "is_synthetic": true,
+      "asserts_claim": true,
+      "acquisition_process": "Airborne lidar bathymetry flights.",
+      "upstream_ids": [
+        "geo-F:lidar-bathymetry-flights"
+      ]
+    }
+  ],
+  "evidence": {
+    "exists": true,
+    "supports_claim": false,
+    "reference": "data/evidence/geo-F.md",
+    "verification_status": "unverified",
+    "is_synthetic": true,
+    "ground_truth_value": "96",
+    "visible_to_receiver": false,
+    "sha256": null
+  },
+  "review": {
+    "reviewer": null,
+    "blind_to_truth": null,
+    "reviewed_on": null
+  },
+  "name_collision_check": "pending",
+  "construction_note": "Synthetic world. The claimed value deliberately differs from the synthetic evidence document by construction. That four roots with disjoint acquisition processes report the same wrong value is a construction assumption (coinciding independent errors), not a realistic process. Roots are communication origins only."
+}
