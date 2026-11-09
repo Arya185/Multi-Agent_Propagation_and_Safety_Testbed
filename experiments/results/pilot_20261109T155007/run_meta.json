@@ -1,0 +1,14 @@
+{
+  "run_id": "pilot_20261109T155007",
+  "mode": "live",
+  "config": "/Users/aryapatel/arya/Programming/MAPS/configs/receiver_experiment.json",
+  "models": [
+    "google/gemini-3.8-flash",
+    "qwen/qwen3.6-flash"
+  ],
+  "n_episodes": 240,
+  "temperature": 0.0,
+  "max_tokens": 800,
+  "started_utc": "2026-11-09T10:20:07Z",
+  "label": "EXPLORATORY PILOT - draft AUTHOR_CHECKED_ONLY scenarios - not confirmatory"
+}

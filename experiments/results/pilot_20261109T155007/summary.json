@@ -1,0 +1,470 @@
+{
+  "n_episodes": 240,
+  "status_counts": {
+    "call_error": 208,
+    "ok": 27,
+    "parse_error": 5
+  },
+  "lenient_recovered": 0,
+  "n_ok_strict": 27,
+  "n_ok": 27,
+  "conditions": [
+    {
+      "model": "gemini",
+      "variant": "neutral",
+      "condition": "C0",
+      "n_messages": 0,
+      "n_roots": 0,
+      "n": 2,
+      "confidence_mean": 0.0,
+      "confidence_ci95": [
+        0.0,
+        0.0
+      ],
+      "confidence_sd": 0.0,
+      "accept_rate": 0.0,
+      "est_roots_mean": 0.0,
+      "root_overcount_mean": 0.0,
+      "accept_rate_true": 0.0,
+      "accept_rate_false": 0.0
+    },
+    {
+      "model": "gemini",
+      "variant": "neutral",
+      "condition": "C1",
+      "n_messages": 1,
+      "n_roots": 1,
+      "n": 3,
+      "confidence_mean": 93.33333333333333,
+      "confidence_ci95": [
+        90.0,
+        95.0
+      ],
+      "confidence_sd": 2.8867513459481287,
+      "accept_rate": 1.0,
+      "est_roots_mean": 1.0,
+      "root_overcount_mean": 0.0,
+      "accept_rate_true": 1.0,
+      "accept_rate_false": 1.0
+    },
+    {
+      "model": "gemini",
+      "variant": "neutral",
+      "condition": "C2",
+      "n_messages": 2,
+      "n_roots": 1,
+      "n": 3,
+      "confidence_mean": 86.66666666666667,
+      "confidence_ci95": [
+        80.0,
+        90.0
+      ],
+      "confidence_sd": 5.773502691896257,
+      "accept_rate": 1.0,
+      "est_roots_mean": 1.0,
+      "root_overcount_mean": 0.0,
+      "accept_rate_true": 1.0,
+      "accept_rate_false": 1.0
+    },
+    {
+      "model": "gemini",
+      "variant": "neutral",
+      "condition": "C4",
+      "n_messages": 2,
+      "n_roots": 2,
+      "n": 1,
+      "confidence_mean": 95.0,
+      "confidence_ci95": [
+        NaN,
+        NaN
+      ],
+      "confidence_sd": 0.0,
+      "accept_rate": 1.0,
+      "est_roots_mean": 2.0,
+      "root_overcount_mean": 0.0,
+      "accept_rate_true": 1.0,
+      "accept_rate_false": null
+    },
+    {
+      "model": "gemini",
+      "variant": "neutral",
+      "condition": "C5",
+      "n_messages": 4,
+      "n_roots": 4,
+      "n": 1,
+      "confidence_mean": 98.0,
+      "confidence_ci95": [
+        NaN,
+        NaN
+      ],
+      "confidence_sd": 0.0,
+      "accept_rate": 1.0,
+      "est_roots_mean": 4.0,
+      "root_overcount_mean": 0.0,
+      "accept_rate_true": 1.0,
+      "accept_rate_false": null
+    },
+    {
+      "model": "gemini",
+      "variant": "source-aware",
+      "condition": "C0",
+      "n_messages": 0,
+      "n_roots": 0,
+      "n": 1,
+      "confidence_mean": 0.0,
+      "confidence_ci95": [
+        NaN,
+        NaN
+      ],
+      "confidence_sd": 0.0,
+      "accept_rate": 0.0,
+      "est_roots_mean": 0.0,
+      "root_overcount_mean": 0.0,
+      "accept_rate_true": 0.0,
+      "accept_rate_false": null
+    },
+    {
+      "model": "gemini",
+      "variant": "source-aware",
+      "condition": "C1",
+      "n_messages": 1,
+      "n_roots": 1,
+      "n": 1,
+      "confidence_mean": 85.0,
+      "confidence_ci95": [
+        NaN,
+        NaN
+      ],
+      "confidence_sd": 0.0,
+      "accept_rate": 1.0,
+      "est_roots_mean": 1.0,
+      "root_overcount_mean": 0.0,
+      "accept_rate_true": 1.0,
+      "accept_rate_false": null
+    },
+    {
+      "model": "gemini",
+      "variant": "source-aware",
+      "condition": "C2",
+      "n_messages": 2,
+      "n_roots": 1,
+      "n": 5,
+      "confidence_mean": 93.0,
+      "confidence_ci95": [
+        91.0,
+        95.0
+      ],
+      "confidence_sd": 2.7386127875258306,
+      "accept_rate": 1.0,
+      "est_roots_mean": 1.0,
+      "root_overcount_mean": 0.0,
+      "accept_rate_true": 1.0,
+      "accept_rate_false": 1.0
+    },
+    {
+      "model": "gemini",
+      "variant": "source-aware",
+      "condition": "C3",
+      "n_messages": 4,
+      "n_roots": 1,
+      "n": 1,
+      "confidence_mean": 90.0,
+      "confidence_ci95": [
+        NaN,
+        NaN
+      ],
+      "confidence_sd": 0.0,
+      "accept_rate": 1.0,
+      "est_roots_mean": 1.0,
+      "root_overcount_mean": 0.0,
+      "accept_rate_true": 1.0,
+      "accept_rate_false": null
+    },
+    {
+      "model": "gemini",
+      "variant": "source-aware",
+      "condition": "C4",
+      "n_messages": 2,
+      "n_roots": 2,
+      "n": 3,
+      "confidence_mean": 93.33333333333333,
+      "confidence_ci95": [
+        90.0,
+        95.0
+      ],
+      "confidence_sd": 2.8867513459481287,
+      "accept_rate": 1.0,
+      "est_roots_mean": 2.0,
+      "root_overcount_mean": 0.0,
+      "accept_rate_true": 1.0,
+      "accept_rate_false": 1.0
+    },
+    {
+      "model": "qwen",
+      "variant": "neutral",
+      "condition": "C0",
+      "n_messages": 0,
+      "n_roots": 0,
+      "n": 1,
+      "confidence_mean": 0.0,
+      "confidence_ci95": [
+        NaN,
+        NaN
+      ],
+      "confidence_sd": 0.0,
+      "accept_rate": 0.0,
+      "est_roots_mean": 0.0,
+      "root_overcount_mean": 0.0,
+      "accept_rate_true": null,
+      "accept_rate_false": 0.0
+    },
+    {
+      "model": "qwen",
+      "variant": "neutral",
+      "condition": "C1",
+      "n_messages": 1,
+      "n_roots": 1,
+      "n": 2,
+      "confidence_mean": 97.5,
+      "confidence_ci95": [
+        95.0,
+        100.0
+      ],
+      "confidence_sd": 3.5355339059327378,
+      "accept_rate": 1.0,
+      "est_roots_mean": 1.0,
+      "root_overcount_mean": 0.0,
+      "accept_rate_true": 1.0,
+      "accept_rate_false": 1.0
+    },
+    {
+      "model": "qwen",
+      "variant": "source-aware",
+      "condition": "C0",
+      "n_messages": 0,
+      "n_roots": 0,
+      "n": 3,
+      "confidence_mean": 0.0,
+      "confidence_ci95": [
+        0.0,
+        0.0
+      ],
+      "confidence_sd": 0.0,
+      "accept_rate": 0.0,
+      "est_roots_mean": 0.0,
+      "root_overcount_mean": 0.0,
+      "accept_rate_true": 0.0,
+      "accept_rate_false": 0.0
+    }
+  ],
+  "contrasts": [
+    {
+      "model": "gemini",
+      "variant": "neutral",
+      "contrast": "C3-C5",
+      "n_pairs": 0,
+      "confidence_diff_mean": NaN,
+      "confidence_diff_ci95": [
+        NaN,
+        NaN
+      ],
+      "confidence_diff_signflip_p": 1.0,
+      "est_roots_diff_mean": NaN
+    },
+    {
+      "model": "gemini",
+      "variant": "neutral",
+      "contrast": "C2-C4",
+      "n_pairs": 0,
+      "confidence_diff_mean": NaN,
+      "confidence_diff_ci95": [
+        NaN,
+        NaN
+      ],
+      "confidence_diff_signflip_p": 1.0,
+      "est_roots_diff_mean": NaN
+    },
+    {
+      "model": "gemini",
+      "variant": "neutral",
+      "contrast": "C3-C1",
+      "n_pairs": 0,
+      "confidence_diff_mean": NaN,
+      "confidence_diff_ci95": [
+        NaN,
+        NaN
+      ],
+      "confidence_diff_signflip_p": 1.0,
+      "est_roots_diff_mean": NaN
+    },
+    {
+      "model": "gemini",
+      "variant": "neutral",
+      "contrast": "C5-C1",
+      "n_pairs": 1,
+      "confidence_diff_mean": 8.0,
+      "confidence_diff_ci95": [
+        NaN,
+        NaN
+      ],
+      "confidence_diff_signflip_p": 1.0,
+      "est_roots_diff_mean": 3.0
+    },
+    {
+      "model": "gemini",
+      "variant": "source-aware",
+      "contrast": "C3-C5",
+      "n_pairs": 0,
+      "confidence_diff_mean": NaN,
+      "confidence_diff_ci95": [
+        NaN,
+        NaN
+      ],
+      "confidence_diff_signflip_p": 1.0,
+      "est_roots_diff_mean": NaN
+    },
+    {
+      "model": "gemini",
+      "variant": "source-aware",
+      "contrast": "C2-C4",
+      "n_pairs": 2,
+      "confidence_diff_mean": -2.5,
+      "confidence_diff_ci95": [
+        -5.0,
+        0.0
+      ],
+      "confidence_diff_signflip_p": 1.0,
+      "est_roots_diff_mean": -1.0
+    },
+    {
+      "model": "gemini",
+      "variant": "source-aware",
+      "contrast": "C3-C1",
+      "n_pairs": 0,
+      "confidence_diff_mean": NaN,
+      "confidence_diff_ci95": [
+        NaN,
+        NaN
+      ],
+      "confidence_diff_signflip_p": 1.0,
+      "est_roots_diff_mean": NaN
+    },
+    {
+      "model": "gemini",
+      "variant": "source-aware",
+      "contrast": "C5-C1",
+      "n_pairs": 0,
+      "confidence_diff_mean": NaN,
+      "confidence_diff_ci95": [
+        NaN,
+        NaN
+      ],
+      "confidence_diff_signflip_p": 1.0,
+      "est_roots_diff_mean": NaN
+    },
+    {
+      "model": "qwen",
+      "variant": "neutral",
+      "contrast": "C3-C5",
+      "n_pairs": 0,
+      "confidence_diff_mean": NaN,
+      "confidence_diff_ci95": [
+        NaN,
+        NaN
+      ],
+      "confidence_diff_signflip_p": 1.0,
+      "est_roots_diff_mean": NaN
+    },
+    {
+      "model": "qwen",
+      "variant": "neutral",
+      "contrast": "C2-C4",
+      "n_pairs": 0,
+      "confidence_diff_mean": NaN,
+      "confidence_diff_ci95": [
+        NaN,
+        NaN
+      ],
+      "confidence_diff_signflip_p": 1.0,
+      "est_roots_diff_mean": NaN
+    },
+    {
+      "model": "qwen",
+      "variant": "neutral",
+      "contrast": "C3-C1",
+      "n_pairs": 0,
+      "confidence_diff_mean": NaN,
+      "confidence_diff_ci95": [
+        NaN,
+        NaN
+      ],
+      "confidence_diff_signflip_p": 1.0,
+      "est_roots_diff_mean": NaN
+    },
+    {
+      "model": "qwen",
+      "variant": "neutral",
+      "contrast": "C5-C1",
+      "n_pairs": 0,
+      "confidence_diff_mean": NaN,
+      "confidence_diff_ci95": [
+        NaN,
+        NaN
+      ],
+      "confidence_diff_signflip_p": 1.0,
+      "est_roots_diff_mean": NaN
+    },
+    {
+      "model": "qwen",
+      "variant": "source-aware",
+      "contrast": "C3-C5",
+      "n_pairs": 0,
+      "confidence_diff_mean": NaN,
+      "confidence_diff_ci95": [
+        NaN,
+        NaN
+      ],
+      "confidence_diff_signflip_p": 1.0,
+      "est_roots_diff_mean": NaN
+    },
+    {
+      "model": "qwen",
+      "variant": "source-aware",
+      "contrast": "C2-C4",
+      "n_pairs": 0,
+      "confidence_diff_mean": NaN,
+      "confidence_diff_ci95": [
+        NaN,
+        NaN
+      ],
+      "confidence_diff_signflip_p": 1.0,
+      "est_roots_diff_mean": NaN
+    },
+    {
+      "model": "qwen",
+      "variant": "source-aware",
+      "contrast": "C3-C1",
+      "n_pairs": 0,
+      "confidence_diff_mean": NaN,
+      "confidence_diff_ci95": [
+        NaN,
+        NaN
+      ],
+      "confidence_diff_signflip_p": 1.0,
+      "est_roots_diff_mean": NaN
+    },
+    {
+      "model": "qwen",
+      "variant": "source-aware",
+      "contrast": "C5-C1",
+      "n_pairs": 0,
+      "confidence_diff_mean": NaN,
+      "confidence_diff_ci95": [
+        NaN,
+        NaN
+      ],
+      "confidence_diff_signflip_p": 1.0,
+      "est_roots_diff_mean": NaN
+    }
+  ]
+}

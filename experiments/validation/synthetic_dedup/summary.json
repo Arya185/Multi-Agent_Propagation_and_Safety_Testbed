@@ -1,0 +1,678 @@
+{
+  "n_episodes": 240,
+  "status_counts": {
+    "ok": 194,
+    "parse_error": 46
+  },
+  "lenient_recovered": 46,
+  "n_ok_strict": 194,
+  "n_ok": 240,
+  "conditions": [
+    {
+      "model": "gemini",
+      "variant": "neutral",
+      "condition": "C0",
+      "n_messages": 0,
+      "n_roots": 0,
+      "n": 10,
+      "confidence_mean": 50.0,
+      "confidence_ci95": [
+        50.0,
+        50.0
+      ],
+      "confidence_sd": 0.0,
+      "accept_rate": 0.0,
+      "est_roots_mean": 0.0,
+      "root_overcount_mean": 0.0,
+      "accept_rate_true": 0.0,
+      "accept_rate_false": 0.0
+    },
+    {
+      "model": "gemini",
+      "variant": "neutral",
+      "condition": "C1",
+      "n_messages": 1,
+      "n_roots": 1,
+      "n": 10,
+      "confidence_mean": 62.5,
+      "confidence_ci95": [
+        60.5,
+        64.6
+      ],
+      "confidence_sd": 3.4399612400917157,
+      "accept_rate": 1.0,
+      "est_roots_mean": 1.0,
+      "root_overcount_mean": 0.0,
+      "accept_rate_true": 1.0,
+      "accept_rate_false": 1.0
+    },
+    {
+      "model": "gemini",
+      "variant": "neutral",
+      "condition": "C2",
+      "n_messages": 2,
+      "n_roots": 1,
+      "n": 10,
+      "confidence_mean": 62.5,
+      "confidence_ci95": [
+        60.5,
+        64.4
+      ],
+      "confidence_sd": 3.4075080500434787,
+      "accept_rate": 1.0,
+      "est_roots_mean": 1.0,
+      "root_overcount_mean": 0.0,
+      "accept_rate_true": 1.0,
+      "accept_rate_false": 1.0
+    },
+    {
+      "model": "gemini",
+      "variant": "neutral",
+      "condition": "C3",
+      "n_messages": 4,
+      "n_roots": 1,
+      "n": 10,
+      "confidence_mean": 62.1,
+      "confidence_ci95": [
+        60.4,
+        63.9
+      ],
+      "confidence_sd": 2.8848262031225076,
+      "accept_rate": 1.0,
+      "est_roots_mean": 1.0,
+      "root_overcount_mean": 0.0,
+      "accept_rate_true": 1.0,
+      "accept_rate_false": 1.0
+    },
+    {
+      "model": "gemini",
+      "variant": "neutral",
+      "condition": "C4",
+      "n_messages": 2,
+      "n_roots": 2,
+      "n": 10,
+      "confidence_mean": 74.3,
+      "confidence_ci95": [
+        72.3,
+        76.2
+      ],
+      "confidence_sd": 3.4334951418181574,
+      "accept_rate": 1.0,
+      "est_roots_mean": 2.0,
+      "root_overcount_mean": 0.0,
+      "accept_rate_true": 1.0,
+      "accept_rate_false": 1.0
+    },
+    {
+      "model": "gemini",
+      "variant": "neutral",
+      "condition": "C5",
+      "n_messages": 4,
+      "n_roots": 4,
+      "n": 10,
+      "confidence_mean": 94.8,
+      "confidence_ci95": [
+        94.6,
+        95.0
+      ],
+      "confidence_sd": 0.4216370213557839,
+      "accept_rate": 1.0,
+      "est_roots_mean": 4.0,
+      "root_overcount_mean": 0.0,
+      "accept_rate_true": 1.0,
+      "accept_rate_false": 1.0
+    },
+    {
+      "model": "gemini",
+      "variant": "source-aware",
+      "condition": "C0",
+      "n_messages": 0,
+      "n_roots": 0,
+      "n": 10,
+      "confidence_mean": 50.0,
+      "confidence_ci95": [
+        50.0,
+        50.0
+      ],
+      "confidence_sd": 0.0,
+      "accept_rate": 0.0,
+      "est_roots_mean": 0.0,
+      "root_overcount_mean": 0.0,
+      "accept_rate_true": 0.0,
+      "accept_rate_false": 0.0
+    },
+    {
+      "model": "gemini",
+      "variant": "source-aware",
+      "condition": "C1",
+      "n_messages": 1,
+      "n_roots": 1,
+      "n": 10,
+      "confidence_mean": 63.2,
+      "confidence_ci95": [
+        61.4,
+        65.0
+      ],
+      "confidence_sd": 3.0840089349921005,
+      "accept_rate": 1.0,
+      "est_roots_mean": 1.0,
+      "root_overcount_mean": 0.0,
+      "accept_rate_true": 1.0,
+      "accept_rate_false": 1.0
+    },
+    {
+      "model": "gemini",
+      "variant": "source-aware",
+      "condition": "C2",
+      "n_messages": 2,
+      "n_roots": 1,
+      "n": 10,
+      "confidence_mean": 61.3,
+      "confidence_ci95": [
+        60.1,
+        62.5
+      ],
+      "confidence_sd": 2.0027758514399734,
+      "accept_rate": 1.0,
+      "est_roots_mean": 1.0,
+      "root_overcount_mean": 0.0,
+      "accept_rate_true": 1.0,
+      "accept_rate_false": 1.0
+    },
+    {
+      "model": "gemini",
+      "variant": "source-aware",
+      "condition": "C3",
+      "n_messages": 4,
+      "n_roots": 1,
+      "n": 10,
+      "confidence_mean": 62.4,
+      "confidence_ci95": [
+        60.9,
+        64.0
+      ],
+      "confidence_sd": 2.6749870196985173,
+      "accept_rate": 1.0,
+      "est_roots_mean": 1.0,
+      "root_overcount_mean": 0.0,
+      "accept_rate_true": 1.0,
+      "accept_rate_false": 1.0
+    },
+    {
+      "model": "gemini",
+      "variant": "source-aware",
+      "condition": "C4",
+      "n_messages": 2,
+      "n_roots": 2,
+      "n": 10,
+      "confidence_mean": 73.5,
+      "confidence_ci95": [
+        71.7,
+        75.3
+      ],
+      "confidence_sd": 3.1710495984067415,
+      "accept_rate": 1.0,
+      "est_roots_mean": 2.0,
+      "root_overcount_mean": 0.0,
+      "accept_rate_true": 1.0,
+      "accept_rate_false": 1.0
+    },
+    {
+      "model": "gemini",
+      "variant": "source-aware",
+      "condition": "C5",
+      "n_messages": 4,
+      "n_roots": 4,
+      "n": 10,
+      "confidence_mean": 94.6,
+      "confidence_ci95": [
+        94.0,
+        95.0
+      ],
+      "confidence_sd": 0.8432740427115678,
+      "accept_rate": 1.0,
+      "est_roots_mean": 4.0,
+      "root_overcount_mean": 0.0,
+      "accept_rate_true": 1.0,
+      "accept_rate_false": 1.0
+    },
+    {
+      "model": "qwen",
+      "variant": "neutral",
+      "condition": "C0",
+      "n_messages": 0,
+      "n_roots": 0,
+      "n": 10,
+      "confidence_mean": 50.0,
+      "confidence_ci95": [
+        50.0,
+        50.0
+      ],
+      "confidence_sd": 0.0,
+      "accept_rate": 0.0,
+      "est_roots_mean": 0.0,
+      "root_overcount_mean": 0.0,
+      "accept_rate_true": 0.0,
+      "accept_rate_false": 0.0
+    },
+    {
+      "model": "qwen",
+      "variant": "neutral",
+      "condition": "C1",
+      "n_messages": 1,
+      "n_roots": 1,
+      "n": 10,
+      "confidence_mean": 61.3,
+      "confidence_ci95": [
+        59.2,
+        63.4
+      ],
+      "confidence_sd": 3.5292429153510465,
+      "accept_rate": 1.0,
+      "est_roots_mean": 1.0,
+      "root_overcount_mean": 0.0,
+      "accept_rate_true": 1.0,
+      "accept_rate_false": 1.0
+    },
+    {
+      "model": "qwen",
+      "variant": "neutral",
+      "condition": "C2",
+      "n_messages": 2,
+      "n_roots": 1,
+      "n": 10,
+      "confidence_mean": 61.4,
+      "confidence_ci95": [
+        59.9,
+        62.9
+      ],
+      "confidence_sd": 2.590581230363393,
+      "accept_rate": 1.0,
+      "est_roots_mean": 1.0,
+      "root_overcount_mean": 0.0,
+      "accept_rate_true": 1.0,
+      "accept_rate_false": 1.0
+    },
+    {
+      "model": "qwen",
+      "variant": "neutral",
+      "condition": "C3",
+      "n_messages": 4,
+      "n_roots": 1,
+      "n": 10,
+      "confidence_mean": 60.8,
+      "confidence_ci95": [
+        59.4,
+        62.5
+      ],
+      "confidence_sd": 2.6583202716502514,
+      "accept_rate": 1.0,
+      "est_roots_mean": 1.0,
+      "root_overcount_mean": 0.0,
+      "accept_rate_true": 1.0,
+      "accept_rate_false": 1.0
+    },
+    {
+      "model": "qwen",
+      "variant": "neutral",
+      "condition": "C4",
+      "n_messages": 2,
+      "n_roots": 2,
+      "n": 10,
+      "confidence_mean": 74.3,
+      "confidence_ci95": [
+        72.6,
+        76.2
+      ],
+      "confidence_sd": 3.1640339933558095,
+      "accept_rate": 1.0,
+      "est_roots_mean": 2.0,
+      "root_overcount_mean": 0.0,
+      "accept_rate_true": 1.0,
+      "accept_rate_false": 1.0
+    },
+    {
+      "model": "qwen",
+      "variant": "neutral",
+      "condition": "C5",
+      "n_messages": 4,
+      "n_roots": 4,
+      "n": 10,
+      "confidence_mean": 95.0,
+      "confidence_ci95": [
+        95.0,
+        95.0
+      ],
+      "confidence_sd": 0.0,
+      "accept_rate": 1.0,
+      "est_roots_mean": 4.0,
+      "root_overcount_mean": 0.0,
+      "accept_rate_true": 1.0,
+      "accept_rate_false": 1.0
+    },
+    {
+      "model": "qwen",
+      "variant": "source-aware",
+      "condition": "C0",
+      "n_messages": 0,
+      "n_roots": 0,
+      "n": 10,
+      "confidence_mean": 50.0,
+      "confidence_ci95": [
+        50.0,
+        50.0
+      ],
+      "confidence_sd": 0.0,
+      "accept_rate": 0.0,
+      "est_roots_mean": 0.0,
+      "root_overcount_mean": 0.0,
+      "accept_rate_true": 0.0,
+      "accept_rate_false": 0.0
+    },
+    {
+      "model": "qwen",
+      "variant": "source-aware",
+      "condition": "C1",
+      "n_messages": 1,
+      "n_roots": 1,
+      "n": 10,
+      "confidence_mean": 62.1,
+      "confidence_ci95": [
+        60.4,
+        63.6
+      ],
+      "confidence_sd": 2.6853512081497106,
+      "accept_rate": 1.0,
+      "est_roots_mean": 1.0,
+      "root_overcount_mean": 0.0,
+      "accept_rate_true": 1.0,
+      "accept_rate_false": 1.0
+    },
+    {
+      "model": "qwen",
+      "variant": "source-aware",
+      "condition": "C2",
+      "n_messages": 2,
+      "n_roots": 1,
+      "n": 10,
+      "confidence_mean": 62.2,
+      "confidence_ci95": [
+        60.1,
+        64.2
+      ],
+      "confidence_sd": 3.425395354310701,
+      "accept_rate": 1.0,
+      "est_roots_mean": 1.0,
+      "root_overcount_mean": 0.0,
+      "accept_rate_true": 1.0,
+      "accept_rate_false": 1.0
+    },
+    {
+      "model": "qwen",
+      "variant": "source-aware",
+      "condition": "C3",
+      "n_messages": 4,
+      "n_roots": 1,
+      "n": 10,
+      "confidence_mean": 61.7,
+      "confidence_ci95": [
+        60.0,
+        63.5
+      ],
+      "confidence_sd": 2.94580681270476,
+      "accept_rate": 1.0,
+      "est_roots_mean": 1.0,
+      "root_overcount_mean": 0.0,
+      "accept_rate_true": 1.0,
+      "accept_rate_false": 1.0
+    },
+    {
+      "model": "qwen",
+      "variant": "source-aware",
+      "condition": "C4",
+      "n_messages": 2,
+      "n_roots": 2,
+      "n": 10,
+      "confidence_mean": 73.9,
+      "confidence_ci95": [
+        72.0,
+        75.8
+      ],
+      "confidence_sd": 3.4464152068167553,
+      "accept_rate": 1.0,
+      "est_roots_mean": 2.0,
+      "root_overcount_mean": 0.0,
+      "accept_rate_true": 1.0,
+      "accept_rate_false": 1.0
+    },
+    {
+      "model": "qwen",
+      "variant": "source-aware",
+      "condition": "C5",
+      "n_messages": 4,
+      "n_roots": 4,
+      "n": 10,
+      "confidence_mean": 94.5,
+      "confidence_ci95": [
+        94.0,
+        95.0
+      ],
+      "confidence_sd": 0.8498365855987975,
+      "accept_rate": 1.0,
+      "est_roots_mean": 4.0,
+      "root_overcount_mean": 0.0,
+      "accept_rate_true": 1.0,
+      "accept_rate_false": 1.0
+    }
+  ],
+  "contrasts": [
+    {
+      "model": "gemini",
+      "variant": "neutral",
+      "contrast": "C3-C5",
+      "n_pairs": 10,
+      "confidence_diff_mean": -32.7,
+      "confidence_diff_ci95": [
+        -34.4,
+        -31.0
+      ],
+      "confidence_diff_signflip_p": 0.0024997500249975004,
+      "est_roots_diff_mean": -3.0
+    },
+    {
+      "model": "gemini",
+      "variant": "neutral",
+      "contrast": "C2-C4",
+      "n_pairs": 10,
+      "confidence_diff_mean": -11.8,
+      "confidence_diff_ci95": [
+        -15.0,
+        -8.7
+      ],
+      "confidence_diff_signflip_p": 0.0024997500249975004,
+      "est_roots_diff_mean": -1.0
+    },
+    {
+      "model": "gemini",
+      "variant": "neutral",
+      "contrast": "C3-C1",
+      "n_pairs": 10,
+      "confidence_diff_mean": -0.4,
+      "confidence_diff_ci95": [
+        -1.8,
+        1.2
+      ],
+      "confidence_diff_signflip_p": 0.6912308769123088,
+      "est_roots_diff_mean": 0.0
+    },
+    {
+      "model": "gemini",
+      "variant": "neutral",
+      "contrast": "C5-C1",
+      "n_pairs": 10,
+      "confidence_diff_mean": 32.3,
+      "confidence_diff_ci95": [
+        30.2,
+        34.2
+      ],
+      "confidence_diff_signflip_p": 0.0024997500249975004,
+      "est_roots_diff_mean": 3.0
+    },
+    {
+      "model": "gemini",
+      "variant": "source-aware",
+      "contrast": "C3-C5",
+      "n_pairs": 10,
+      "confidence_diff_mean": -32.2,
+      "confidence_diff_ci95": [
+        -33.8,
+        -30.8
+      ],
+      "confidence_diff_signflip_p": 0.0024997500249975004,
+      "est_roots_diff_mean": -3.0
+    },
+    {
+      "model": "gemini",
+      "variant": "source-aware",
+      "contrast": "C2-C4",
+      "n_pairs": 10,
+      "confidence_diff_mean": -12.2,
+      "confidence_diff_ci95": [
+        -14.5,
+        -10.1
+      ],
+      "confidence_diff_signflip_p": 0.0024997500249975004,
+      "est_roots_diff_mean": -1.0
+    },
+    {
+      "model": "gemini",
+      "variant": "source-aware",
+      "contrast": "C3-C1",
+      "n_pairs": 10,
+      "confidence_diff_mean": -0.8,
+      "confidence_diff_ci95": [
+        -4.0,
+        2.0
+      ],
+      "confidence_diff_signflip_p": 0.6585341465853415,
+      "est_roots_diff_mean": 0.0
+    },
+    {
+      "model": "gemini",
+      "variant": "source-aware",
+      "contrast": "C5-C1",
+      "n_pairs": 10,
+      "confidence_diff_mean": 31.4,
+      "confidence_diff_ci95": [
+        29.4,
+        33.2
+      ],
+      "confidence_diff_signflip_p": 0.0024997500249975004,
+      "est_roots_diff_mean": 3.0
+    },
+    {
+      "model": "qwen",
+      "variant": "neutral",
+      "contrast": "C3-C5",
+      "n_pairs": 10,
+      "confidence_diff_mean": -34.2,
+      "confidence_diff_ci95": [
+        -35.6,
+        -32.5
+      ],
+      "confidence_diff_signflip_p": 0.0024997500249975004,
+      "est_roots_diff_mean": -3.0
+    },
+    {
+      "model": "qwen",
+      "variant": "neutral",
+      "contrast": "C2-C4",
+      "n_pairs": 10,
+      "confidence_diff_mean": -12.9,
+      "confidence_diff_ci95": [
+        -15.5,
+        -9.9
+      ],
+      "confidence_diff_signflip_p": 0.0024997500249975004,
+      "est_roots_diff_mean": -1.0
+    },
+    {
+      "model": "qwen",
+      "variant": "neutral",
+      "contrast": "C3-C1",
+      "n_pairs": 10,
+      "confidence_diff_mean": -0.5,
+      "confidence_diff_ci95": [
+        -2.7,
+        1.4
+      ],
+      "confidence_diff_signflip_p": 0.7335266473352665,
+      "est_roots_diff_mean": 0.0
+    },
+    {
+      "model": "qwen",
+      "variant": "neutral",
+      "contrast": "C5-C1",
+      "n_pairs": 10,
+      "confidence_diff_mean": 33.7,
+      "confidence_diff_ci95": [
+        31.6,
+        35.8
+      ],
+      "confidence_diff_signflip_p": 0.0024997500249975004,
+      "est_roots_diff_mean": 3.0
+    },
+    {
+      "model": "qwen",
+      "variant": "source-aware",
+      "contrast": "C3-C5",
+      "n_pairs": 10,
+      "confidence_diff_mean": -32.8,
+      "confidence_diff_ci95": [
+        -34.3,
+        -31.2
+      ],
+      "confidence_diff_signflip_p": 0.0024997500249975004,
+      "est_roots_diff_mean": -3.0
+    },
+    {
+      "model": "qwen",
+      "variant": "source-aware",
+      "contrast": "C2-C4",
+      "n_pairs": 10,
+      "confidence_diff_mean": -11.7,
+      "confidence_diff_ci95": [
+        -14.8,
+        -9.0
+      ],
+      "confidence_diff_signflip_p": 0.0024997500249975004,
+      "est_roots_diff_mean": -1.0
+    },
+    {
+      "model": "qwen",
+      "variant": "source-aware",
+      "contrast": "C3-C1",
+      "n_pairs": 10,
+      "confidence_diff_mean": -0.4,
+      "confidence_diff_ci95": [
+        -2.7,
+        2.0
+      ],
+      "confidence_diff_signflip_p": 0.7981201879812019,
+      "est_roots_diff_mean": 0.0
+    },
+    {
+      "model": "qwen",
+      "variant": "source-aware",
+      "contrast": "C5-C1",
+      "n_pairs": 10,
+      "confidence_diff_mean": 32.4,
+      "confidence_diff_ci95": [
+        31.0,
+        34.1
+      ],
+      "confidence_diff_signflip_p": 0.0024997500249975004,
+      "est_roots_diff_mean": 3.0
+    }
+  ]
+}

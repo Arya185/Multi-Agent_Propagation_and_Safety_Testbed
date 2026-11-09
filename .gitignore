@@ -25,6 +25,11 @@ data/review/answer_key*
 # Experiment outputs
 experiments/results/*
 !experiments/results/.gitkeep
+# Credit-limited partial pilot cited in the hackathon report (27/240 episodes)
+!experiments/results/pilot_20261109T155007/
+
+# Local report drafts (submitted as PDF, not versioned)
+paper/
 
 # Logs
 *.log
